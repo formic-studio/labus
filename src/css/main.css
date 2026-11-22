@@ -1,5 +1,9 @@
 @import './accessibility.css';
 
+body {
+  background-color: #f2ff26;
+}
+
 [data-component='example-disclosure'] > summary {
   display: list-item;
   cursor: pointer;
