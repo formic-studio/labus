@@ -1,0 +1,6 @@
+@import './accessibility.css';
+
+[data-component='example-disclosure'] > summary {
+  display: list-item;
+  cursor: pointer;
+}

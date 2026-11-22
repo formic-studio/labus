@@ -1,0 +1,33 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - name: Verify committed dist
+        shell: bash
+        run: |
+          changes=$(git status --porcelain --untracked-files=all -- dist/)
+          if [[ -n "$changes" ]]; then
+            printf '%s\n' "$changes"
+            echo '::error::dist/ differs from the production build. Run npm ci and npm run build, then commit all changes in dist/.'
+            exit 1
+          fi
