@@ -1,0 +1,133 @@
+.design-approach {
+  display: block;
+  width: 100%;
+  padding: 7.5rem var(--space-20, 2rem);
+  background: var(--color-lime, #f2ff26);
+  color: var(--color-black, #000);
+}
+
+.design-approach .design-approach-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  max-width: 62rem;
+  margin-inline: auto;
+}
+
+.design-approach .design-approach-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 538 / 604;
+  border-radius: 2.3rem;
+  object-fit: cover;
+  object-position: 53.06% center;
+}
+
+.design-approach .design-approach-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: start;
+  gap: var(--space-40, 4rem);
+}
+
+.design-approach .design-approach-title {
+  margin: 0;
+  font-size: clamp(4.4rem, 12.8vw, 5rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.design-approach .design-approach-list {
+  display: block;
+  width: calc(100% + var(--space-12, 1.2rem));
+  max-width: 43.9rem;
+  margin: 0;
+  padding-inline-start: 0.3rem;
+  font-size: var(--font-16, 1.6rem);
+  line-height: 1.45;
+  list-style: disc inside;
+}
+
+.design-approach .design-approach-list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.design-approach .design-approach-list > li::marker {
+  content: '• ';
+  font-size: 0.8em;
+}
+
+.design-approach .design-approach-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 5rem;
+  margin-block-start: var(--space-10, 1rem);
+  padding: var(--space-12, 1.2rem) var(--space-24, 2.4rem);
+  border: 1px solid var(--color-espresso, #110a05);
+  border-radius: 5.7rem;
+  background: transparent;
+  color: var(--color-espresso, #110a05);
+  font-size: var(--font-12, 1.2rem);
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.design-approach .design-approach-cta:hover {
+  background: var(--color-espresso, #110a05);
+  color: var(--color-lime, #f2ff26);
+}
+
+@media (min-width: 768px) {
+  .design-approach {
+    padding: var(--space-60, 6rem) var(--space-40, 4rem) 10rem;
+  }
+
+  .design-approach .design-approach-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-20, 2rem);
+    max-width: none;
+  }
+
+  .design-approach .design-approach-image {
+    width: min(100%, 53.8rem);
+    border-radius: var(--space-30, 3rem);
+  }
+
+  .design-approach .design-approach-title {
+    font-size: var(--font-39, 3.9rem);
+    line-height: 1.05;
+  }
+
+  .design-approach .design-approach-list {
+    width: 100%;
+    padding-inline-start: 0;
+  }
+
+  .design-approach .design-approach-cta {
+    width: auto;
+    min-width: 20.9rem;
+    max-width: 100%;
+    min-height: 6rem;
+    margin-block-start: var(--space-20, 2rem);
+    font-size: var(--font-14, 1.4rem);
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 992px) {
+  .design-approach {
+    padding-inline: var(--space-60, 6rem);
+  }
+
+  .design-approach .design-approach-title {
+    font-size: var(--font-61, 6.1rem);
+  }
+}
