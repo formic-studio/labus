@@ -16,6 +16,14 @@
   margin-inline: auto;
 }
 
+.design-approach .design-approach-photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: clip;
+  border-radius: 2.3rem;
+}
+
 .design-approach .design-approach-image {
   display: block;
   width: 100%;
@@ -62,6 +70,7 @@
 }
 
 .design-approach .design-approach-cta {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -80,9 +89,81 @@
   text-decoration: none;
 }
 
-.design-approach .design-approach-cta:hover {
+.design-approach .design-approach-cta:not([data-directional-fill]):hover {
   background: var(--color-espresso, #110a05);
   color: var(--color-lime, #f2ff26);
+}
+
+.design-approach .design-approach-cta:focus-visible {
+  outline-color: var(--color-espresso, #110a05);
+}
+
+.design-approach .design-approach-cta-fill {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: inherit;
+  border-radius: inherit;
+  background: var(--color-espresso, #110a05);
+  color: var(--color-lime, #f2ff26);
+  clip-path: circle(0% at center);
+  pointer-events: none;
+}
+
+.design-approach-reveal-trigger {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .design-approach-photo[data-photo-reveal] {
+    background: var(--color-sky, #98c2e5);
+    --design-approach-reveal-duration: 900ms;
+  }
+
+  .design-approach-photo[data-photo-reveal='pending'] {
+    clip-path: circle(0.75rem at center);
+  }
+
+  .design-approach-photo[data-photo-reveal='pending'] .design-approach-image {
+    opacity: 0;
+  }
+
+  .design-approach-photo[data-photo-reveal='playing'] {
+    animation: design-approach-reveal var(--design-approach-reveal-duration)
+      cubic-bezier(0.3, 0.7, 0.2, 1) both;
+  }
+
+  .design-approach-photo[data-photo-reveal='playing'] .design-approach-image {
+    animation: design-approach-photo-in var(--design-approach-reveal-duration) ease-out both;
+  }
+}
+
+@keyframes design-approach-reveal {
+  0%,
+  12% {
+    clip-path: circle(0.75rem at center);
+  }
+
+  100% {
+    clip-path: circle(72% at center);
+  }
+}
+
+@keyframes design-approach-photo-in {
+  0%,
+  18% {
+    opacity: 0;
+  }
+
+  74%,
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -96,6 +177,7 @@
     max-width: none;
   }
 
+  .design-approach .design-approach-photo,
   .design-approach .design-approach-image {
     width: min(100%, 53.8rem);
     border-radius: var(--space-30, 3rem);

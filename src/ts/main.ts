@@ -14,6 +14,11 @@ const components = [
     load: () => import('./components/logo-marquee'),
   },
   {
+    name: 'design-approach',
+    selector: '[data-component="design-approach"]',
+    load: () => import('./components/design-approach'),
+  },
+  {
     name: 'example-disclosure',
     selector: '[data-component="example-disclosure"]',
     load: () => import('./components/example-disclosure'),
