@@ -77,27 +77,15 @@
   pointer-events: none;
 }
 
-.lci-measure .lci-measure-rule::before,
-.lci-measure .lci-measure-rule::after {
+.lci-measure .lci-measure-rule::before {
   position: absolute;
   inset-block: 0;
+  inset-inline: 0;
   background: var(--measure-ink);
   content: '';
-}
-
-.lci-measure .lci-measure-rule::before {
-  inset-inline: 0;
   mask: url('../assets/lci/measure-rule.svg') center / 100% 100% no-repeat;
   transform: scaleY(calc(4 / 14));
   transform-origin: top;
-}
-
-.lci-measure .lci-measure-rule::after {
-  inset-inline-end: 100%;
-  width: 2.4rem;
-  border-radius: 90% 0 0 90% / 50% 0 0 50%;
-  transform: scale(0, 0.25);
-  transform-origin: right center;
 }
 
 .lci-measure .lci-measure-dot {
@@ -108,7 +96,7 @@
   height: 1.5rem;
   border-radius: 50%;
   background: var(--measure-ink);
-  transform: translate(0, -0.55rem) scale(0.23);
+  transform: translate(0, -0.55rem) scale(0.18);
 }
 
 .lci-measure .lci-measure-item[open]:not([data-measure-closing]) .lci-measure-label {
@@ -161,9 +149,11 @@
 
   .lci-measure .lci-measure-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: min(6.2rem, 4.306vw);
+    /* Zachowaj proporcje projektu 1440 px przy poszerzaniu kolumn. */
+    column-gap: calc(100% * 62 / 1279);
     min-height: 28.7rem;
-    max-width: 127.9rem;
+    width: calc(100% * 1279 / 1320);
+    max-width: none;
     margin: 8rem 0 0;
   }
 
@@ -176,6 +166,7 @@
   }
 
   .lci-measure .lci-measure-copy {
+    max-width: 38.5rem;
     padding: 4rem 0 0 3.7rem;
   }
 
@@ -192,28 +183,5 @@
   .lci-measure .lci-measure-dot,
   .lci-measure .lci-measure-rule::before {
     transition: transform var(--measure-duration) var(--measure-easing);
-  }
-
-  .lci-measure .lci-measure-item[open]:not([data-measure-closing]) .lci-measure-rule::after {
-    animation: lci-measure-drop-release var(--measure-duration) var(--measure-easing);
-  }
-}
-
-@keyframes lci-measure-drop-release {
-  0% {
-    transform: scale(0, 0.25);
-  }
-
-  45% {
-    transform: scale(0.35, 0.72);
-  }
-
-  62% {
-    transform: scale(0.72, 0.52);
-  }
-
-  78%,
-  100% {
-    transform: scale(0, 0.2);
   }
 }
