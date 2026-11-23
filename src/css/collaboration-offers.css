@@ -116,13 +116,3 @@
     list-style: disc;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .collaboration-offers .collaboration-offer-summary {
-    transition: min-block-size 360ms cubic-bezier(0.32, 0, 0.2, 1);
-  }
-
-  .collaboration-offers .collaboration-offer[open]:not([data-accordion-closing]) > summary {
-    transition-duration: 468ms;
-  }
-}

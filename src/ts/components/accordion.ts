@@ -6,7 +6,38 @@ interface Disclosure {
   name: string | null;
 }
 
-const easing = 'cubic-bezier(0.32, 0, 0.2, 1)';
+interface PanelLayout {
+  open: boolean;
+  summaryMinSize: string;
+  summaryHeight: number;
+  rowHeight: number;
+  copyTop: number;
+  opacity: string;
+  translate: string;
+}
+
+const disclosureEasing = 'cubic-bezier(0.32, 0, 0.2, 1)';
+const switchEasing = 'cubic-bezier(0.7, -0.4, 0.4, 1.4)';
+
+function measure({ details, summary, content }: Disclosure): PanelLayout {
+  const summaryBox = summary.getBoundingClientRect();
+  const copy = details.open ? content : null;
+  const style = copy ? getComputedStyle(copy) : null;
+
+  return {
+    open: details.open,
+    summaryMinSize: getComputedStyle(summary).minBlockSize,
+    summaryHeight: summaryBox.height,
+    rowHeight: details.getBoundingClientRect().height,
+    copyTop: (copy?.getBoundingClientRect().top ?? summaryBox.bottom) + window.scrollY,
+    opacity: style?.opacity ?? '0',
+    translate: style?.translate ?? 'none',
+  };
+}
+
+function translateY(value: number): string {
+  return `0px ${value.toFixed(2)}px`;
+}
 
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
   if (typeof HTMLElement.prototype.animate !== 'function') return;
@@ -53,54 +84,74 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     settle(item, item === active);
   }
 
-  function animate(item: Disclosure, expanded: boolean, direction: -1 | 1): void {
+  function animate(
+    item: Disclosure,
+    before: PanelLayout,
+    after: PanelLayout,
+    layoutTiming: { duration: number; easing: string; fill: 'both' },
+    copyMotion: { start: string; end: string; exchange: boolean },
+  ): void {
     const { details, panel, summary, content } = item;
-    if (!expanded && panel.contains(document.activeElement)) {
-      summary.focus({ preventScroll: true });
-    }
-
-    if (reducedMotion.matches) {
-      settle(item, expanded);
-      return;
-    }
-
-    const wasOpen = details.open;
-    const previousHeight = wasOpen ? panel.getBoundingClientRect().height : 0;
-    const contentStyle = wasOpen && content ? getComputedStyle(content) : null;
-    const travel = 'var(--accordion-content-travel, 4rem)';
-    const from = {
-      opacity: contentStyle?.opacity ?? 0,
-      translate: contentStyle?.translate ?? `0 calc(${travel} * ${String(-direction)})`,
-    };
-    cancel(item);
-
+    const expanded = after.open;
     details.open = true;
     details.toggleAttribute('data-accordion-closing', !expanded);
     panel.inert = !expanded;
     panel.setAttribute('data-accordion-animating', '');
-    const height = expanded ? panel.getBoundingClientRect().height : 0;
-
-    const duration = expanded ? 468 : 360;
-    const layout = panel.animate(
-      [{ height: `${previousHeight.toFixed(2)}px` }, { height: `${height.toFixed(2)}px` }],
-      { duration, easing, fill: 'both' },
+    // Animuj cały wiersz. Wysokość samego panelu zatrzymałaby się na zerze podczas zamachu.
+    const layout = details.animate(
+      [
+        { height: `${before.rowHeight.toFixed(2)}px` },
+        { height: `${after.rowHeight.toFixed(2)}px` },
+      ],
+      layoutTiming,
     );
     const motion = [layout];
 
-    if (content) {
-      const delay = expanded && !wasOpen ? 60 : 0;
+    if (before.summaryMinSize !== after.summaryMinSize) {
       motion.push(
-        content.animate(
-          [
-            from,
-            {
-              opacity: expanded ? 1 : 0,
-              translate: expanded ? 'none' : `0 calc(${travel} * ${String(direction)})`,
-            },
-          ],
-          { delay, duration: expanded ? duration - delay : 240, easing, fill: 'both' },
+        summary.animate(
+          [{ minBlockSize: before.summaryMinSize }, { minBlockSize: after.summaryMinSize }],
+          layoutTiming,
         ),
       );
+    }
+
+    if (content) {
+      const opacity = expanded ? after.opacity : '0';
+      if (copyMotion.exchange) {
+        // Zachowaj widoczny zamach. Opisy przenikają się dopiero, gdy mija je krawędź panelu.
+        motion.push(
+          content.animate(
+            [{ translate: copyMotion.start }, { translate: copyMotion.end }],
+            layoutTiming,
+          ),
+          content.animate(
+            [
+              { opacity: before.opacity, offset: 0 },
+              { opacity: before.opacity, offset: expanded ? 0.42 : 0.33 },
+              { opacity, offset: expanded ? 0.71 : 0.66 },
+              { opacity, offset: 1 },
+            ],
+            { duration: layoutTiming.duration, fill: 'both' },
+          ),
+        );
+      } else {
+        const delay = expanded && !before.open ? 60 : 0;
+        motion.push(
+          content.animate(
+            [
+              { opacity: before.opacity, translate: copyMotion.start },
+              { opacity, translate: copyMotion.end },
+            ],
+            {
+              delay,
+              duration: expanded ? layoutTiming.duration - delay : 240,
+              easing: disclosureEasing,
+              fill: 'both',
+            },
+          ),
+        );
+      }
     }
 
     animations.set(item, motion);
@@ -113,6 +164,56 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     );
   }
 
+  function select(next: Disclosure | undefined): void {
+    const previous = active;
+    active = next;
+    if (previous?.panel.contains(document.activeElement)) {
+      previous.summary.focus({ preventScroll: true });
+    }
+
+    const affected = items.filter(
+      (item) => item === previous || item === next || animations.has(item),
+    );
+    if (reducedMotion.matches) {
+      for (const item of affected) settle(item, item === next);
+      return;
+    }
+
+    const starts = affected.map((item) => ({ item, before: measure(item) }));
+    for (const item of affected) settle(item, item === next);
+    const frames = starts.map(({ item, before }) => ({ item, before, after: measure(item) }));
+
+    const outgoing = frames.find(({ item }) => item === previous);
+    const incoming = frames.find(({ item }) => item === next);
+    const switching = Boolean(outgoing && incoming);
+    let travel = 0;
+    if (outgoing && incoming) {
+      const direction = items.indexOf(incoming.item) > items.indexOf(outgoing.item) ? 1 : -1;
+      // Sąsiednie opisy pokonują tę samą drogę w widoku, niezależnie od zmiany wysokości wierszy.
+      const distance = Math.abs(incoming.after.copyTop - outgoing.before.copyTop);
+      const maxTravel = Math.max(outgoing.after.summaryHeight, incoming.before.summaryHeight);
+      travel = direction * Math.min(distance, maxTravel);
+    }
+
+    for (const { item, before, after } of frames) {
+      const exchange = switching && (item === previous || item === next);
+      const offset = '0 calc(-1 * var(--accordion-content-travel, 4rem))';
+      const start = before.open
+        ? before.translate
+        : exchange
+          ? translateY(after.copyTop - travel - before.copyTop)
+          : offset;
+      const end = after.open
+        ? after.translate
+        : exchange
+          ? translateY(before.copyTop + travel - after.copyTop)
+          : offset;
+      const duration = switching ? 400 : after.open ? 468 : 360;
+      const easing = switching ? switchEasing : disclosureEasing;
+      animate(item, before, after, { duration, easing, fill: 'both' }, { start, end, exchange });
+    }
+  }
+
   element.addEventListener(
     'click',
     (event) => {
@@ -123,12 +224,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
       if (!item) return;
 
       event.preventDefault();
-      const previous = active;
-      active = item === previous ? undefined : item;
-      const direction =
-        previous && active && items.indexOf(active) > items.indexOf(previous) ? 1 : -1;
-      if (previous) animate(previous, false, direction);
-      if (active) animate(active, true, previous ? direction : 1);
+      select(item === active ? undefined : item);
     },
     { signal },
   );
