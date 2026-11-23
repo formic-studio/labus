@@ -190,6 +190,116 @@
   font: 400 var(--font-14, 1.4rem) / 1.4 var(--intro-body);
 }
 
+@media (max-width: 767px) {
+  [data-component='intro'] .intro-pillars {
+    --intro-rail-inset: min(var(--space-18, 1.8rem), 5vw);
+    padding-block-start: 7.5rem;
+    padding-inline: var(--intro-rail-inset);
+  }
+
+  [data-component='intro'] .intro-pillars-title {
+    font-size: clamp(4.4rem, 12.8vw, 5rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  [data-component='intro'] .intro-deck {
+    display: flex;
+    flex-direction: row;
+    gap: min(var(--intro-card-gap), 6vw);
+    width: auto;
+    max-width: none;
+    margin-inline: calc(-1 * var(--intro-rail-inset));
+    padding-inline: var(--intro-rail-inset);
+    overflow-x: auto;
+  }
+
+  [data-component='intro'] .intro-deck:focus-visible {
+    outline-offset: calc(-1 * var(--labus-focus-ring-width));
+  }
+
+  [data-component='intro'] .intro-card {
+    --intro-card-text: var(--color-espresso, #110a05);
+    --intro-card-width: min(31.5rem, 82vw);
+    display: grid;
+    flex: 0 0 var(--intro-card-width);
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: minmax(3.7rem, auto) 1fr auto;
+    column-gap: var(--space-8, 0.8rem);
+    row-gap: min(var(--space-24, 2.4rem), 6.25vw);
+    min-height: calc(var(--intro-card-width) * 400 / 315);
+    padding: 2.3rem min(var(--space-30, 3rem), 8vw) var(--space-30, 3rem);
+    border-radius: 2.3rem;
+    box-shadow: none;
+  }
+
+  .intro-card[data-tone='dark'] {
+    --intro-card-background: var(--color-sky, #98c2e5);
+    --intro-card-icon: url('../assets/intro/nauka.svg?no-inline');
+    --intro-card-icon-offset: -0.65rem;
+  }
+
+  .intro-card[data-tone='orange'] {
+    --intro-card-icon: url('../assets/intro/wdrozenie.svg?no-inline');
+    --intro-card-icon-rotation: 180deg;
+  }
+
+  .intro-card[data-tone='sky'] {
+    --intro-card-background: var(--intro-accent);
+    --intro-card-icon: url('../assets/intro/narzedzie.svg?no-inline');
+  }
+
+  .intro-card[data-tone='lime'] {
+    --intro-card-background: var(--color-espresso, #110a05);
+    --intro-card-text: var(--intro-paper);
+    --intro-card-icon: url('../assets/intro/nowy-standard.svg?no-inline');
+  }
+
+  [data-component='intro'] .intro-card::before {
+    content: '';
+    grid-row: 2;
+    grid-column: 1 / -1;
+    place-self: center;
+    width: min(15.2rem, 39vw);
+    aspect-ratio: 1;
+    background: var(--intro-card-icon) center / contain no-repeat;
+    translate: var(--intro-card-icon-offset, 0);
+    rotate: var(--intro-card-icon-rotation, 0deg);
+  }
+
+  [data-component='intro'] .intro-card-title,
+  [data-component='intro'] .intro-card-number {
+    grid-row: 1;
+    align-self: end;
+  }
+
+  [data-component='intro'] .intro-card-title {
+    grid-column: 1;
+    font-size: var(--font-29, 2.9rem);
+    line-height: 1.1;
+    text-transform: none;
+  }
+
+  [data-component='intro'] .intro-card-number {
+    grid-column: 2;
+    color: inherit;
+    font: 600 var(--font-14, 1.4rem) / 1.1 var(--intro-body);
+    letter-spacing: normal;
+  }
+
+  [data-component='intro'] .intro-card-context {
+    display: none;
+  }
+
+  [data-component='intro'] .intro-card-description {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: var(--font-16, 1.6rem);
+    line-height: 1.45;
+  }
+}
+
 @media (min-width: 768px) {
   [data-component='intro'] .intro-hero {
     padding: var(--space-56, 5.6rem) max(var(--space-24, 2.4rem), 4.2%);

@@ -53,6 +53,8 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const desktop = window.matchMedia('(min-width: 992px) and (min-height: 640px)');
+  const mobile = window.matchMedia('(max-width: 767px)');
+  const manageDeckFocus = !deck.hasAttribute('tabindex');
   const visualPhrase = document.createElement('span');
   visualPhrase.setAttribute('aria-hidden', 'true');
   visualPhrase.textContent = start;
@@ -160,6 +162,11 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
       const wasPinned = Boolean(geometry);
       const shouldPin = desktop.matches && !reducedMotion.matches;
 
+      if (manageDeckFocus) {
+        if (mobile.matches) deck.tabIndex = 0;
+        else deck.removeAttribute('tabindex');
+      }
+
       if (reducedMotion.matches) {
         element.removeAttribute('data-intro-motion');
         visualPhrase.remove();
@@ -200,10 +207,33 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   window.addEventListener('resize', invalidateLayout, { signal });
   reducedMotion.addEventListener('change', invalidateLayout, { signal });
   document.fonts.addEventListener('loadingdone', invalidateLayout, { signal });
+  deck.addEventListener(
+    'keydown',
+    (event) => {
+      if (
+        !mobile.matches ||
+        event.target !== deck ||
+        event.defaultPrevented ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight')
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+      const direction = event.key === 'ArrowRight' ? 1 : -1;
+      deck.scrollBy({ left: (deck.clientWidth / 4) * direction });
+    },
+    { signal },
+  );
   update();
 
   return () => {
     if (frame !== undefined) window.cancelAnimationFrame(frame);
+    if (manageDeckFocus) deck.removeAttribute('tabindex');
     element.removeAttribute('data-intro-motion');
     visualPhrase.remove();
     resetScene();
