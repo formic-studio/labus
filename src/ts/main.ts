@@ -29,6 +29,11 @@ const components = [
     load: () => import('./components/lci-diagram'),
   },
   {
+    name: 'lci-measure',
+    selector: '[data-component="lci-measure"]',
+    load: () => import('./components/lci-measure'),
+  },
+  {
     name: 'accordion',
     selector: '[data-component="accordion"]',
     load: () => import('./components/accordion'),
