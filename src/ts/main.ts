@@ -19,6 +19,11 @@ const components = [
     load: () => import('./components/design-approach'),
   },
   {
+    name: 'directional-fill',
+    selector: '[data-component="directional-fill"]',
+    load: () => import('./components/directional-fill'),
+  },
+  {
     name: 'example-disclosure',
     selector: '[data-component="example-disclosure"]',
     load: () => import('./components/example-disclosure'),

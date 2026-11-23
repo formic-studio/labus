@@ -56,7 +56,7 @@
   text-decoration: none;
 }
 
-.longevity .longevity-cta:hover {
+.longevity .longevity-cta:not([data-directional-fill]):hover {
   background: var(--color-lime, #f2ff26);
 }
 

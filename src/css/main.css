@@ -3,6 +3,8 @@
 @import './intro.css';
 @import './longevity.css';
 @import './design-approach.css';
+@import './lci.css';
+@import './directional-fill.css';
 
 :root {
   overscroll-behavior-y: none;

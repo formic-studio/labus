@@ -70,7 +70,8 @@
 }
 
 .design-approach .design-approach-cta {
-  position: relative;
+  --directional-fill-background: var(--color-espresso, #110a05);
+  --directional-fill-color: var(--color-lime, #f2ff26);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -96,19 +97,6 @@
 
 .design-approach .design-approach-cta:focus-visible {
   outline-color: var(--color-espresso, #110a05);
-}
-
-.design-approach .design-approach-cta-fill {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: inherit;
-  border-radius: inherit;
-  background: var(--color-espresso, #110a05);
-  color: var(--color-lime, #f2ff26);
-  clip-path: circle(0% at center);
-  pointer-events: none;
 }
 
 .design-approach-reveal-trigger {
