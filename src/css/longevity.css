@@ -1,0 +1,240 @@
+.longevity {
+  --longevity-inset: var(--space-20, 2rem);
+  --logo-gap: var(--space-20, 2rem);
+  --logo-card-width: 20rem;
+  --logo-card-height: 6.8rem;
+  display: block;
+  width: 100%;
+  padding: 7.5rem 0;
+  background: var(--color-cream, #fcf6e8);
+  color: var(--color-black, #000);
+}
+
+.longevity .longevity-copy,
+.longevity .logo-marquee-header {
+  width: 100%;
+  padding-inline: var(--longevity-inset);
+}
+
+.longevity .longevity-copy {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-40, 4rem);
+}
+
+.longevity .longevity-title {
+  max-width: 129.1rem;
+  margin: 0;
+  font-size: 2.8rem;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.longevity-title .longevity-break-desktop {
+  display: none;
+}
+
+.longevity .longevity-description {
+  max-width: 80.7rem;
+  margin: 0;
+  font-size: var(--font-16, 1.6rem);
+  line-height: 1.45;
+}
+
+.longevity .longevity-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 5rem;
+  padding: var(--space-12, 1.2rem) var(--space-24, 2.4rem);
+  border: 0;
+  border-radius: 14rem;
+  background: var(--color-orange, #ff7340);
+  color: var(--color-espresso, #110a05);
+  text-align: center;
+  text-decoration: none;
+}
+
+.longevity .longevity-cta:hover {
+  background: var(--color-lime, #f2ff26);
+}
+
+.longevity .logo-marquee {
+  display: block;
+  width: 100%;
+  margin-block-start: var(--space-64, 6.4rem);
+}
+
+.longevity .logo-marquee-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8, 0.8rem) var(--space-20, 2rem);
+  margin-block-end: var(--space-24, 2.4rem);
+}
+
+.longevity .logo-marquee-title {
+  margin: 0;
+  font-size: var(--font-24, 2.4rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.longevity .logo-marquee-toggle {
+  padding: var(--space-8, 0.8rem) var(--space-12, 1.2rem);
+  border: 1px solid currentColor;
+  border-radius: 14rem;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.longevity .logo-marquee-viewport {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.longevity .logo-marquee-viewport:focus-visible {
+  outline-offset: calc(-1 * var(--labus-focus-ring-width));
+}
+
+.longevity .logo-marquee-track,
+.longevity .logo-marquee-group {
+  display: flex;
+  flex-flow: row nowrap;
+  width: max-content;
+  max-width: none;
+}
+
+.longevity .logo-marquee-group {
+  flex: none;
+  gap: var(--logo-gap);
+  margin: 0;
+  padding: 0 var(--logo-gap) 0 0;
+  list-style: none;
+}
+
+.longevity .logo-marquee-card {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--logo-card-width);
+  height: var(--logo-card-height);
+  overflow: clip;
+  border: 1px solid currentColor;
+  border-radius: 14rem;
+}
+
+.longevity .logo-marquee-image {
+  display: block;
+  width: var(--logo-width, 51.3%);
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-marquee-card[data-logo='olx-group'] {
+  --logo-width: 51.6%;
+}
+
+.logo-marquee-card[data-logo='ing'] {
+  --logo-width: 48.7%;
+}
+
+.logo-marquee-card[data-logo='geberit'] {
+  --logo-width: 54%;
+}
+
+.logo-marquee-card[data-logo='warsaw'] {
+  --logo-width: 50%;
+}
+
+.logo-marquee-card[data-logo='bbgk-architekci'] {
+  --logo-width: 40.9%;
+}
+
+@media (min-width: 768px) {
+  .longevity {
+    --longevity-inset: var(--space-40, 4rem);
+    --logo-card-width: 25rem;
+    --logo-card-height: 8.5rem;
+    padding-block: var(--space-96, 9.6rem);
+  }
+
+  .longevity .longevity-title {
+    font-size: var(--font-52, 5.2rem);
+    text-wrap: balance;
+  }
+
+  .longevity-title .longevity-break-mobile {
+    display: none;
+  }
+
+  .longevity .longevity-cta {
+    width: auto;
+    min-width: 25.7rem;
+    min-height: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .longevity {
+    --longevity-inset: var(--space-60, 6rem);
+    --logo-card-width: 30.8rem;
+    --logo-card-height: 10.4rem;
+    padding-block: var(--space-120, 12rem);
+  }
+
+  .longevity .longevity-copy {
+    gap: var(--space-60, 6rem);
+  }
+
+  .longevity .longevity-title {
+    font-size: var(--font-82, 8.2rem);
+  }
+
+  .longevity .longevity-description {
+    font-size: var(--font-24, 2.4rem);
+    line-height: 1.25;
+  }
+
+  .longevity .logo-marquee {
+    margin-block-start: 18.4rem;
+  }
+
+  .longevity .logo-marquee-header {
+    margin-block-end: var(--space-40, 4rem);
+  }
+
+  .longevity .logo-marquee-title {
+    font-size: var(--font-39, 3.9rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .longevity-title .longevity-break-desktop {
+    display: initial;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .longevity .logo-marquee-viewport[data-logo-marquee-ready] {
+    overflow: clip;
+  }
+
+  [data-logo-marquee-ready] .logo-marquee-track {
+    animation: logo-marquee var(--logo-marquee-duration) linear infinite paused;
+  }
+
+  [data-logo-marquee-playing] .logo-marquee-track {
+    animation-play-state: running;
+  }
+}
+
+@keyframes logo-marquee {
+  to {
+    transform: translateX(var(--logo-marquee-offset));
+  }
+}

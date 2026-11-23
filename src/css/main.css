@@ -1,6 +1,7 @@
 @import './accessibility.css';
 @import './responsive-scale.css';
 @import './intro.css';
+@import './longevity.css';
 
 :root {
   overscroll-behavior-y: none;

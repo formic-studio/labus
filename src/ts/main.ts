@@ -9,6 +9,11 @@ const components = [
     load: () => import('./components/intro'),
   },
   {
+    name: 'logo-marquee',
+    selector: '[data-component="logo-marquee"]',
+    load: () => import('./components/logo-marquee'),
+  },
+  {
     name: 'example-disclosure',
     selector: '[data-component="example-disclosure"]',
     load: () => import('./components/example-disclosure'),

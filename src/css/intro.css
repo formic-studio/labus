@@ -212,6 +212,11 @@
     margin-inline: calc(-1 * var(--intro-rail-inset));
     padding-inline: var(--intro-rail-inset);
     overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  [data-component='intro'] .intro-deck::-webkit-scrollbar {
+    display: none;
   }
 
   [data-component='intro'] .intro-deck:focus-visible {

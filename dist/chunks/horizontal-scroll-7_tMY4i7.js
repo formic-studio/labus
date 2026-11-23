@@ -1,0 +1,1 @@
+function e(e,t){if(t.target!==e||t.defaultPrevented||t.altKey||t.ctrlKey||t.metaKey||t.shiftKey||t.key!==`ArrowLeft`&&t.key!==`ArrowRight`)return;t.preventDefault();let n=t.key===`ArrowRight`?1:-1;e.scrollBy({left:e.clientWidth/4*n})}export{e as t};

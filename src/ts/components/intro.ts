@@ -1,3 +1,5 @@
+import { scrollHorizontalWithArrowKeys } from '../core/horizontal-scroll';
+
 const scrambleAlphabet = 'abcdefghijklmnoprstuwxyz';
 const cardRotations = [-4, 6, -6, 4] as const;
 
@@ -210,22 +212,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   deck.addEventListener(
     'keydown',
     (event) => {
-      if (
-        !mobile.matches ||
-        event.target !== deck ||
-        event.defaultPrevented ||
-        event.altKey ||
-        event.ctrlKey ||
-        event.metaKey ||
-        event.shiftKey ||
-        (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight')
-      ) {
-        return;
-      }
-
-      event.preventDefault();
-      const direction = event.key === 'ArrowRight' ? 1 : -1;
-      deck.scrollBy({ left: (deck.clientWidth / 4) * direction });
+      if (mobile.matches) scrollHorizontalWithArrowKeys(deck, event);
     },
     { signal },
   );
