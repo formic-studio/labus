@@ -205,7 +205,7 @@
 
   [data-component='intro'] .intro-deck {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     gap: min(var(--intro-card-gap), 6vw);
     width: auto;
     max-width: none;
