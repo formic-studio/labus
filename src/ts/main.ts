@@ -19,9 +19,9 @@ const components = [
     load: () => import('./components/logo-marquee'),
   },
   {
-    name: 'design-approach',
-    selector: '[data-component="design-approach"]',
-    load: () => import('./components/design-approach'),
+    name: 'photo-reveal',
+    selector: '[data-component="photo-reveal"], [data-component="design-approach"]',
+    load: () => import('./components/photo-reveal'),
   },
   {
     name: 'lci-diagram',

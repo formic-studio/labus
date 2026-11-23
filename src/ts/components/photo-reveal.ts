@@ -7,7 +7,7 @@ function mountPhotoReveal(
   if (reducedMotion.matches || (image.complete && image.naturalWidth === 0)) return;
 
   const trigger = document.createElement('span');
-  trigger.className = 'design-approach-reveal-trigger';
+  trigger.className = 'photo-reveal-trigger';
   trigger.setAttribute('aria-hidden', 'true');
   let centerVisible = false;
 
@@ -49,7 +49,7 @@ function mountPhotoReveal(
   frame.addEventListener(
     'animationend',
     (event) => {
-      if (event.target === frame && event.animationName === 'design-approach-reveal') finish();
+      if (event.target === frame && event.animationName === 'photo-reveal') finish();
     },
     { signal },
   );
@@ -65,9 +65,13 @@ function mountPhotoReveal(
 }
 
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
-  const frame = element.querySelector<HTMLElement>('[data-design-approach-photo]');
-  const image = frame?.querySelector('img');
-  if (!frame || !image) return;
+  const frame = element.matches('[data-component="photo-reveal"]')
+    ? element
+    : element.querySelector('[data-design-approach-photo]');
+  if (!(frame instanceof HTMLElement)) return;
+
+  const image = frame.querySelector('img');
+  if (!image) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   return mountPhotoReveal(frame, image, reducedMotion, signal);
