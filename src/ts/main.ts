@@ -24,6 +24,11 @@ const components = [
     load: () => import('./components/directional-fill'),
   },
   {
+    name: 'site-footer',
+    selector: '[data-component="site-footer"]',
+    load: () => import('./components/site-footer'),
+  },
+  {
     name: 'example-disclosure',
     selector: '[data-component="example-disclosure"]',
     load: () => import('./components/example-disclosure'),
