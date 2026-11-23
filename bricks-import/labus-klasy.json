@@ -1,14 +1,14 @@
 [
   {
     "id": "inawxf",
-    "name": "labus-type-display",
+    "name": "type-display",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-82)",
+        "font-size": "var(--font-82)",
         "font-weight": "900",
-        "line-height": "var(--labus-leading-115)"
+        "line-height": "var(--leading-115)"
       }
     },
     "category": "rhyzec",
@@ -19,14 +19,14 @@
   },
   {
     "id": "mpjrvc",
-    "name": "labus-type-h6",
+    "name": "type-h6",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-61)",
+        "font-size": "var(--font-61)",
         "font-weight": "900",
-        "line-height": "var(--labus-leading-105)"
+        "line-height": "var(--leading-105)"
       }
     },
     "category": "rhyzec",
@@ -37,14 +37,14 @@
   },
   {
     "id": "ohrtya",
-    "name": "labus-type-h5",
+    "name": "type-h5",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-52)",
+        "font-size": "var(--font-52)",
         "font-weight": "900",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -55,14 +55,14 @@
   },
   {
     "id": "alkcge",
-    "name": "labus-type-h4",
+    "name": "type-h4",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-39)",
+        "font-size": "var(--font-39)",
         "font-weight": "600",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -73,14 +73,14 @@
   },
   {
     "id": "bcrwrm",
-    "name": "labus-type-h3-dystopian",
+    "name": "type-h3-dystopian",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-29)",
+        "font-size": "var(--font-29)",
         "font-weight": "900",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -91,14 +91,14 @@
   },
   {
     "id": "pnpyvc",
-    "name": "labus-type-h3-dystopian-regular",
+    "name": "type-h3-dystopian-regular",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-29)",
+        "font-size": "var(--font-29)",
         "font-weight": "400",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -109,14 +109,14 @@
   },
   {
     "id": "gaogce",
-    "name": "labus-type-h3-mona",
+    "name": "type-h3-mona",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-29)",
+        "font-size": "var(--font-29)",
         "font-weight": "600",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -127,14 +127,14 @@
   },
   {
     "id": "ojjejx",
-    "name": "labus-type-h2-dystopian",
+    "name": "type-h2-dystopian",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-39)",
+        "font-size": "var(--font-39)",
         "font-weight": "900",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -145,14 +145,14 @@
   },
   {
     "id": "xqfoal",
-    "name": "labus-type-h2-mona",
+    "name": "type-h2-mona",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-24)",
+        "font-size": "var(--font-24)",
         "font-weight": "500",
-        "line-height": "var(--labus-leading-125)"
+        "line-height": "var(--leading-125)"
       }
     },
     "category": "rhyzec",
@@ -163,14 +163,14 @@
   },
   {
     "id": "wfwjte",
-    "name": "labus-type-h1-dystopian",
+    "name": "type-h1-dystopian",
     "settings": {
       "_typography": {
         "font-family": "Dystopian",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-21)",
+        "font-size": "var(--font-21)",
         "font-weight": "900",
-        "line-height": "var(--labus-leading-120)"
+        "line-height": "var(--leading-120)"
       }
     },
     "category": "rhyzec",
@@ -181,14 +181,14 @@
   },
   {
     "id": "pojikq",
-    "name": "labus-type-h1-mona",
+    "name": "type-h1-mona",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-21)",
+        "font-size": "var(--font-21)",
         "font-weight": "600",
-        "line-height": "var(--labus-leading-120)"
+        "line-height": "var(--leading-120)"
       }
     },
     "category": "rhyzec",
@@ -199,14 +199,14 @@
   },
   {
     "id": "euljsh",
-    "name": "labus-type-body",
+    "name": "type-body",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-16)",
+        "font-size": "var(--font-16)",
         "font-weight": "400",
-        "line-height": "var(--labus-leading-145)"
+        "line-height": "var(--leading-145)"
       }
     },
     "category": "rhyzec",
@@ -217,14 +217,14 @@
   },
   {
     "id": "jxuiyb",
-    "name": "labus-type-body-medium",
+    "name": "type-body-medium",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-16)",
+        "font-size": "var(--font-16)",
         "font-weight": "500",
-        "line-height": "var(--labus-leading-145)"
+        "line-height": "var(--leading-145)"
       }
     },
     "category": "rhyzec",
@@ -235,14 +235,14 @@
   },
   {
     "id": "pkammr",
-    "name": "labus-type-caption",
+    "name": "type-caption",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-14)",
+        "font-size": "var(--font-14)",
         "font-weight": "600",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -253,14 +253,14 @@
   },
   {
     "id": "zckizq",
-    "name": "labus-type-caption-small",
+    "name": "type-caption-small",
     "settings": {
       "_typography": {
         "font-family": "Mona Sans",
         "fallback": "sans-serif",
-        "font-size": "var(--labus-font-12)",
+        "font-size": "var(--font-12)",
         "font-weight": "500",
-        "line-height": "var(--labus-leading-110)"
+        "line-height": "var(--leading-110)"
       }
     },
     "category": "rhyzec",
@@ -271,10 +271,10 @@
   },
   {
     "id": "ncklry",
-    "name": "labus-gap-6",
+    "name": "gap-6",
     "settings": {
-      "_rowGap": "var(--labus-space-6)",
-      "_columnGap": "var(--labus-space-6)"
+      "_rowGap": "var(--space-6)",
+      "_columnGap": "var(--space-6)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -284,10 +284,10 @@
   },
   {
     "id": "nkuakd",
-    "name": "labus-gap-8",
+    "name": "gap-8",
     "settings": {
-      "_rowGap": "var(--labus-space-8)",
-      "_columnGap": "var(--labus-space-8)"
+      "_rowGap": "var(--space-8)",
+      "_columnGap": "var(--space-8)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -297,10 +297,10 @@
   },
   {
     "id": "gzdyht",
-    "name": "labus-gap-10",
+    "name": "gap-10",
     "settings": {
-      "_rowGap": "var(--labus-space-10)",
-      "_columnGap": "var(--labus-space-10)"
+      "_rowGap": "var(--space-10)",
+      "_columnGap": "var(--space-10)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -310,10 +310,10 @@
   },
   {
     "id": "fwrrry",
-    "name": "labus-gap-12",
+    "name": "gap-12",
     "settings": {
-      "_rowGap": "var(--labus-space-12)",
-      "_columnGap": "var(--labus-space-12)"
+      "_rowGap": "var(--space-12)",
+      "_columnGap": "var(--space-12)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -323,10 +323,10 @@
   },
   {
     "id": "zakzkc",
-    "name": "labus-gap-14",
+    "name": "gap-14",
     "settings": {
-      "_rowGap": "var(--labus-space-14)",
-      "_columnGap": "var(--labus-space-14)"
+      "_rowGap": "var(--space-14)",
+      "_columnGap": "var(--space-14)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -336,10 +336,10 @@
   },
   {
     "id": "xwldpo",
-    "name": "labus-gap-16",
+    "name": "gap-16",
     "settings": {
-      "_rowGap": "var(--labus-space-16)",
-      "_columnGap": "var(--labus-space-16)"
+      "_rowGap": "var(--space-16)",
+      "_columnGap": "var(--space-16)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -349,10 +349,10 @@
   },
   {
     "id": "dfnqhd",
-    "name": "labus-gap-18",
+    "name": "gap-18",
     "settings": {
-      "_rowGap": "var(--labus-space-18)",
-      "_columnGap": "var(--labus-space-18)"
+      "_rowGap": "var(--space-18)",
+      "_columnGap": "var(--space-18)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -362,10 +362,10 @@
   },
   {
     "id": "czbhxe",
-    "name": "labus-gap-20",
+    "name": "gap-20",
     "settings": {
-      "_rowGap": "var(--labus-space-20)",
-      "_columnGap": "var(--labus-space-20)"
+      "_rowGap": "var(--space-20)",
+      "_columnGap": "var(--space-20)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -375,10 +375,10 @@
   },
   {
     "id": "kfbsqx",
-    "name": "labus-gap-22",
+    "name": "gap-22",
     "settings": {
-      "_rowGap": "var(--labus-space-22)",
-      "_columnGap": "var(--labus-space-22)"
+      "_rowGap": "var(--space-22)",
+      "_columnGap": "var(--space-22)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -388,10 +388,10 @@
   },
   {
     "id": "ixuyzt",
-    "name": "labus-gap-24",
+    "name": "gap-24",
     "settings": {
-      "_rowGap": "var(--labus-space-24)",
-      "_columnGap": "var(--labus-space-24)"
+      "_rowGap": "var(--space-24)",
+      "_columnGap": "var(--space-24)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -401,10 +401,10 @@
   },
   {
     "id": "yjathv",
-    "name": "labus-gap-26",
+    "name": "gap-26",
     "settings": {
-      "_rowGap": "var(--labus-space-26)",
-      "_columnGap": "var(--labus-space-26)"
+      "_rowGap": "var(--space-26)",
+      "_columnGap": "var(--space-26)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -414,10 +414,10 @@
   },
   {
     "id": "coszst",
-    "name": "labus-gap-28",
+    "name": "gap-28",
     "settings": {
-      "_rowGap": "var(--labus-space-28)",
-      "_columnGap": "var(--labus-space-28)"
+      "_rowGap": "var(--space-28)",
+      "_columnGap": "var(--space-28)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -427,10 +427,10 @@
   },
   {
     "id": "gqznvc",
-    "name": "labus-gap-30",
+    "name": "gap-30",
     "settings": {
-      "_rowGap": "var(--labus-space-30)",
-      "_columnGap": "var(--labus-space-30)"
+      "_rowGap": "var(--space-30)",
+      "_columnGap": "var(--space-30)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -440,10 +440,10 @@
   },
   {
     "id": "qwgpju",
-    "name": "labus-gap-32",
+    "name": "gap-32",
     "settings": {
-      "_rowGap": "var(--labus-space-32)",
-      "_columnGap": "var(--labus-space-32)"
+      "_rowGap": "var(--space-32)",
+      "_columnGap": "var(--space-32)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -453,10 +453,10 @@
   },
   {
     "id": "gkuraj",
-    "name": "labus-gap-34",
+    "name": "gap-34",
     "settings": {
-      "_rowGap": "var(--labus-space-34)",
-      "_columnGap": "var(--labus-space-34)"
+      "_rowGap": "var(--space-34)",
+      "_columnGap": "var(--space-34)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -466,10 +466,10 @@
   },
   {
     "id": "hskgrq",
-    "name": "labus-gap-36",
+    "name": "gap-36",
     "settings": {
-      "_rowGap": "var(--labus-space-36)",
-      "_columnGap": "var(--labus-space-36)"
+      "_rowGap": "var(--space-36)",
+      "_columnGap": "var(--space-36)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -479,10 +479,10 @@
   },
   {
     "id": "iynrgp",
-    "name": "labus-gap-40",
+    "name": "gap-40",
     "settings": {
-      "_rowGap": "var(--labus-space-40)",
-      "_columnGap": "var(--labus-space-40)"
+      "_rowGap": "var(--space-40)",
+      "_columnGap": "var(--space-40)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -492,10 +492,10 @@
   },
   {
     "id": "aylcqs",
-    "name": "labus-gap-48",
+    "name": "gap-48",
     "settings": {
-      "_rowGap": "var(--labus-space-48)",
-      "_columnGap": "var(--labus-space-48)"
+      "_rowGap": "var(--space-48)",
+      "_columnGap": "var(--space-48)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -505,10 +505,23 @@
   },
   {
     "id": "bmcpeb",
-    "name": "labus-gap-56",
+    "name": "gap-56",
     "settings": {
-      "_rowGap": "var(--labus-space-56)",
-      "_columnGap": "var(--labus-space-56)"
+      "_rowGap": "var(--space-56)",
+      "_columnGap": "var(--space-56)"
+    },
+    "category": "ckcrac",
+    "_categoryData": {
+      "id": "ckcrac",
+      "name": "Labus · Gap"
+    }
+  },
+  {
+    "id": "occidz",
+    "name": "gap-60",
+    "settings": {
+      "_rowGap": "var(--space-60)",
+      "_columnGap": "var(--space-60)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -518,10 +531,10 @@
   },
   {
     "id": "agtyam",
-    "name": "labus-gap-64",
+    "name": "gap-64",
     "settings": {
-      "_rowGap": "var(--labus-space-64)",
-      "_columnGap": "var(--labus-space-64)"
+      "_rowGap": "var(--space-64)",
+      "_columnGap": "var(--space-64)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -531,10 +544,10 @@
   },
   {
     "id": "hsptbm",
-    "name": "labus-gap-72",
+    "name": "gap-72",
     "settings": {
-      "_rowGap": "var(--labus-space-72)",
-      "_columnGap": "var(--labus-space-72)"
+      "_rowGap": "var(--space-72)",
+      "_columnGap": "var(--space-72)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -544,10 +557,10 @@
   },
   {
     "id": "xnrvgf",
-    "name": "labus-gap-80",
+    "name": "gap-80",
     "settings": {
-      "_rowGap": "var(--labus-space-80)",
-      "_columnGap": "var(--labus-space-80)"
+      "_rowGap": "var(--space-80)",
+      "_columnGap": "var(--space-80)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -557,10 +570,10 @@
   },
   {
     "id": "mxomct",
-    "name": "labus-gap-88",
+    "name": "gap-88",
     "settings": {
-      "_rowGap": "var(--labus-space-88)",
-      "_columnGap": "var(--labus-space-88)"
+      "_rowGap": "var(--space-88)",
+      "_columnGap": "var(--space-88)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -570,10 +583,10 @@
   },
   {
     "id": "uomywy",
-    "name": "labus-gap-96",
+    "name": "gap-96",
     "settings": {
-      "_rowGap": "var(--labus-space-96)",
-      "_columnGap": "var(--labus-space-96)"
+      "_rowGap": "var(--space-96)",
+      "_columnGap": "var(--space-96)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -583,10 +596,10 @@
   },
   {
     "id": "pleldc",
-    "name": "labus-gap-104",
+    "name": "gap-104",
     "settings": {
-      "_rowGap": "var(--labus-space-104)",
-      "_columnGap": "var(--labus-space-104)"
+      "_rowGap": "var(--space-104)",
+      "_columnGap": "var(--space-104)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -596,10 +609,10 @@
   },
   {
     "id": "lubygo",
-    "name": "labus-gap-112",
+    "name": "gap-112",
     "settings": {
-      "_rowGap": "var(--labus-space-112)",
-      "_columnGap": "var(--labus-space-112)"
+      "_rowGap": "var(--space-112)",
+      "_columnGap": "var(--space-112)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -609,10 +622,10 @@
   },
   {
     "id": "zgduop",
-    "name": "labus-gap-120",
+    "name": "gap-120",
     "settings": {
-      "_rowGap": "var(--labus-space-120)",
-      "_columnGap": "var(--labus-space-120)"
+      "_rowGap": "var(--space-120)",
+      "_columnGap": "var(--space-120)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -622,10 +635,10 @@
   },
   {
     "id": "tqookm",
-    "name": "labus-gap-128",
+    "name": "gap-128",
     "settings": {
-      "_rowGap": "var(--labus-space-128)",
-      "_columnGap": "var(--labus-space-128)"
+      "_rowGap": "var(--space-128)",
+      "_columnGap": "var(--space-128)"
     },
     "category": "ckcrac",
     "_categoryData": {
@@ -635,13 +648,13 @@
   },
   {
     "id": "csosyn",
-    "name": "labus-p-6",
+    "name": "p-6",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-6)",
-        "right": "var(--labus-space-6)",
-        "bottom": "var(--labus-space-6)",
-        "left": "var(--labus-space-6)"
+        "top": "var(--space-6)",
+        "right": "var(--space-6)",
+        "bottom": "var(--space-6)",
+        "left": "var(--space-6)"
       }
     },
     "category": "bnbwiu",
@@ -652,13 +665,13 @@
   },
   {
     "id": "bdnmxg",
-    "name": "labus-p-8",
+    "name": "p-8",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-8)",
-        "right": "var(--labus-space-8)",
-        "bottom": "var(--labus-space-8)",
-        "left": "var(--labus-space-8)"
+        "top": "var(--space-8)",
+        "right": "var(--space-8)",
+        "bottom": "var(--space-8)",
+        "left": "var(--space-8)"
       }
     },
     "category": "bnbwiu",
@@ -669,13 +682,13 @@
   },
   {
     "id": "bmjfpg",
-    "name": "labus-p-10",
+    "name": "p-10",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-10)",
-        "right": "var(--labus-space-10)",
-        "bottom": "var(--labus-space-10)",
-        "left": "var(--labus-space-10)"
+        "top": "var(--space-10)",
+        "right": "var(--space-10)",
+        "bottom": "var(--space-10)",
+        "left": "var(--space-10)"
       }
     },
     "category": "bnbwiu",
@@ -686,13 +699,13 @@
   },
   {
     "id": "szxsdy",
-    "name": "labus-p-12",
+    "name": "p-12",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-12)",
-        "right": "var(--labus-space-12)",
-        "bottom": "var(--labus-space-12)",
-        "left": "var(--labus-space-12)"
+        "top": "var(--space-12)",
+        "right": "var(--space-12)",
+        "bottom": "var(--space-12)",
+        "left": "var(--space-12)"
       }
     },
     "category": "bnbwiu",
@@ -703,13 +716,13 @@
   },
   {
     "id": "gsayyz",
-    "name": "labus-p-14",
+    "name": "p-14",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-14)",
-        "right": "var(--labus-space-14)",
-        "bottom": "var(--labus-space-14)",
-        "left": "var(--labus-space-14)"
+        "top": "var(--space-14)",
+        "right": "var(--space-14)",
+        "bottom": "var(--space-14)",
+        "left": "var(--space-14)"
       }
     },
     "category": "bnbwiu",
@@ -720,13 +733,13 @@
   },
   {
     "id": "ruhixw",
-    "name": "labus-p-16",
+    "name": "p-16",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-16)",
-        "right": "var(--labus-space-16)",
-        "bottom": "var(--labus-space-16)",
-        "left": "var(--labus-space-16)"
+        "top": "var(--space-16)",
+        "right": "var(--space-16)",
+        "bottom": "var(--space-16)",
+        "left": "var(--space-16)"
       }
     },
     "category": "bnbwiu",
@@ -737,13 +750,13 @@
   },
   {
     "id": "bhodix",
-    "name": "labus-p-18",
+    "name": "p-18",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-18)",
-        "right": "var(--labus-space-18)",
-        "bottom": "var(--labus-space-18)",
-        "left": "var(--labus-space-18)"
+        "top": "var(--space-18)",
+        "right": "var(--space-18)",
+        "bottom": "var(--space-18)",
+        "left": "var(--space-18)"
       }
     },
     "category": "bnbwiu",
@@ -754,13 +767,13 @@
   },
   {
     "id": "bbhsrw",
-    "name": "labus-p-20",
+    "name": "p-20",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-20)",
-        "right": "var(--labus-space-20)",
-        "bottom": "var(--labus-space-20)",
-        "left": "var(--labus-space-20)"
+        "top": "var(--space-20)",
+        "right": "var(--space-20)",
+        "bottom": "var(--space-20)",
+        "left": "var(--space-20)"
       }
     },
     "category": "bnbwiu",
@@ -771,13 +784,13 @@
   },
   {
     "id": "xsaazm",
-    "name": "labus-p-22",
+    "name": "p-22",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-22)",
-        "right": "var(--labus-space-22)",
-        "bottom": "var(--labus-space-22)",
-        "left": "var(--labus-space-22)"
+        "top": "var(--space-22)",
+        "right": "var(--space-22)",
+        "bottom": "var(--space-22)",
+        "left": "var(--space-22)"
       }
     },
     "category": "bnbwiu",
@@ -788,13 +801,13 @@
   },
   {
     "id": "iuxhwn",
-    "name": "labus-p-24",
+    "name": "p-24",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-24)",
-        "right": "var(--labus-space-24)",
-        "bottom": "var(--labus-space-24)",
-        "left": "var(--labus-space-24)"
+        "top": "var(--space-24)",
+        "right": "var(--space-24)",
+        "bottom": "var(--space-24)",
+        "left": "var(--space-24)"
       }
     },
     "category": "bnbwiu",
@@ -805,13 +818,13 @@
   },
   {
     "id": "jaiuly",
-    "name": "labus-p-26",
+    "name": "p-26",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-26)",
-        "right": "var(--labus-space-26)",
-        "bottom": "var(--labus-space-26)",
-        "left": "var(--labus-space-26)"
+        "top": "var(--space-26)",
+        "right": "var(--space-26)",
+        "bottom": "var(--space-26)",
+        "left": "var(--space-26)"
       }
     },
     "category": "bnbwiu",
@@ -822,13 +835,13 @@
   },
   {
     "id": "dxrspc",
-    "name": "labus-p-28",
+    "name": "p-28",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-28)",
-        "right": "var(--labus-space-28)",
-        "bottom": "var(--labus-space-28)",
-        "left": "var(--labus-space-28)"
+        "top": "var(--space-28)",
+        "right": "var(--space-28)",
+        "bottom": "var(--space-28)",
+        "left": "var(--space-28)"
       }
     },
     "category": "bnbwiu",
@@ -839,13 +852,13 @@
   },
   {
     "id": "gqczim",
-    "name": "labus-p-30",
+    "name": "p-30",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-30)",
-        "right": "var(--labus-space-30)",
-        "bottom": "var(--labus-space-30)",
-        "left": "var(--labus-space-30)"
+        "top": "var(--space-30)",
+        "right": "var(--space-30)",
+        "bottom": "var(--space-30)",
+        "left": "var(--space-30)"
       }
     },
     "category": "bnbwiu",
@@ -856,13 +869,13 @@
   },
   {
     "id": "wganau",
-    "name": "labus-p-32",
+    "name": "p-32",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-32)",
-        "right": "var(--labus-space-32)",
-        "bottom": "var(--labus-space-32)",
-        "left": "var(--labus-space-32)"
+        "top": "var(--space-32)",
+        "right": "var(--space-32)",
+        "bottom": "var(--space-32)",
+        "left": "var(--space-32)"
       }
     },
     "category": "bnbwiu",
@@ -873,13 +886,13 @@
   },
   {
     "id": "bomrix",
-    "name": "labus-p-34",
+    "name": "p-34",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-34)",
-        "right": "var(--labus-space-34)",
-        "bottom": "var(--labus-space-34)",
-        "left": "var(--labus-space-34)"
+        "top": "var(--space-34)",
+        "right": "var(--space-34)",
+        "bottom": "var(--space-34)",
+        "left": "var(--space-34)"
       }
     },
     "category": "bnbwiu",
@@ -890,13 +903,13 @@
   },
   {
     "id": "plktxm",
-    "name": "labus-p-36",
+    "name": "p-36",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-36)",
-        "right": "var(--labus-space-36)",
-        "bottom": "var(--labus-space-36)",
-        "left": "var(--labus-space-36)"
+        "top": "var(--space-36)",
+        "right": "var(--space-36)",
+        "bottom": "var(--space-36)",
+        "left": "var(--space-36)"
       }
     },
     "category": "bnbwiu",
@@ -907,13 +920,13 @@
   },
   {
     "id": "osrslh",
-    "name": "labus-p-40",
+    "name": "p-40",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-40)",
-        "right": "var(--labus-space-40)",
-        "bottom": "var(--labus-space-40)",
-        "left": "var(--labus-space-40)"
+        "top": "var(--space-40)",
+        "right": "var(--space-40)",
+        "bottom": "var(--space-40)",
+        "left": "var(--space-40)"
       }
     },
     "category": "bnbwiu",
@@ -924,13 +937,13 @@
   },
   {
     "id": "chiqrb",
-    "name": "labus-p-48",
+    "name": "p-48",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-48)",
-        "right": "var(--labus-space-48)",
-        "bottom": "var(--labus-space-48)",
-        "left": "var(--labus-space-48)"
+        "top": "var(--space-48)",
+        "right": "var(--space-48)",
+        "bottom": "var(--space-48)",
+        "left": "var(--space-48)"
       }
     },
     "category": "bnbwiu",
@@ -941,13 +954,30 @@
   },
   {
     "id": "rfqumg",
-    "name": "labus-p-56",
+    "name": "p-56",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-56)",
-        "right": "var(--labus-space-56)",
-        "bottom": "var(--labus-space-56)",
-        "left": "var(--labus-space-56)"
+        "top": "var(--space-56)",
+        "right": "var(--space-56)",
+        "bottom": "var(--space-56)",
+        "left": "var(--space-56)"
+      }
+    },
+    "category": "bnbwiu",
+    "_categoryData": {
+      "id": "bnbwiu",
+      "name": "Labus · Padding"
+    }
+  },
+  {
+    "id": "sygqbp",
+    "name": "p-60",
+    "settings": {
+      "_padding": {
+        "top": "var(--space-60)",
+        "right": "var(--space-60)",
+        "bottom": "var(--space-60)",
+        "left": "var(--space-60)"
       }
     },
     "category": "bnbwiu",
@@ -958,13 +988,13 @@
   },
   {
     "id": "gotriv",
-    "name": "labus-p-64",
+    "name": "p-64",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-64)",
-        "right": "var(--labus-space-64)",
-        "bottom": "var(--labus-space-64)",
-        "left": "var(--labus-space-64)"
+        "top": "var(--space-64)",
+        "right": "var(--space-64)",
+        "bottom": "var(--space-64)",
+        "left": "var(--space-64)"
       }
     },
     "category": "bnbwiu",
@@ -975,13 +1005,13 @@
   },
   {
     "id": "ancjpn",
-    "name": "labus-p-72",
+    "name": "p-72",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-72)",
-        "right": "var(--labus-space-72)",
-        "bottom": "var(--labus-space-72)",
-        "left": "var(--labus-space-72)"
+        "top": "var(--space-72)",
+        "right": "var(--space-72)",
+        "bottom": "var(--space-72)",
+        "left": "var(--space-72)"
       }
     },
     "category": "bnbwiu",
@@ -992,13 +1022,13 @@
   },
   {
     "id": "evzjfk",
-    "name": "labus-p-80",
+    "name": "p-80",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-80)",
-        "right": "var(--labus-space-80)",
-        "bottom": "var(--labus-space-80)",
-        "left": "var(--labus-space-80)"
+        "top": "var(--space-80)",
+        "right": "var(--space-80)",
+        "bottom": "var(--space-80)",
+        "left": "var(--space-80)"
       }
     },
     "category": "bnbwiu",
@@ -1009,13 +1039,13 @@
   },
   {
     "id": "rnsjwk",
-    "name": "labus-p-88",
+    "name": "p-88",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-88)",
-        "right": "var(--labus-space-88)",
-        "bottom": "var(--labus-space-88)",
-        "left": "var(--labus-space-88)"
+        "top": "var(--space-88)",
+        "right": "var(--space-88)",
+        "bottom": "var(--space-88)",
+        "left": "var(--space-88)"
       }
     },
     "category": "bnbwiu",
@@ -1026,13 +1056,13 @@
   },
   {
     "id": "fdgmpd",
-    "name": "labus-p-96",
+    "name": "p-96",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-96)",
-        "right": "var(--labus-space-96)",
-        "bottom": "var(--labus-space-96)",
-        "left": "var(--labus-space-96)"
+        "top": "var(--space-96)",
+        "right": "var(--space-96)",
+        "bottom": "var(--space-96)",
+        "left": "var(--space-96)"
       }
     },
     "category": "bnbwiu",
@@ -1043,13 +1073,13 @@
   },
   {
     "id": "psycjs",
-    "name": "labus-p-104",
+    "name": "p-104",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-104)",
-        "right": "var(--labus-space-104)",
-        "bottom": "var(--labus-space-104)",
-        "left": "var(--labus-space-104)"
+        "top": "var(--space-104)",
+        "right": "var(--space-104)",
+        "bottom": "var(--space-104)",
+        "left": "var(--space-104)"
       }
     },
     "category": "bnbwiu",
@@ -1060,13 +1090,13 @@
   },
   {
     "id": "plkogv",
-    "name": "labus-p-112",
+    "name": "p-112",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-112)",
-        "right": "var(--labus-space-112)",
-        "bottom": "var(--labus-space-112)",
-        "left": "var(--labus-space-112)"
+        "top": "var(--space-112)",
+        "right": "var(--space-112)",
+        "bottom": "var(--space-112)",
+        "left": "var(--space-112)"
       }
     },
     "category": "bnbwiu",
@@ -1077,13 +1107,13 @@
   },
   {
     "id": "trjsde",
-    "name": "labus-p-120",
+    "name": "p-120",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-120)",
-        "right": "var(--labus-space-120)",
-        "bottom": "var(--labus-space-120)",
-        "left": "var(--labus-space-120)"
+        "top": "var(--space-120)",
+        "right": "var(--space-120)",
+        "bottom": "var(--space-120)",
+        "left": "var(--space-120)"
       }
     },
     "category": "bnbwiu",
@@ -1094,13 +1124,13 @@
   },
   {
     "id": "pulsgr",
-    "name": "labus-p-128",
+    "name": "p-128",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-128)",
-        "right": "var(--labus-space-128)",
-        "bottom": "var(--labus-space-128)",
-        "left": "var(--labus-space-128)"
+        "top": "var(--space-128)",
+        "right": "var(--space-128)",
+        "bottom": "var(--space-128)",
+        "left": "var(--space-128)"
       }
     },
     "category": "bnbwiu",
@@ -1111,11 +1141,11 @@
   },
   {
     "id": "uyxemy",
-    "name": "labus-px-6",
+    "name": "px-6",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-6)",
-        "left": "var(--labus-space-6)"
+        "right": "var(--space-6)",
+        "left": "var(--space-6)"
       }
     },
     "category": "bnbwiu",
@@ -1126,11 +1156,11 @@
   },
   {
     "id": "sgxitp",
-    "name": "labus-px-8",
+    "name": "px-8",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-8)",
-        "left": "var(--labus-space-8)"
+        "right": "var(--space-8)",
+        "left": "var(--space-8)"
       }
     },
     "category": "bnbwiu",
@@ -1141,11 +1171,11 @@
   },
   {
     "id": "ivhgew",
-    "name": "labus-px-10",
+    "name": "px-10",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-10)",
-        "left": "var(--labus-space-10)"
+        "right": "var(--space-10)",
+        "left": "var(--space-10)"
       }
     },
     "category": "bnbwiu",
@@ -1156,11 +1186,11 @@
   },
   {
     "id": "yeibul",
-    "name": "labus-px-12",
+    "name": "px-12",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-12)",
-        "left": "var(--labus-space-12)"
+        "right": "var(--space-12)",
+        "left": "var(--space-12)"
       }
     },
     "category": "bnbwiu",
@@ -1171,11 +1201,11 @@
   },
   {
     "id": "dvbmhr",
-    "name": "labus-px-14",
+    "name": "px-14",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-14)",
-        "left": "var(--labus-space-14)"
+        "right": "var(--space-14)",
+        "left": "var(--space-14)"
       }
     },
     "category": "bnbwiu",
@@ -1186,11 +1216,11 @@
   },
   {
     "id": "jjfwkj",
-    "name": "labus-px-16",
+    "name": "px-16",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-16)",
-        "left": "var(--labus-space-16)"
+        "right": "var(--space-16)",
+        "left": "var(--space-16)"
       }
     },
     "category": "bnbwiu",
@@ -1201,11 +1231,11 @@
   },
   {
     "id": "irnmhk",
-    "name": "labus-px-18",
+    "name": "px-18",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-18)",
-        "left": "var(--labus-space-18)"
+        "right": "var(--space-18)",
+        "left": "var(--space-18)"
       }
     },
     "category": "bnbwiu",
@@ -1216,11 +1246,11 @@
   },
   {
     "id": "pikghg",
-    "name": "labus-px-20",
+    "name": "px-20",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-20)",
-        "left": "var(--labus-space-20)"
+        "right": "var(--space-20)",
+        "left": "var(--space-20)"
       }
     },
     "category": "bnbwiu",
@@ -1231,11 +1261,11 @@
   },
   {
     "id": "pfvrvy",
-    "name": "labus-px-22",
+    "name": "px-22",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-22)",
-        "left": "var(--labus-space-22)"
+        "right": "var(--space-22)",
+        "left": "var(--space-22)"
       }
     },
     "category": "bnbwiu",
@@ -1246,11 +1276,11 @@
   },
   {
     "id": "rgytzy",
-    "name": "labus-px-24",
+    "name": "px-24",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-24)",
-        "left": "var(--labus-space-24)"
+        "right": "var(--space-24)",
+        "left": "var(--space-24)"
       }
     },
     "category": "bnbwiu",
@@ -1261,11 +1291,11 @@
   },
   {
     "id": "tubzjk",
-    "name": "labus-px-26",
+    "name": "px-26",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-26)",
-        "left": "var(--labus-space-26)"
+        "right": "var(--space-26)",
+        "left": "var(--space-26)"
       }
     },
     "category": "bnbwiu",
@@ -1276,11 +1306,11 @@
   },
   {
     "id": "mzuvax",
-    "name": "labus-px-28",
+    "name": "px-28",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-28)",
-        "left": "var(--labus-space-28)"
+        "right": "var(--space-28)",
+        "left": "var(--space-28)"
       }
     },
     "category": "bnbwiu",
@@ -1291,11 +1321,11 @@
   },
   {
     "id": "dmzfji",
-    "name": "labus-px-30",
+    "name": "px-30",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-30)",
-        "left": "var(--labus-space-30)"
+        "right": "var(--space-30)",
+        "left": "var(--space-30)"
       }
     },
     "category": "bnbwiu",
@@ -1306,11 +1336,11 @@
   },
   {
     "id": "iaqcui",
-    "name": "labus-px-32",
+    "name": "px-32",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-32)",
-        "left": "var(--labus-space-32)"
+        "right": "var(--space-32)",
+        "left": "var(--space-32)"
       }
     },
     "category": "bnbwiu",
@@ -1321,11 +1351,11 @@
   },
   {
     "id": "pwxvqn",
-    "name": "labus-px-34",
+    "name": "px-34",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-34)",
-        "left": "var(--labus-space-34)"
+        "right": "var(--space-34)",
+        "left": "var(--space-34)"
       }
     },
     "category": "bnbwiu",
@@ -1336,11 +1366,11 @@
   },
   {
     "id": "dhcqzj",
-    "name": "labus-px-36",
+    "name": "px-36",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-36)",
-        "left": "var(--labus-space-36)"
+        "right": "var(--space-36)",
+        "left": "var(--space-36)"
       }
     },
     "category": "bnbwiu",
@@ -1351,11 +1381,11 @@
   },
   {
     "id": "ousmks",
-    "name": "labus-px-40",
+    "name": "px-40",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-40)",
-        "left": "var(--labus-space-40)"
+        "right": "var(--space-40)",
+        "left": "var(--space-40)"
       }
     },
     "category": "bnbwiu",
@@ -1366,11 +1396,11 @@
   },
   {
     "id": "vuankw",
-    "name": "labus-px-48",
+    "name": "px-48",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-48)",
-        "left": "var(--labus-space-48)"
+        "right": "var(--space-48)",
+        "left": "var(--space-48)"
       }
     },
     "category": "bnbwiu",
@@ -1381,11 +1411,26 @@
   },
   {
     "id": "pfvvpk",
-    "name": "labus-px-56",
+    "name": "px-56",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-56)",
-        "left": "var(--labus-space-56)"
+        "right": "var(--space-56)",
+        "left": "var(--space-56)"
+      }
+    },
+    "category": "bnbwiu",
+    "_categoryData": {
+      "id": "bnbwiu",
+      "name": "Labus · Padding"
+    }
+  },
+  {
+    "id": "cpwctz",
+    "name": "px-60",
+    "settings": {
+      "_padding": {
+        "right": "var(--space-60)",
+        "left": "var(--space-60)"
       }
     },
     "category": "bnbwiu",
@@ -1396,11 +1441,11 @@
   },
   {
     "id": "fmdick",
-    "name": "labus-px-64",
+    "name": "px-64",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-64)",
-        "left": "var(--labus-space-64)"
+        "right": "var(--space-64)",
+        "left": "var(--space-64)"
       }
     },
     "category": "bnbwiu",
@@ -1411,11 +1456,11 @@
   },
   {
     "id": "oqcmqc",
-    "name": "labus-px-72",
+    "name": "px-72",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-72)",
-        "left": "var(--labus-space-72)"
+        "right": "var(--space-72)",
+        "left": "var(--space-72)"
       }
     },
     "category": "bnbwiu",
@@ -1426,11 +1471,11 @@
   },
   {
     "id": "ynukyo",
-    "name": "labus-px-80",
+    "name": "px-80",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-80)",
-        "left": "var(--labus-space-80)"
+        "right": "var(--space-80)",
+        "left": "var(--space-80)"
       }
     },
     "category": "bnbwiu",
@@ -1441,11 +1486,11 @@
   },
   {
     "id": "fetwcl",
-    "name": "labus-px-88",
+    "name": "px-88",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-88)",
-        "left": "var(--labus-space-88)"
+        "right": "var(--space-88)",
+        "left": "var(--space-88)"
       }
     },
     "category": "bnbwiu",
@@ -1456,11 +1501,11 @@
   },
   {
     "id": "wadgik",
-    "name": "labus-px-96",
+    "name": "px-96",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-96)",
-        "left": "var(--labus-space-96)"
+        "right": "var(--space-96)",
+        "left": "var(--space-96)"
       }
     },
     "category": "bnbwiu",
@@ -1471,11 +1516,11 @@
   },
   {
     "id": "bxoqca",
-    "name": "labus-px-104",
+    "name": "px-104",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-104)",
-        "left": "var(--labus-space-104)"
+        "right": "var(--space-104)",
+        "left": "var(--space-104)"
       }
     },
     "category": "bnbwiu",
@@ -1486,11 +1531,11 @@
   },
   {
     "id": "cqfbtf",
-    "name": "labus-px-112",
+    "name": "px-112",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-112)",
-        "left": "var(--labus-space-112)"
+        "right": "var(--space-112)",
+        "left": "var(--space-112)"
       }
     },
     "category": "bnbwiu",
@@ -1501,11 +1546,11 @@
   },
   {
     "id": "nasqnk",
-    "name": "labus-px-120",
+    "name": "px-120",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-120)",
-        "left": "var(--labus-space-120)"
+        "right": "var(--space-120)",
+        "left": "var(--space-120)"
       }
     },
     "category": "bnbwiu",
@@ -1516,11 +1561,11 @@
   },
   {
     "id": "avhzku",
-    "name": "labus-px-128",
+    "name": "px-128",
     "settings": {
       "_padding": {
-        "right": "var(--labus-space-128)",
-        "left": "var(--labus-space-128)"
+        "right": "var(--space-128)",
+        "left": "var(--space-128)"
       }
     },
     "category": "bnbwiu",
@@ -1531,11 +1576,11 @@
   },
   {
     "id": "fmwkaj",
-    "name": "labus-py-6",
+    "name": "py-6",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-6)",
-        "bottom": "var(--labus-space-6)"
+        "top": "var(--space-6)",
+        "bottom": "var(--space-6)"
       }
     },
     "category": "bnbwiu",
@@ -1546,11 +1591,11 @@
   },
   {
     "id": "cyvuvy",
-    "name": "labus-py-8",
+    "name": "py-8",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-8)",
-        "bottom": "var(--labus-space-8)"
+        "top": "var(--space-8)",
+        "bottom": "var(--space-8)"
       }
     },
     "category": "bnbwiu",
@@ -1561,11 +1606,11 @@
   },
   {
     "id": "cvaaam",
-    "name": "labus-py-10",
+    "name": "py-10",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-10)",
-        "bottom": "var(--labus-space-10)"
+        "top": "var(--space-10)",
+        "bottom": "var(--space-10)"
       }
     },
     "category": "bnbwiu",
@@ -1576,11 +1621,11 @@
   },
   {
     "id": "myrjva",
-    "name": "labus-py-12",
+    "name": "py-12",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-12)",
-        "bottom": "var(--labus-space-12)"
+        "top": "var(--space-12)",
+        "bottom": "var(--space-12)"
       }
     },
     "category": "bnbwiu",
@@ -1591,11 +1636,11 @@
   },
   {
     "id": "kdqjkx",
-    "name": "labus-py-14",
+    "name": "py-14",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-14)",
-        "bottom": "var(--labus-space-14)"
+        "top": "var(--space-14)",
+        "bottom": "var(--space-14)"
       }
     },
     "category": "bnbwiu",
@@ -1606,11 +1651,11 @@
   },
   {
     "id": "blkdxr",
-    "name": "labus-py-16",
+    "name": "py-16",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-16)",
-        "bottom": "var(--labus-space-16)"
+        "top": "var(--space-16)",
+        "bottom": "var(--space-16)"
       }
     },
     "category": "bnbwiu",
@@ -1621,11 +1666,11 @@
   },
   {
     "id": "ypdulb",
-    "name": "labus-py-18",
+    "name": "py-18",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-18)",
-        "bottom": "var(--labus-space-18)"
+        "top": "var(--space-18)",
+        "bottom": "var(--space-18)"
       }
     },
     "category": "bnbwiu",
@@ -1636,11 +1681,11 @@
   },
   {
     "id": "bovdod",
-    "name": "labus-py-20",
+    "name": "py-20",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-20)",
-        "bottom": "var(--labus-space-20)"
+        "top": "var(--space-20)",
+        "bottom": "var(--space-20)"
       }
     },
     "category": "bnbwiu",
@@ -1651,11 +1696,11 @@
   },
   {
     "id": "xbwerz",
-    "name": "labus-py-22",
+    "name": "py-22",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-22)",
-        "bottom": "var(--labus-space-22)"
+        "top": "var(--space-22)",
+        "bottom": "var(--space-22)"
       }
     },
     "category": "bnbwiu",
@@ -1666,11 +1711,11 @@
   },
   {
     "id": "vobwax",
-    "name": "labus-py-24",
+    "name": "py-24",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-24)",
-        "bottom": "var(--labus-space-24)"
+        "top": "var(--space-24)",
+        "bottom": "var(--space-24)"
       }
     },
     "category": "bnbwiu",
@@ -1681,11 +1726,11 @@
   },
   {
     "id": "dsodfa",
-    "name": "labus-py-26",
+    "name": "py-26",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-26)",
-        "bottom": "var(--labus-space-26)"
+        "top": "var(--space-26)",
+        "bottom": "var(--space-26)"
       }
     },
     "category": "bnbwiu",
@@ -1696,11 +1741,11 @@
   },
   {
     "id": "cgowxq",
-    "name": "labus-py-28",
+    "name": "py-28",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-28)",
-        "bottom": "var(--labus-space-28)"
+        "top": "var(--space-28)",
+        "bottom": "var(--space-28)"
       }
     },
     "category": "bnbwiu",
@@ -1711,11 +1756,11 @@
   },
   {
     "id": "ictcdo",
-    "name": "labus-py-30",
+    "name": "py-30",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-30)",
-        "bottom": "var(--labus-space-30)"
+        "top": "var(--space-30)",
+        "bottom": "var(--space-30)"
       }
     },
     "category": "bnbwiu",
@@ -1726,11 +1771,11 @@
   },
   {
     "id": "dqfaxy",
-    "name": "labus-py-32",
+    "name": "py-32",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-32)",
-        "bottom": "var(--labus-space-32)"
+        "top": "var(--space-32)",
+        "bottom": "var(--space-32)"
       }
     },
     "category": "bnbwiu",
@@ -1741,11 +1786,11 @@
   },
   {
     "id": "dnnemv",
-    "name": "labus-py-34",
+    "name": "py-34",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-34)",
-        "bottom": "var(--labus-space-34)"
+        "top": "var(--space-34)",
+        "bottom": "var(--space-34)"
       }
     },
     "category": "bnbwiu",
@@ -1756,11 +1801,11 @@
   },
   {
     "id": "qkxjel",
-    "name": "labus-py-36",
+    "name": "py-36",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-36)",
-        "bottom": "var(--labus-space-36)"
+        "top": "var(--space-36)",
+        "bottom": "var(--space-36)"
       }
     },
     "category": "bnbwiu",
@@ -1771,11 +1816,11 @@
   },
   {
     "id": "gojtoa",
-    "name": "labus-py-40",
+    "name": "py-40",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-40)",
-        "bottom": "var(--labus-space-40)"
+        "top": "var(--space-40)",
+        "bottom": "var(--space-40)"
       }
     },
     "category": "bnbwiu",
@@ -1786,11 +1831,11 @@
   },
   {
     "id": "kmajkw",
-    "name": "labus-py-48",
+    "name": "py-48",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-48)",
-        "bottom": "var(--labus-space-48)"
+        "top": "var(--space-48)",
+        "bottom": "var(--space-48)"
       }
     },
     "category": "bnbwiu",
@@ -1801,11 +1846,26 @@
   },
   {
     "id": "asnkmn",
-    "name": "labus-py-56",
+    "name": "py-56",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-56)",
-        "bottom": "var(--labus-space-56)"
+        "top": "var(--space-56)",
+        "bottom": "var(--space-56)"
+      }
+    },
+    "category": "bnbwiu",
+    "_categoryData": {
+      "id": "bnbwiu",
+      "name": "Labus · Padding"
+    }
+  },
+  {
+    "id": "qiwuyo",
+    "name": "py-60",
+    "settings": {
+      "_padding": {
+        "top": "var(--space-60)",
+        "bottom": "var(--space-60)"
       }
     },
     "category": "bnbwiu",
@@ -1816,11 +1876,11 @@
   },
   {
     "id": "xgillm",
-    "name": "labus-py-64",
+    "name": "py-64",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-64)",
-        "bottom": "var(--labus-space-64)"
+        "top": "var(--space-64)",
+        "bottom": "var(--space-64)"
       }
     },
     "category": "bnbwiu",
@@ -1831,11 +1891,11 @@
   },
   {
     "id": "eghmya",
-    "name": "labus-py-72",
+    "name": "py-72",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-72)",
-        "bottom": "var(--labus-space-72)"
+        "top": "var(--space-72)",
+        "bottom": "var(--space-72)"
       }
     },
     "category": "bnbwiu",
@@ -1846,11 +1906,11 @@
   },
   {
     "id": "agdhse",
-    "name": "labus-py-80",
+    "name": "py-80",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-80)",
-        "bottom": "var(--labus-space-80)"
+        "top": "var(--space-80)",
+        "bottom": "var(--space-80)"
       }
     },
     "category": "bnbwiu",
@@ -1861,11 +1921,11 @@
   },
   {
     "id": "hputfx",
-    "name": "labus-py-88",
+    "name": "py-88",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-88)",
-        "bottom": "var(--labus-space-88)"
+        "top": "var(--space-88)",
+        "bottom": "var(--space-88)"
       }
     },
     "category": "bnbwiu",
@@ -1876,11 +1936,11 @@
   },
   {
     "id": "urabmi",
-    "name": "labus-py-96",
+    "name": "py-96",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-96)",
-        "bottom": "var(--labus-space-96)"
+        "top": "var(--space-96)",
+        "bottom": "var(--space-96)"
       }
     },
     "category": "bnbwiu",
@@ -1891,11 +1951,11 @@
   },
   {
     "id": "veflur",
-    "name": "labus-py-104",
+    "name": "py-104",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-104)",
-        "bottom": "var(--labus-space-104)"
+        "top": "var(--space-104)",
+        "bottom": "var(--space-104)"
       }
     },
     "category": "bnbwiu",
@@ -1906,11 +1966,11 @@
   },
   {
     "id": "wgzlbp",
-    "name": "labus-py-112",
+    "name": "py-112",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-112)",
-        "bottom": "var(--labus-space-112)"
+        "top": "var(--space-112)",
+        "bottom": "var(--space-112)"
       }
     },
     "category": "bnbwiu",
@@ -1921,11 +1981,11 @@
   },
   {
     "id": "vxjltm",
-    "name": "labus-py-120",
+    "name": "py-120",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-120)",
-        "bottom": "var(--labus-space-120)"
+        "top": "var(--space-120)",
+        "bottom": "var(--space-120)"
       }
     },
     "category": "bnbwiu",
@@ -1936,11 +1996,11 @@
   },
   {
     "id": "rygbwo",
-    "name": "labus-py-128",
+    "name": "py-128",
     "settings": {
       "_padding": {
-        "top": "var(--labus-space-128)",
-        "bottom": "var(--labus-space-128)"
+        "top": "var(--space-128)",
+        "bottom": "var(--space-128)"
       }
     },
     "category": "bnbwiu",
@@ -1951,13 +2011,13 @@
   },
   {
     "id": "jhbdqo",
-    "name": "labus-m-6",
+    "name": "m-6",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-6)",
-        "right": "var(--labus-space-6)",
-        "bottom": "var(--labus-space-6)",
-        "left": "var(--labus-space-6)"
+        "top": "var(--space-6)",
+        "right": "var(--space-6)",
+        "bottom": "var(--space-6)",
+        "left": "var(--space-6)"
       }
     },
     "category": "cxrtvf",
@@ -1968,13 +2028,13 @@
   },
   {
     "id": "maghyq",
-    "name": "labus-m-8",
+    "name": "m-8",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-8)",
-        "right": "var(--labus-space-8)",
-        "bottom": "var(--labus-space-8)",
-        "left": "var(--labus-space-8)"
+        "top": "var(--space-8)",
+        "right": "var(--space-8)",
+        "bottom": "var(--space-8)",
+        "left": "var(--space-8)"
       }
     },
     "category": "cxrtvf",
@@ -1985,13 +2045,13 @@
   },
   {
     "id": "blbcoj",
-    "name": "labus-m-10",
+    "name": "m-10",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-10)",
-        "right": "var(--labus-space-10)",
-        "bottom": "var(--labus-space-10)",
-        "left": "var(--labus-space-10)"
+        "top": "var(--space-10)",
+        "right": "var(--space-10)",
+        "bottom": "var(--space-10)",
+        "left": "var(--space-10)"
       }
     },
     "category": "cxrtvf",
@@ -2002,13 +2062,13 @@
   },
   {
     "id": "rnlbuh",
-    "name": "labus-m-12",
+    "name": "m-12",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-12)",
-        "right": "var(--labus-space-12)",
-        "bottom": "var(--labus-space-12)",
-        "left": "var(--labus-space-12)"
+        "top": "var(--space-12)",
+        "right": "var(--space-12)",
+        "bottom": "var(--space-12)",
+        "left": "var(--space-12)"
       }
     },
     "category": "cxrtvf",
@@ -2019,13 +2079,13 @@
   },
   {
     "id": "oawldf",
-    "name": "labus-m-14",
+    "name": "m-14",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-14)",
-        "right": "var(--labus-space-14)",
-        "bottom": "var(--labus-space-14)",
-        "left": "var(--labus-space-14)"
+        "top": "var(--space-14)",
+        "right": "var(--space-14)",
+        "bottom": "var(--space-14)",
+        "left": "var(--space-14)"
       }
     },
     "category": "cxrtvf",
@@ -2036,13 +2096,13 @@
   },
   {
     "id": "wpxovn",
-    "name": "labus-m-16",
+    "name": "m-16",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-16)",
-        "right": "var(--labus-space-16)",
-        "bottom": "var(--labus-space-16)",
-        "left": "var(--labus-space-16)"
+        "top": "var(--space-16)",
+        "right": "var(--space-16)",
+        "bottom": "var(--space-16)",
+        "left": "var(--space-16)"
       }
     },
     "category": "cxrtvf",
@@ -2053,13 +2113,13 @@
   },
   {
     "id": "urrlfa",
-    "name": "labus-m-18",
+    "name": "m-18",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-18)",
-        "right": "var(--labus-space-18)",
-        "bottom": "var(--labus-space-18)",
-        "left": "var(--labus-space-18)"
+        "top": "var(--space-18)",
+        "right": "var(--space-18)",
+        "bottom": "var(--space-18)",
+        "left": "var(--space-18)"
       }
     },
     "category": "cxrtvf",
@@ -2070,13 +2130,13 @@
   },
   {
     "id": "povuxb",
-    "name": "labus-m-20",
+    "name": "m-20",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-20)",
-        "right": "var(--labus-space-20)",
-        "bottom": "var(--labus-space-20)",
-        "left": "var(--labus-space-20)"
+        "top": "var(--space-20)",
+        "right": "var(--space-20)",
+        "bottom": "var(--space-20)",
+        "left": "var(--space-20)"
       }
     },
     "category": "cxrtvf",
@@ -2087,13 +2147,13 @@
   },
   {
     "id": "gpmcco",
-    "name": "labus-m-22",
+    "name": "m-22",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-22)",
-        "right": "var(--labus-space-22)",
-        "bottom": "var(--labus-space-22)",
-        "left": "var(--labus-space-22)"
+        "top": "var(--space-22)",
+        "right": "var(--space-22)",
+        "bottom": "var(--space-22)",
+        "left": "var(--space-22)"
       }
     },
     "category": "cxrtvf",
@@ -2104,13 +2164,13 @@
   },
   {
     "id": "ixljmi",
-    "name": "labus-m-24",
+    "name": "m-24",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-24)",
-        "right": "var(--labus-space-24)",
-        "bottom": "var(--labus-space-24)",
-        "left": "var(--labus-space-24)"
+        "top": "var(--space-24)",
+        "right": "var(--space-24)",
+        "bottom": "var(--space-24)",
+        "left": "var(--space-24)"
       }
     },
     "category": "cxrtvf",
@@ -2121,13 +2181,13 @@
   },
   {
     "id": "qmtdud",
-    "name": "labus-m-26",
+    "name": "m-26",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-26)",
-        "right": "var(--labus-space-26)",
-        "bottom": "var(--labus-space-26)",
-        "left": "var(--labus-space-26)"
+        "top": "var(--space-26)",
+        "right": "var(--space-26)",
+        "bottom": "var(--space-26)",
+        "left": "var(--space-26)"
       }
     },
     "category": "cxrtvf",
@@ -2138,13 +2198,13 @@
   },
   {
     "id": "xtsqad",
-    "name": "labus-m-28",
+    "name": "m-28",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-28)",
-        "right": "var(--labus-space-28)",
-        "bottom": "var(--labus-space-28)",
-        "left": "var(--labus-space-28)"
+        "top": "var(--space-28)",
+        "right": "var(--space-28)",
+        "bottom": "var(--space-28)",
+        "left": "var(--space-28)"
       }
     },
     "category": "cxrtvf",
@@ -2155,13 +2215,13 @@
   },
   {
     "id": "wxyebf",
-    "name": "labus-m-30",
+    "name": "m-30",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-30)",
-        "right": "var(--labus-space-30)",
-        "bottom": "var(--labus-space-30)",
-        "left": "var(--labus-space-30)"
+        "top": "var(--space-30)",
+        "right": "var(--space-30)",
+        "bottom": "var(--space-30)",
+        "left": "var(--space-30)"
       }
     },
     "category": "cxrtvf",
@@ -2172,13 +2232,13 @@
   },
   {
     "id": "umqfuv",
-    "name": "labus-m-32",
+    "name": "m-32",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-32)",
-        "right": "var(--labus-space-32)",
-        "bottom": "var(--labus-space-32)",
-        "left": "var(--labus-space-32)"
+        "top": "var(--space-32)",
+        "right": "var(--space-32)",
+        "bottom": "var(--space-32)",
+        "left": "var(--space-32)"
       }
     },
     "category": "cxrtvf",
@@ -2189,13 +2249,13 @@
   },
   {
     "id": "igbuqy",
-    "name": "labus-m-34",
+    "name": "m-34",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-34)",
-        "right": "var(--labus-space-34)",
-        "bottom": "var(--labus-space-34)",
-        "left": "var(--labus-space-34)"
+        "top": "var(--space-34)",
+        "right": "var(--space-34)",
+        "bottom": "var(--space-34)",
+        "left": "var(--space-34)"
       }
     },
     "category": "cxrtvf",
@@ -2206,13 +2266,13 @@
   },
   {
     "id": "hdzsyx",
-    "name": "labus-m-36",
+    "name": "m-36",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-36)",
-        "right": "var(--labus-space-36)",
-        "bottom": "var(--labus-space-36)",
-        "left": "var(--labus-space-36)"
+        "top": "var(--space-36)",
+        "right": "var(--space-36)",
+        "bottom": "var(--space-36)",
+        "left": "var(--space-36)"
       }
     },
     "category": "cxrtvf",
@@ -2223,13 +2283,13 @@
   },
   {
     "id": "fkpnby",
-    "name": "labus-m-40",
+    "name": "m-40",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-40)",
-        "right": "var(--labus-space-40)",
-        "bottom": "var(--labus-space-40)",
-        "left": "var(--labus-space-40)"
+        "top": "var(--space-40)",
+        "right": "var(--space-40)",
+        "bottom": "var(--space-40)",
+        "left": "var(--space-40)"
       }
     },
     "category": "cxrtvf",
@@ -2240,13 +2300,13 @@
   },
   {
     "id": "emdnky",
-    "name": "labus-m-48",
+    "name": "m-48",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-48)",
-        "right": "var(--labus-space-48)",
-        "bottom": "var(--labus-space-48)",
-        "left": "var(--labus-space-48)"
+        "top": "var(--space-48)",
+        "right": "var(--space-48)",
+        "bottom": "var(--space-48)",
+        "left": "var(--space-48)"
       }
     },
     "category": "cxrtvf",
@@ -2257,13 +2317,30 @@
   },
   {
     "id": "hvjyse",
-    "name": "labus-m-56",
+    "name": "m-56",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-56)",
-        "right": "var(--labus-space-56)",
-        "bottom": "var(--labus-space-56)",
-        "left": "var(--labus-space-56)"
+        "top": "var(--space-56)",
+        "right": "var(--space-56)",
+        "bottom": "var(--space-56)",
+        "left": "var(--space-56)"
+      }
+    },
+    "category": "cxrtvf",
+    "_categoryData": {
+      "id": "cxrtvf",
+      "name": "Labus · Margin"
+    }
+  },
+  {
+    "id": "afljok",
+    "name": "m-60",
+    "settings": {
+      "_margin": {
+        "top": "var(--space-60)",
+        "right": "var(--space-60)",
+        "bottom": "var(--space-60)",
+        "left": "var(--space-60)"
       }
     },
     "category": "cxrtvf",
@@ -2274,13 +2351,13 @@
   },
   {
     "id": "kdcaue",
-    "name": "labus-m-64",
+    "name": "m-64",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-64)",
-        "right": "var(--labus-space-64)",
-        "bottom": "var(--labus-space-64)",
-        "left": "var(--labus-space-64)"
+        "top": "var(--space-64)",
+        "right": "var(--space-64)",
+        "bottom": "var(--space-64)",
+        "left": "var(--space-64)"
       }
     },
     "category": "cxrtvf",
@@ -2291,13 +2368,13 @@
   },
   {
     "id": "xhprgn",
-    "name": "labus-m-72",
+    "name": "m-72",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-72)",
-        "right": "var(--labus-space-72)",
-        "bottom": "var(--labus-space-72)",
-        "left": "var(--labus-space-72)"
+        "top": "var(--space-72)",
+        "right": "var(--space-72)",
+        "bottom": "var(--space-72)",
+        "left": "var(--space-72)"
       }
     },
     "category": "cxrtvf",
@@ -2308,13 +2385,13 @@
   },
   {
     "id": "mfngyl",
-    "name": "labus-m-80",
+    "name": "m-80",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-80)",
-        "right": "var(--labus-space-80)",
-        "bottom": "var(--labus-space-80)",
-        "left": "var(--labus-space-80)"
+        "top": "var(--space-80)",
+        "right": "var(--space-80)",
+        "bottom": "var(--space-80)",
+        "left": "var(--space-80)"
       }
     },
     "category": "cxrtvf",
@@ -2325,13 +2402,13 @@
   },
   {
     "id": "ugieij",
-    "name": "labus-m-88",
+    "name": "m-88",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-88)",
-        "right": "var(--labus-space-88)",
-        "bottom": "var(--labus-space-88)",
-        "left": "var(--labus-space-88)"
+        "top": "var(--space-88)",
+        "right": "var(--space-88)",
+        "bottom": "var(--space-88)",
+        "left": "var(--space-88)"
       }
     },
     "category": "cxrtvf",
@@ -2342,13 +2419,13 @@
   },
   {
     "id": "rhmqtd",
-    "name": "labus-m-96",
+    "name": "m-96",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-96)",
-        "right": "var(--labus-space-96)",
-        "bottom": "var(--labus-space-96)",
-        "left": "var(--labus-space-96)"
+        "top": "var(--space-96)",
+        "right": "var(--space-96)",
+        "bottom": "var(--space-96)",
+        "left": "var(--space-96)"
       }
     },
     "category": "cxrtvf",
@@ -2359,13 +2436,13 @@
   },
   {
     "id": "ykmaiy",
-    "name": "labus-m-104",
+    "name": "m-104",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-104)",
-        "right": "var(--labus-space-104)",
-        "bottom": "var(--labus-space-104)",
-        "left": "var(--labus-space-104)"
+        "top": "var(--space-104)",
+        "right": "var(--space-104)",
+        "bottom": "var(--space-104)",
+        "left": "var(--space-104)"
       }
     },
     "category": "cxrtvf",
@@ -2376,13 +2453,13 @@
   },
   {
     "id": "qjffye",
-    "name": "labus-m-112",
+    "name": "m-112",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-112)",
-        "right": "var(--labus-space-112)",
-        "bottom": "var(--labus-space-112)",
-        "left": "var(--labus-space-112)"
+        "top": "var(--space-112)",
+        "right": "var(--space-112)",
+        "bottom": "var(--space-112)",
+        "left": "var(--space-112)"
       }
     },
     "category": "cxrtvf",
@@ -2393,13 +2470,13 @@
   },
   {
     "id": "qggypo",
-    "name": "labus-m-120",
+    "name": "m-120",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-120)",
-        "right": "var(--labus-space-120)",
-        "bottom": "var(--labus-space-120)",
-        "left": "var(--labus-space-120)"
+        "top": "var(--space-120)",
+        "right": "var(--space-120)",
+        "bottom": "var(--space-120)",
+        "left": "var(--space-120)"
       }
     },
     "category": "cxrtvf",
@@ -2410,13 +2487,13 @@
   },
   {
     "id": "chotns",
-    "name": "labus-m-128",
+    "name": "m-128",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-128)",
-        "right": "var(--labus-space-128)",
-        "bottom": "var(--labus-space-128)",
-        "left": "var(--labus-space-128)"
+        "top": "var(--space-128)",
+        "right": "var(--space-128)",
+        "bottom": "var(--space-128)",
+        "left": "var(--space-128)"
       }
     },
     "category": "cxrtvf",
@@ -2427,11 +2504,11 @@
   },
   {
     "id": "qqparo",
-    "name": "labus-mx-6",
+    "name": "mx-6",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-6)",
-        "left": "var(--labus-space-6)"
+        "right": "var(--space-6)",
+        "left": "var(--space-6)"
       }
     },
     "category": "cxrtvf",
@@ -2442,11 +2519,11 @@
   },
   {
     "id": "vldrva",
-    "name": "labus-mx-8",
+    "name": "mx-8",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-8)",
-        "left": "var(--labus-space-8)"
+        "right": "var(--space-8)",
+        "left": "var(--space-8)"
       }
     },
     "category": "cxrtvf",
@@ -2457,11 +2534,11 @@
   },
   {
     "id": "icwlly",
-    "name": "labus-mx-10",
+    "name": "mx-10",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-10)",
-        "left": "var(--labus-space-10)"
+        "right": "var(--space-10)",
+        "left": "var(--space-10)"
       }
     },
     "category": "cxrtvf",
@@ -2472,11 +2549,11 @@
   },
   {
     "id": "pqcotk",
-    "name": "labus-mx-12",
+    "name": "mx-12",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-12)",
-        "left": "var(--labus-space-12)"
+        "right": "var(--space-12)",
+        "left": "var(--space-12)"
       }
     },
     "category": "cxrtvf",
@@ -2487,11 +2564,11 @@
   },
   {
     "id": "ayugey",
-    "name": "labus-mx-14",
+    "name": "mx-14",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-14)",
-        "left": "var(--labus-space-14)"
+        "right": "var(--space-14)",
+        "left": "var(--space-14)"
       }
     },
     "category": "cxrtvf",
@@ -2502,11 +2579,11 @@
   },
   {
     "id": "hvezcg",
-    "name": "labus-mx-16",
+    "name": "mx-16",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-16)",
-        "left": "var(--labus-space-16)"
+        "right": "var(--space-16)",
+        "left": "var(--space-16)"
       }
     },
     "category": "cxrtvf",
@@ -2517,11 +2594,11 @@
   },
   {
     "id": "jclohf",
-    "name": "labus-mx-18",
+    "name": "mx-18",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-18)",
-        "left": "var(--labus-space-18)"
+        "right": "var(--space-18)",
+        "left": "var(--space-18)"
       }
     },
     "category": "cxrtvf",
@@ -2532,11 +2609,11 @@
   },
   {
     "id": "ypdrzh",
-    "name": "labus-mx-20",
+    "name": "mx-20",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-20)",
-        "left": "var(--labus-space-20)"
+        "right": "var(--space-20)",
+        "left": "var(--space-20)"
       }
     },
     "category": "cxrtvf",
@@ -2547,11 +2624,11 @@
   },
   {
     "id": "baodmt",
-    "name": "labus-mx-22",
+    "name": "mx-22",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-22)",
-        "left": "var(--labus-space-22)"
+        "right": "var(--space-22)",
+        "left": "var(--space-22)"
       }
     },
     "category": "cxrtvf",
@@ -2562,11 +2639,11 @@
   },
   {
     "id": "eeceyv",
-    "name": "labus-mx-24",
+    "name": "mx-24",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-24)",
-        "left": "var(--labus-space-24)"
+        "right": "var(--space-24)",
+        "left": "var(--space-24)"
       }
     },
     "category": "cxrtvf",
@@ -2577,11 +2654,11 @@
   },
   {
     "id": "eygsrv",
-    "name": "labus-mx-26",
+    "name": "mx-26",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-26)",
-        "left": "var(--labus-space-26)"
+        "right": "var(--space-26)",
+        "left": "var(--space-26)"
       }
     },
     "category": "cxrtvf",
@@ -2592,11 +2669,11 @@
   },
   {
     "id": "vaihmk",
-    "name": "labus-mx-28",
+    "name": "mx-28",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-28)",
-        "left": "var(--labus-space-28)"
+        "right": "var(--space-28)",
+        "left": "var(--space-28)"
       }
     },
     "category": "cxrtvf",
@@ -2607,11 +2684,11 @@
   },
   {
     "id": "twlccp",
-    "name": "labus-mx-30",
+    "name": "mx-30",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-30)",
-        "left": "var(--labus-space-30)"
+        "right": "var(--space-30)",
+        "left": "var(--space-30)"
       }
     },
     "category": "cxrtvf",
@@ -2622,11 +2699,11 @@
   },
   {
     "id": "ffbdhc",
-    "name": "labus-mx-32",
+    "name": "mx-32",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-32)",
-        "left": "var(--labus-space-32)"
+        "right": "var(--space-32)",
+        "left": "var(--space-32)"
       }
     },
     "category": "cxrtvf",
@@ -2637,11 +2714,11 @@
   },
   {
     "id": "bdpiqw",
-    "name": "labus-mx-34",
+    "name": "mx-34",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-34)",
-        "left": "var(--labus-space-34)"
+        "right": "var(--space-34)",
+        "left": "var(--space-34)"
       }
     },
     "category": "cxrtvf",
@@ -2652,11 +2729,11 @@
   },
   {
     "id": "asxlcz",
-    "name": "labus-mx-36",
+    "name": "mx-36",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-36)",
-        "left": "var(--labus-space-36)"
+        "right": "var(--space-36)",
+        "left": "var(--space-36)"
       }
     },
     "category": "cxrtvf",
@@ -2667,11 +2744,11 @@
   },
   {
     "id": "ojctgh",
-    "name": "labus-mx-40",
+    "name": "mx-40",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-40)",
-        "left": "var(--labus-space-40)"
+        "right": "var(--space-40)",
+        "left": "var(--space-40)"
       }
     },
     "category": "cxrtvf",
@@ -2682,11 +2759,11 @@
   },
   {
     "id": "dctkca",
-    "name": "labus-mx-48",
+    "name": "mx-48",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-48)",
-        "left": "var(--labus-space-48)"
+        "right": "var(--space-48)",
+        "left": "var(--space-48)"
       }
     },
     "category": "cxrtvf",
@@ -2697,11 +2774,26 @@
   },
   {
     "id": "lxfdeg",
-    "name": "labus-mx-56",
+    "name": "mx-56",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-56)",
-        "left": "var(--labus-space-56)"
+        "right": "var(--space-56)",
+        "left": "var(--space-56)"
+      }
+    },
+    "category": "cxrtvf",
+    "_categoryData": {
+      "id": "cxrtvf",
+      "name": "Labus · Margin"
+    }
+  },
+  {
+    "id": "uahmos",
+    "name": "mx-60",
+    "settings": {
+      "_margin": {
+        "right": "var(--space-60)",
+        "left": "var(--space-60)"
       }
     },
     "category": "cxrtvf",
@@ -2712,11 +2804,11 @@
   },
   {
     "id": "hcbcqm",
-    "name": "labus-mx-64",
+    "name": "mx-64",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-64)",
-        "left": "var(--labus-space-64)"
+        "right": "var(--space-64)",
+        "left": "var(--space-64)"
       }
     },
     "category": "cxrtvf",
@@ -2727,11 +2819,11 @@
   },
   {
     "id": "jihhtx",
-    "name": "labus-mx-72",
+    "name": "mx-72",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-72)",
-        "left": "var(--labus-space-72)"
+        "right": "var(--space-72)",
+        "left": "var(--space-72)"
       }
     },
     "category": "cxrtvf",
@@ -2742,11 +2834,11 @@
   },
   {
     "id": "klpvrd",
-    "name": "labus-mx-80",
+    "name": "mx-80",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-80)",
-        "left": "var(--labus-space-80)"
+        "right": "var(--space-80)",
+        "left": "var(--space-80)"
       }
     },
     "category": "cxrtvf",
@@ -2757,11 +2849,11 @@
   },
   {
     "id": "qoarny",
-    "name": "labus-mx-88",
+    "name": "mx-88",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-88)",
-        "left": "var(--labus-space-88)"
+        "right": "var(--space-88)",
+        "left": "var(--space-88)"
       }
     },
     "category": "cxrtvf",
@@ -2772,11 +2864,11 @@
   },
   {
     "id": "zcadtr",
-    "name": "labus-mx-96",
+    "name": "mx-96",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-96)",
-        "left": "var(--labus-space-96)"
+        "right": "var(--space-96)",
+        "left": "var(--space-96)"
       }
     },
     "category": "cxrtvf",
@@ -2787,11 +2879,11 @@
   },
   {
     "id": "xjhbou",
-    "name": "labus-mx-104",
+    "name": "mx-104",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-104)",
-        "left": "var(--labus-space-104)"
+        "right": "var(--space-104)",
+        "left": "var(--space-104)"
       }
     },
     "category": "cxrtvf",
@@ -2802,11 +2894,11 @@
   },
   {
     "id": "dmogtz",
-    "name": "labus-mx-112",
+    "name": "mx-112",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-112)",
-        "left": "var(--labus-space-112)"
+        "right": "var(--space-112)",
+        "left": "var(--space-112)"
       }
     },
     "category": "cxrtvf",
@@ -2817,11 +2909,11 @@
   },
   {
     "id": "ienhoe",
-    "name": "labus-mx-120",
+    "name": "mx-120",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-120)",
-        "left": "var(--labus-space-120)"
+        "right": "var(--space-120)",
+        "left": "var(--space-120)"
       }
     },
     "category": "cxrtvf",
@@ -2832,11 +2924,11 @@
   },
   {
     "id": "ygnooj",
-    "name": "labus-mx-128",
+    "name": "mx-128",
     "settings": {
       "_margin": {
-        "right": "var(--labus-space-128)",
-        "left": "var(--labus-space-128)"
+        "right": "var(--space-128)",
+        "left": "var(--space-128)"
       }
     },
     "category": "cxrtvf",
@@ -2847,11 +2939,11 @@
   },
   {
     "id": "dtyncg",
-    "name": "labus-my-6",
+    "name": "my-6",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-6)",
-        "bottom": "var(--labus-space-6)"
+        "top": "var(--space-6)",
+        "bottom": "var(--space-6)"
       }
     },
     "category": "cxrtvf",
@@ -2862,11 +2954,11 @@
   },
   {
     "id": "cnhxid",
-    "name": "labus-my-8",
+    "name": "my-8",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-8)",
-        "bottom": "var(--labus-space-8)"
+        "top": "var(--space-8)",
+        "bottom": "var(--space-8)"
       }
     },
     "category": "cxrtvf",
@@ -2877,11 +2969,11 @@
   },
   {
     "id": "wdhsgq",
-    "name": "labus-my-10",
+    "name": "my-10",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-10)",
-        "bottom": "var(--labus-space-10)"
+        "top": "var(--space-10)",
+        "bottom": "var(--space-10)"
       }
     },
     "category": "cxrtvf",
@@ -2892,11 +2984,11 @@
   },
   {
     "id": "qhfwqy",
-    "name": "labus-my-12",
+    "name": "my-12",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-12)",
-        "bottom": "var(--labus-space-12)"
+        "top": "var(--space-12)",
+        "bottom": "var(--space-12)"
       }
     },
     "category": "cxrtvf",
@@ -2907,11 +2999,11 @@
   },
   {
     "id": "fpxneh",
-    "name": "labus-my-14",
+    "name": "my-14",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-14)",
-        "bottom": "var(--labus-space-14)"
+        "top": "var(--space-14)",
+        "bottom": "var(--space-14)"
       }
     },
     "category": "cxrtvf",
@@ -2922,11 +3014,11 @@
   },
   {
     "id": "vbnngk",
-    "name": "labus-my-16",
+    "name": "my-16",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-16)",
-        "bottom": "var(--labus-space-16)"
+        "top": "var(--space-16)",
+        "bottom": "var(--space-16)"
       }
     },
     "category": "cxrtvf",
@@ -2937,11 +3029,11 @@
   },
   {
     "id": "wiezqz",
-    "name": "labus-my-18",
+    "name": "my-18",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-18)",
-        "bottom": "var(--labus-space-18)"
+        "top": "var(--space-18)",
+        "bottom": "var(--space-18)"
       }
     },
     "category": "cxrtvf",
@@ -2952,11 +3044,11 @@
   },
   {
     "id": "ilvkvz",
-    "name": "labus-my-20",
+    "name": "my-20",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-20)",
-        "bottom": "var(--labus-space-20)"
+        "top": "var(--space-20)",
+        "bottom": "var(--space-20)"
       }
     },
     "category": "cxrtvf",
@@ -2967,11 +3059,11 @@
   },
   {
     "id": "vxbxeb",
-    "name": "labus-my-22",
+    "name": "my-22",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-22)",
-        "bottom": "var(--labus-space-22)"
+        "top": "var(--space-22)",
+        "bottom": "var(--space-22)"
       }
     },
     "category": "cxrtvf",
@@ -2982,11 +3074,11 @@
   },
   {
     "id": "ndmgee",
-    "name": "labus-my-24",
+    "name": "my-24",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-24)",
-        "bottom": "var(--labus-space-24)"
+        "top": "var(--space-24)",
+        "bottom": "var(--space-24)"
       }
     },
     "category": "cxrtvf",
@@ -2997,11 +3089,11 @@
   },
   {
     "id": "axjvvy",
-    "name": "labus-my-26",
+    "name": "my-26",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-26)",
-        "bottom": "var(--labus-space-26)"
+        "top": "var(--space-26)",
+        "bottom": "var(--space-26)"
       }
     },
     "category": "cxrtvf",
@@ -3012,11 +3104,11 @@
   },
   {
     "id": "rygfhc",
-    "name": "labus-my-28",
+    "name": "my-28",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-28)",
-        "bottom": "var(--labus-space-28)"
+        "top": "var(--space-28)",
+        "bottom": "var(--space-28)"
       }
     },
     "category": "cxrtvf",
@@ -3027,11 +3119,11 @@
   },
   {
     "id": "rqumkt",
-    "name": "labus-my-30",
+    "name": "my-30",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-30)",
-        "bottom": "var(--labus-space-30)"
+        "top": "var(--space-30)",
+        "bottom": "var(--space-30)"
       }
     },
     "category": "cxrtvf",
@@ -3042,11 +3134,11 @@
   },
   {
     "id": "wwfgfk",
-    "name": "labus-my-32",
+    "name": "my-32",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-32)",
-        "bottom": "var(--labus-space-32)"
+        "top": "var(--space-32)",
+        "bottom": "var(--space-32)"
       }
     },
     "category": "cxrtvf",
@@ -3057,11 +3149,11 @@
   },
   {
     "id": "lprcnp",
-    "name": "labus-my-34",
+    "name": "my-34",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-34)",
-        "bottom": "var(--labus-space-34)"
+        "top": "var(--space-34)",
+        "bottom": "var(--space-34)"
       }
     },
     "category": "cxrtvf",
@@ -3072,11 +3164,11 @@
   },
   {
     "id": "psbdeu",
-    "name": "labus-my-36",
+    "name": "my-36",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-36)",
-        "bottom": "var(--labus-space-36)"
+        "top": "var(--space-36)",
+        "bottom": "var(--space-36)"
       }
     },
     "category": "cxrtvf",
@@ -3087,11 +3179,11 @@
   },
   {
     "id": "xclrrh",
-    "name": "labus-my-40",
+    "name": "my-40",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-40)",
-        "bottom": "var(--labus-space-40)"
+        "top": "var(--space-40)",
+        "bottom": "var(--space-40)"
       }
     },
     "category": "cxrtvf",
@@ -3102,11 +3194,11 @@
   },
   {
     "id": "ppeogu",
-    "name": "labus-my-48",
+    "name": "my-48",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-48)",
-        "bottom": "var(--labus-space-48)"
+        "top": "var(--space-48)",
+        "bottom": "var(--space-48)"
       }
     },
     "category": "cxrtvf",
@@ -3117,11 +3209,26 @@
   },
   {
     "id": "ndfgdx",
-    "name": "labus-my-56",
+    "name": "my-56",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-56)",
-        "bottom": "var(--labus-space-56)"
+        "top": "var(--space-56)",
+        "bottom": "var(--space-56)"
+      }
+    },
+    "category": "cxrtvf",
+    "_categoryData": {
+      "id": "cxrtvf",
+      "name": "Labus · Margin"
+    }
+  },
+  {
+    "id": "swddjc",
+    "name": "my-60",
+    "settings": {
+      "_margin": {
+        "top": "var(--space-60)",
+        "bottom": "var(--space-60)"
       }
     },
     "category": "cxrtvf",
@@ -3132,11 +3239,11 @@
   },
   {
     "id": "cgirin",
-    "name": "labus-my-64",
+    "name": "my-64",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-64)",
-        "bottom": "var(--labus-space-64)"
+        "top": "var(--space-64)",
+        "bottom": "var(--space-64)"
       }
     },
     "category": "cxrtvf",
@@ -3147,11 +3254,11 @@
   },
   {
     "id": "pmxwuv",
-    "name": "labus-my-72",
+    "name": "my-72",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-72)",
-        "bottom": "var(--labus-space-72)"
+        "top": "var(--space-72)",
+        "bottom": "var(--space-72)"
       }
     },
     "category": "cxrtvf",
@@ -3162,11 +3269,11 @@
   },
   {
     "id": "zqgjrn",
-    "name": "labus-my-80",
+    "name": "my-80",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-80)",
-        "bottom": "var(--labus-space-80)"
+        "top": "var(--space-80)",
+        "bottom": "var(--space-80)"
       }
     },
     "category": "cxrtvf",
@@ -3177,11 +3284,11 @@
   },
   {
     "id": "ykfkrd",
-    "name": "labus-my-88",
+    "name": "my-88",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-88)",
-        "bottom": "var(--labus-space-88)"
+        "top": "var(--space-88)",
+        "bottom": "var(--space-88)"
       }
     },
     "category": "cxrtvf",
@@ -3192,11 +3299,11 @@
   },
   {
     "id": "fhrinf",
-    "name": "labus-my-96",
+    "name": "my-96",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-96)",
-        "bottom": "var(--labus-space-96)"
+        "top": "var(--space-96)",
+        "bottom": "var(--space-96)"
       }
     },
     "category": "cxrtvf",
@@ -3207,11 +3314,11 @@
   },
   {
     "id": "pfmstn",
-    "name": "labus-my-104",
+    "name": "my-104",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-104)",
-        "bottom": "var(--labus-space-104)"
+        "top": "var(--space-104)",
+        "bottom": "var(--space-104)"
       }
     },
     "category": "cxrtvf",
@@ -3222,11 +3329,11 @@
   },
   {
     "id": "ssjzkz",
-    "name": "labus-my-112",
+    "name": "my-112",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-112)",
-        "bottom": "var(--labus-space-112)"
+        "top": "var(--space-112)",
+        "bottom": "var(--space-112)"
       }
     },
     "category": "cxrtvf",
@@ -3237,11 +3344,11 @@
   },
   {
     "id": "ianwql",
-    "name": "labus-my-120",
+    "name": "my-120",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-120)",
-        "bottom": "var(--labus-space-120)"
+        "top": "var(--space-120)",
+        "bottom": "var(--space-120)"
       }
     },
     "category": "cxrtvf",
@@ -3252,11 +3359,11 @@
   },
   {
     "id": "vrnitp",
-    "name": "labus-my-128",
+    "name": "my-128",
     "settings": {
       "_margin": {
-        "top": "var(--labus-space-128)",
-        "bottom": "var(--labus-space-128)"
+        "top": "var(--space-128)",
+        "bottom": "var(--space-128)"
       }
     },
     "category": "cxrtvf",

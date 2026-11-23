@@ -4,56 +4,56 @@
   "colors": [
     {
       "id": "mhcmzm",
-      "name": "labus-color-espresso",
-      "raw": "var(--labus-color-espresso)",
+      "name": "color-espresso",
+      "raw": "var(--color-espresso)",
       "light": "#110A05"
     },
     {
       "id": "udreox",
-      "name": "labus-color-orange",
-      "raw": "var(--labus-color-orange)",
+      "name": "color-orange",
+      "raw": "var(--color-orange)",
       "light": "#FF7340"
     },
     {
       "id": "outkhc",
-      "name": "labus-color-cream",
-      "raw": "var(--labus-color-cream)",
+      "name": "color-cream",
+      "raw": "var(--color-cream)",
       "light": "#FCF6E8"
     },
     {
       "id": "qdeydx",
-      "name": "labus-color-lime",
-      "raw": "var(--labus-color-lime)",
+      "name": "color-lime",
+      "raw": "var(--color-lime)",
       "light": "#F2FF26"
     },
     {
       "id": "samaua",
-      "name": "labus-color-sky",
-      "raw": "var(--labus-color-sky)",
+      "name": "color-sky",
+      "raw": "var(--color-sky)",
       "light": "#98C2E5"
     },
     {
       "id": "qporwp",
-      "name": "labus-color-black",
-      "raw": "var(--labus-color-black)",
+      "name": "color-black",
+      "raw": "var(--color-black)",
       "light": "#000000"
     },
     {
       "id": "skqvzw",
-      "name": "labus-color-white",
-      "raw": "var(--labus-color-white)",
+      "name": "color-white",
+      "raw": "var(--color-white)",
       "light": "#FFFFFF"
     },
     {
       "id": "kdseai",
-      "name": "labus-color-dark-brown",
-      "raw": "var(--labus-color-dark-brown)",
+      "name": "color-dark-brown",
+      "raw": "var(--color-dark-brown)",
       "light": "#140C06"
     },
     {
       "id": "dpeezk",
-      "name": "labus-color-taupe",
-      "raw": "var(--labus-color-taupe)",
+      "name": "color-taupe",
+      "raw": "var(--color-taupe)",
       "light": "#978B6F"
     }
   ]
