@@ -4,6 +4,11 @@ import { createComponentRegistry, type ComponentDefinition } from './core/compon
 
 const components = [
   {
+    name: 'smooth-scroll',
+    selector: '#brx-content',
+    load: () => import('./components/smooth-scroll'),
+  },
+  {
     name: 'intro',
     selector: '[data-component="intro"]',
     load: () => import('./components/intro'),
