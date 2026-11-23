@@ -62,10 +62,12 @@
   text-decoration: none;
 }
 
-.site-footer .site-footer-button:not([data-directional-fill]):hover,
-.site-footer .site-footer-button:focus-visible {
+.site-footer .site-footer-button:not([data-directional-fill]):is(:hover, :focus-visible) {
   background: var(--color-espresso, #110a05);
   color: var(--color-lime, #f2ff26);
+}
+
+.site-footer .site-footer-button:focus-visible {
   outline-color: var(--color-espresso, #110a05);
 }
 

@@ -1,12 +1,31 @@
-[data-component='directional-fill'] {
+:where(
+  .brxe-button,
+  .bricks-button,
+  .site-header-nav a[href],
+  [data-component='directional-fill']
+) {
   position: relative;
+}
+
+:is(.brxe-button, .bricks-button):not(
+    [data-directional-fill],
+    :disabled,
+    [aria-disabled='true']
+  ):hover {
+  background-color: var(--directional-fill-background, var(--color-lime, #f2ff26));
+  color: var(--directional-fill-color, var(--color-espresso, #110a05));
 }
 
 .directional-fill-overlay {
   position: absolute;
   inset: 0;
-  display: grid;
-  place-items: center;
+  display: inherit;
+  align-items: inherit;
+  justify-items: inherit;
+  justify-content: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  gap: inherit;
   padding: inherit;
   border-radius: inherit;
   background: var(--directional-fill-background, var(--color-lime, #f2ff26));

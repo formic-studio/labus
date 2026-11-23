@@ -30,7 +30,8 @@ const components = [
   },
   {
     name: 'directional-fill',
-    selector: '[data-component="directional-fill"]',
+    selector:
+      '.brxe-button, .bricks-button, .site-header-nav a[href], [data-component="directional-fill"]',
     load: () => import('./components/directional-fill'),
   },
   {

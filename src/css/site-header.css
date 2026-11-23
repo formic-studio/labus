@@ -177,7 +177,7 @@
   overflow-wrap: anywhere;
 }
 
-.site-header .site-header-nav a:is(:hover, :focus-visible) {
+.site-header .site-header-nav a:not([data-directional-fill]):is(:hover, :focus-visible) {
   border-color: var(--color-espresso, #110a05);
   background: var(--color-lime, #f2ff26);
   color: var(--color-espresso, #110a05);

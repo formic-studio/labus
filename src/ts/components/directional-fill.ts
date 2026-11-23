@@ -1,5 +1,7 @@
-function edgeOrigin(button: HTMLElement, event: PointerEvent): string {
+function edgeOrigin(button: HTMLElement, event: PointerEvent): string | undefined {
   const box = button.getBoundingClientRect();
+  if (!box.width || !box.height) return;
+
   const x = Math.max(0, Math.min(box.width, event.clientX - box.left));
   const y = Math.max(0, Math.min(box.height, event.clientY - box.top));
   const horizontal = Math.min(x, box.width - x);
@@ -22,7 +24,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   const fill = document.createElement('span');
   fill.className = 'directional-fill-overlay';
   fill.setAttribute('aria-hidden', 'true');
-  fill.textContent = button.textContent.trim();
+  fill.inert = true;
   let animation: Animation | undefined;
 
   function clear(): void {
@@ -36,13 +38,21 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   function animate(event: PointerEvent, entering: boolean): void {
     if (event.pointerType !== 'mouse' || reducedMotion.matches) return;
 
+    const origin = edgeOrigin(button, event);
+    if (!origin) {
+      clear();
+      return;
+    }
+
     if (!fill.isConnected) {
-      if (!entering) return;
+      if (!entering || button.matches(':disabled, [aria-disabled="true"]')) return;
+
+      fill.replaceChildren(...Array.from(button.childNodes, (child) => child.cloneNode(true)));
+      for (const copy of fill.querySelectorAll('[id]')) copy.removeAttribute('id');
       button.append(fill);
       button.setAttribute('data-directional-fill', '');
     }
 
-    const origin = edgeOrigin(button, event);
     const empty = `circle(0% at ${origin})`;
     const full = `circle(145% at ${origin})`;
     const start =
@@ -51,10 +61,21 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
 
     animation?.cancel();
     fill.style.clipPath = end;
-    animation = fill.animate([{ clipPath: start }, { clipPath: end }], {
+    const current = fill.animate([{ clipPath: start }, { clipPath: end }], {
       duration: entering ? 420 : 360,
       easing: 'cubic-bezier(0.25, 0.65, 0.3, 1)',
     });
+    animation = current;
+
+    if (!entering) {
+      current.addEventListener(
+        'finish',
+        () => {
+          if (animation === current) clear();
+        },
+        { once: true, signal },
+      );
+    }
   }
 
   button.addEventListener(
