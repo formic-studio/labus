@@ -1,8 +1,17 @@
+import desktopMenuIcon from '../../assets/navigation/menu-desktop.svg?raw';
+import mobileMenuIcon from '../../assets/navigation/menu-mobile.svg?raw';
+
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
   const logo = element.querySelector('[data-header-logo]');
   const menu = element.querySelector('details[data-header-menu]');
   const toggle = menu?.querySelector('summary');
   if (!logo || !(menu instanceof HTMLDetailsElement) || !toggle) return;
+
+  const menuIcon = document.createElement('span');
+  menuIcon.className = 'site-header-menu-icon';
+  menuIcon.setAttribute('aria-hidden', 'true');
+  menuIcon.innerHTML = mobileMenuIcon + desktopMenuIcon;
+  toggle.append(menuIcon);
 
   const controls = [logo, toggle];
   let frame = 0;
@@ -60,6 +69,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
 
   return () => {
     window.cancelAnimationFrame(frame);
+    menuIcon.remove();
     for (const control of controls) {
       control.removeAttribute('data-header-ink');
     }
