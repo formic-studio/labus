@@ -29,7 +29,7 @@ export function mount(_element: Element, signal: AbortSignal): () => void {
 
     scroll ??= new Lenis({
       autoRaf: true,
-      lerp: 0.26,
+      lerp: 0.16,
       allowNestedScroll: true,
     });
   }
