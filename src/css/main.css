@@ -2,6 +2,10 @@
 @import './responsive-scale.css';
 @import './intro.css';
 
+:root {
+  overscroll-behavior-y: none;
+}
+
 [data-component='example-disclosure'] > summary {
   display: list-item;
   cursor: pointer;
