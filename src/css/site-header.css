@@ -295,19 +295,19 @@
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .site-header .site-header-menu-icon path {
     transform-box: view-box;
-    transition: translate 320ms var(--header-ease);
+    transition: translate 384ms var(--header-ease);
   }
 
   .site-header .site-header-toggle:hover [data-menu-line='top'] {
-    translate: 0 -2.5%;
+    translate: 0 -2%;
   }
 
   .site-header .site-header-toggle:hover [data-menu-line='bottom'] {
-    translate: 0 2.5%;
+    translate: 0 2%;
   }
 
   .site-header .site-header-toggle:hover [data-menu-dot] {
-    translate: -3%;
+    translate: -2.4%;
   }
 }
 
