@@ -29,6 +29,11 @@ const components = [
     load: () => import('./components/lci-diagram'),
   },
   {
+    name: 'accordion',
+    selector: '[data-component="accordion"]',
+    load: () => import('./components/accordion'),
+  },
+  {
     name: 'directional-fill',
     selector:
       '.brxe-button, .bricks-button, .site-header-nav a[href], [data-component="directional-fill"]',

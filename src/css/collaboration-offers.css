@@ -1,0 +1,122 @@
+.collaboration-offers {
+  --offer-gutter: var(--space-20, 2rem);
+  --offer-header-height: 11.5rem;
+  --offer-open-header-height: 10.1rem;
+  display: block;
+  width: 100%;
+  padding: 0.3rem 0 0;
+  background: var(--color-cream, #fcf6e8);
+}
+
+.collaboration-offers .collaboration-offer {
+  display: block;
+  width: 100%;
+  background: var(--color-espresso, #110a05);
+  color: var(--color-cream, #fcf6e8);
+}
+
+.collaboration-offers .collaboration-offer--sky {
+  background: var(--color-sky, #98c2e5);
+  color: var(--color-black, #000);
+}
+
+.collaboration-offers .collaboration-offer-summary {
+  display: grid;
+  grid-template-columns: 9.8rem minmax(0, 1fr);
+  align-items: center;
+  width: 100%;
+  min-block-size: var(--offer-header-height);
+  padding-inline: 2.2rem var(--offer-gutter);
+  cursor: pointer;
+  list-style: none;
+}
+
+.collaboration-offers .collaboration-offer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.collaboration-offers .collaboration-offer-summary:focus-visible {
+  outline-offset: -0.6rem;
+}
+
+.collaboration-offers .collaboration-offer[open]:not([data-accordion-closing]) > summary {
+  min-block-size: var(--offer-open-header-height);
+}
+
+.collaboration-offers .collaboration-offer-number.brxe-text-basic {
+  font-size: 5.6rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.collaboration-offers .collaboration-offer-title.brxe-text-basic {
+  font-size: var(--font-21, 2.1rem);
+  line-height: var(--leading-120, 1.2);
+  overflow-wrap: anywhere;
+}
+
+.collaboration-offers .collaboration-offer-panel {
+  display: block;
+  padding-inline: var(--offer-gutter);
+}
+
+.collaboration-offers [data-accordion-animating] {
+  overflow: clip;
+}
+
+.collaboration-offers .collaboration-offer-content.brxe-block {
+  display: block;
+  width: 100%;
+  max-width: 67.5rem;
+  margin: 0;
+  padding: 0 0 5rem;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.collaboration-offers .collaboration-offer-content > li {
+  display: list-item;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .collaboration-offers {
+    --offer-gutter: 4.3rem;
+    --offer-header-height: 23.5rem;
+    --offer-open-header-height: 18.5rem;
+    padding-block-start: 3.1rem;
+  }
+
+  .collaboration-offers .collaboration-offer-summary {
+    grid-template-columns: minmax(0, calc(45vw - var(--offer-gutter))) minmax(0, 1fr);
+    padding-inline: var(--offer-gutter);
+  }
+
+  .collaboration-offers .collaboration-offer-number.brxe-text-basic {
+    font-size: 20.1rem;
+    line-height: 0.9;
+  }
+
+  .collaboration-offers .collaboration-offer-title.brxe-text-basic {
+    font-size: var(--font-52, 5.2rem);
+    line-height: var(--leading-110, 1.1);
+  }
+
+  .collaboration-offers .collaboration-offer-panel {
+    padding-inline-start: 45vw;
+  }
+
+  .collaboration-offers .collaboration-offer-content.brxe-block {
+    padding: 0 0 6rem 3rem;
+    font-size: var(--font-20, 2rem);
+    line-height: 1.4;
+    letter-spacing: -0.01625em;
+    list-style: disc;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .collaboration-offers .collaboration-offer-summary {
+    transition: min-block-size 360ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
