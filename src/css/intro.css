@@ -200,9 +200,13 @@
   }
 
   [data-component='intro'] .intro-photo [data-intro-backdrop] {
-    height: 115%;
+    --intro-backdrop-scale: 1.15;
+    height: calc(100% * var(--intro-backdrop-scale));
     object-position: center top;
-    transform: translateY(var(--intro-backdrop-y, 0%));
+    /* Ogranicz przesunięcie do zapasu wysokości tła. */
+    transform: translateY(
+      calc((100% / var(--intro-backdrop-scale) - 100%) * var(--intro-backdrop-progress, 0))
+    );
   }
 
   [data-component='intro'] .intro-wordmark {

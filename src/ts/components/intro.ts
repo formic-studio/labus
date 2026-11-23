@@ -96,7 +96,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     '--intro-paper-opacity',
     '--intro-photo-scale',
     '--intro-photo-clip',
-    '--intro-backdrop-y',
+    '--intro-backdrop-progress',
     '--intro-copy-opacity',
     '--intro-titles-opacity',
     '--intro-deck-opacity',
@@ -119,7 +119,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
       '--intro-photo-clip',
       `inset(${cropY}px ${cropX}px round calc(${radiusScale} * var(--intro-card-radius)))`,
     );
-    style.setProperty('--intro-backdrop-y', `${(-15 * crop).toFixed(3)}%`);
+    style.setProperty('--intro-backdrop-progress', String(crop));
     style.setProperty('--intro-copy-opacity', String(clampProgress(1 - shrink * 2.5)));
     style.setProperty('--intro-titles-opacity', String(easeOut(shrink)));
     style.setProperty('--intro-deck-opacity', String(clampProgress(spread * 10)));
