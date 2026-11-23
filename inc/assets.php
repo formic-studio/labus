@@ -20,7 +20,8 @@ function labus_enqueue_assets() {
 	$css_version = labus_asset_version( $style );
 
 	if ( false !== $css_version ) {
-		wp_enqueue_style( 'labus-frontend', $theme_uri . '/' . $style, array( 'bricks-frontend' ), $css_version );
+		wp_enqueue_style( 'labus-dystopian', 'https://use.typekit.net/boc5clz.css', array(), $css_version );
+		wp_enqueue_style( 'labus-frontend', $theme_uri . '/' . $style, array( 'bricks-frontend', 'labus-dystopian' ), $css_version );
 	}
 
 	if ( function_exists( 'bricks_is_builder_iframe' ) && bricks_is_builder_iframe() ) {
