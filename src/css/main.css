@@ -1,5 +1,6 @@
 @import './accessibility.css';
 @import './responsive-scale.css';
+@import './intro.css';
 
 [data-component='example-disclosure'] > summary {
   display: list-item;

@@ -4,6 +4,11 @@ import { createComponentRegistry, type ComponentDefinition } from './core/compon
 
 const components = [
   {
+    name: 'intro',
+    selector: '[data-component="intro"]',
+    load: () => import('./components/intro'),
+  },
+  {
     name: 'example-disclosure',
     selector: '[data-component="example-disclosure"]',
     load: () => import('./components/example-disclosure'),

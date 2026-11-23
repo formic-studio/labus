@@ -1,0 +1,321 @@
+[data-component='intro'] {
+  --intro-ink: var(--color-black, #000);
+  --intro-paper: var(--color-cream, #fcf6e8);
+  --intro-accent: var(--color-lime, #f2ff26);
+  --intro-display: 'Dystopian', sans-serif;
+  --intro-body: 'Mona Sans', sans-serif;
+  --intro-card-gap: var(--space-20, 2rem);
+  --intro-card-radius: var(--space-28, 2.8rem);
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.intro-stage,
+.intro-hero,
+.intro-pillars {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+
+[data-component='intro'] .intro-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100svh;
+  isolation: isolate;
+  overflow: clip;
+  padding: var(--space-36, 3.6rem) var(--space-24, 2.4rem);
+  background: var(--intro-ink);
+  color: var(--intro-accent);
+}
+
+.intro-photo {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  pointer-events: none;
+}
+
+.intro-hero::after {
+  content: '';
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, rgb(0 0 0 / 80%));
+  pointer-events: none;
+}
+
+[data-component='intro'] .intro-photo img,
+[data-component='intro'] .intro-photo picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+[data-component='intro'] .intro-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-12, 1.2rem);
+  opacity: var(--intro-copy-opacity, 1);
+  text-align: end;
+}
+
+[data-component='intro'] .intro-wordmark {
+  display: block;
+  width: min(100%, clamp(18rem, 56vw, 28rem));
+  height: auto;
+}
+
+[data-component='intro'] .intro-phrase {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  margin: 0;
+  color: inherit;
+  font: 900 clamp(1.6rem, 4.8vw, 2.2rem) / 1.2 var(--intro-display);
+  overflow-wrap: anywhere;
+}
+
+.intro-phrase > span {
+  display: block;
+}
+
+[data-intro-motion] .intro-phrase > [data-intro-phrase-part] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+[data-component='intro'] .intro-pillars {
+  padding: var(--space-56, 5.6rem) var(--space-20, 2rem) var(--space-72, 7.2rem);
+  background: var(--intro-paper);
+  color: var(--intro-ink);
+  text-align: center;
+}
+
+[data-component='intro'] .intro-pillars-title {
+  margin: 0 0 var(--space-8, 0.8rem);
+  color: inherit;
+  font: 900 clamp(3.8rem, 10.5vw, 5.2rem) / 1 var(--intro-display);
+  letter-spacing: -0.03em;
+}
+
+[data-component='intro'] .intro-pillars-subtitle {
+  margin: 0 0 var(--space-32, 3.2rem);
+  color: inherit;
+  font: 600 var(--font-16, 1.6rem) / 1.4 var(--intro-body);
+}
+
+[data-component='intro'] .intro-deck {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--intro-card-gap);
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+[data-component='intro'] .intro-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-6, 0.6rem);
+  min-width: 0;
+  min-height: 23rem;
+  padding: var(--space-24, 2.4rem) var(--space-20, 2rem);
+  border-radius: var(--intro-card-radius);
+  background: var(--intro-card-background, var(--intro-ink));
+  color: var(--intro-card-text, var(--intro-ink));
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 8%);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+
+.intro-card[data-tone='dark'] {
+  --intro-card-text: var(--color-white, #fff);
+  --intro-card-number: var(--intro-accent);
+}
+
+.intro-card[data-tone='orange'] {
+  --intro-card-background: var(--color-orange, #ff7340);
+}
+
+.intro-card[data-tone='sky'] {
+  --intro-card-background: var(--color-sky, #98c2e5);
+}
+
+.intro-card[data-tone='lime'] {
+  --intro-card-background: var(--intro-accent);
+}
+
+[data-component='intro'] .intro-card-number {
+  margin: 0;
+  color: var(--intro-card-number, inherit);
+  font: 900 clamp(4.8rem, 5vw, 7.6rem) / 1 var(--intro-display);
+  letter-spacing: -0.04em;
+}
+
+[data-component='intro'] .intro-card-title {
+  margin: 0;
+  color: inherit;
+  font: 900 clamp(1.7rem, 1.65vw, 2.4rem) / 1.05 var(--intro-display);
+  text-transform: uppercase;
+}
+
+[data-component='intro'] .intro-card-context {
+  margin: 0;
+  color: inherit;
+  font: 500 var(--font-12, 1.2rem) / 1.3 var(--intro-body);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+[data-component='intro'] .intro-card-description {
+  margin: var(--space-6, 0.6rem) 0 0;
+  color: inherit;
+  font: 400 var(--font-14, 1.4rem) / 1.4 var(--intro-body);
+}
+
+@media (min-width: 768px) {
+  [data-component='intro'] .intro-hero {
+    padding: var(--space-56, 5.6rem) max(var(--space-24, 2.4rem), 4.2%);
+  }
+
+  [data-component='intro'] .intro-photo img {
+    object-position: center;
+  }
+
+  [data-component='intro'] .intro-photo [data-intro-backdrop] {
+    height: 115%;
+    object-position: center top;
+    transform: translateY(var(--intro-backdrop-y, 0%));
+  }
+
+  [data-component='intro'] .intro-wordmark {
+    width: min(100%, clamp(28rem, 40vw, 61rem));
+  }
+
+  [data-component='intro'] .intro-phrase {
+    font-size: clamp(2.2rem, 2.9vw, 4.2rem);
+  }
+
+  [data-component='intro'] .intro-pillars-title {
+    font-size: clamp(4.8rem, 6.5vw, 10rem);
+  }
+
+  [data-component='intro'] .intro-deck {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 78rem;
+  }
+}
+
+@media (min-width: 992px) {
+  [data-component='intro'] .intro-deck {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 132rem;
+  }
+}
+
+@media (min-width: 992px) and (min-height: 640px) and (prefers-reduced-motion: no-preference) {
+  [data-component='intro'][data-intro-motion='pinned'] {
+    min-height: 360svh;
+  }
+
+  [data-intro-motion='pinned'] .intro-stage {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: clip;
+    isolation: isolate;
+    background: var(--intro-ink);
+  }
+
+  [data-intro-motion='pinned'] .intro-stage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--intro-paper);
+    opacity: var(--intro-paper-opacity, 0);
+  }
+
+  [data-intro-motion='pinned'] .intro-hero,
+  [data-intro-motion='pinned'] .intro-pillars {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+  }
+
+  [data-intro-motion='pinned'] .intro-hero {
+    z-index: 2;
+    padding-bottom: max(var(--space-24, 2.4rem), 5.5svh);
+  }
+
+  [data-intro-motion='pinned'] .intro-hero::after {
+    opacity: var(--intro-copy-opacity, 1);
+    background: linear-gradient(transparent, rgb(0 0 0 / 35%));
+  }
+
+  [data-intro-motion='pinned'] .intro-photo {
+    transform: scale(var(--intro-photo-scale, 1));
+    clip-path: var(--intro-photo-clip, inset(0));
+  }
+
+  [data-intro-motion='pinned'] .intro-pillars {
+    padding: 0;
+  }
+
+  [data-intro-motion='pinned'] .intro-pillars-title,
+  [data-intro-motion='pinned'] .intro-pillars-subtitle {
+    position: absolute;
+    inset-inline: var(--space-20, 2rem);
+    margin: 0;
+    opacity: var(--intro-titles-opacity, 0);
+  }
+
+  [data-intro-motion='pinned'] .intro-pillars-title {
+    top: 10%;
+    line-height: 0.9;
+  }
+
+  [data-intro-motion='pinned'] .intro-pillars-subtitle {
+    bottom: 8%;
+    font-size: clamp(1.4rem, 1.4vw, 2rem);
+  }
+
+  [data-intro-motion='pinned'] .intro-deck {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    grid-template-columns: minmax(0, 1fr);
+    width: min(28rem, 17vw, calc((100% - 6 * var(--intro-card-gap)) / 5));
+    margin: 0;
+    transform: translate(-50%, -50%);
+    opacity: var(--intro-deck-opacity, 0);
+  }
+
+  [data-intro-motion='pinned'] .intro-card {
+    grid-area: 1 / 1;
+    min-height: clamp(22rem, 23vw, 38rem);
+    padding-inline: clamp(1.2rem, 1.4vw, var(--space-20, 2rem));
+    transform: translateX(var(--intro-card-x, 0px)) rotate(var(--intro-card-rotation, 0deg));
+  }
+
+  [data-intro-motion='pinned'] .intro-card > * {
+    opacity: var(--intro-card-content-opacity, 0);
+    transform: translateY(var(--intro-card-content-y, 0px));
+  }
+}
