@@ -1,0 +1,137 @@
+.collaboration-talks {
+  --talks-bottom-padding: 12.5rem;
+  display: block;
+  width: 100%;
+  padding: 7.5rem var(--space-20, 2rem) var(--talks-bottom-padding);
+  background: var(--color-cream, #fcf6e8);
+  color: var(--color-black, #000);
+}
+
+#brx-content:has(+ #brx-footer > .site-footer) > .collaboration-talks:last-child {
+  padding-block-end: calc(var(--talks-bottom-padding) + var(--footer-radius));
+}
+
+.collaboration-talks .collaboration-talks-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-40, 4rem);
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+.collaboration-talks .collaboration-talks-photo {
+  --photo-reveal-color: var(--color-lime, #f2ff26);
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 350 / 393;
+  overflow: clip;
+  border-radius: 2.3rem;
+}
+
+.collaboration-talks img.collaboration-talks-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collaboration-talks .collaboration-talks-copy {
+  display: grid;
+  gap: var(--space-40, 4rem);
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.collaboration-talks .collaboration-talks-title.brxe-heading {
+  max-width: 38.8rem;
+  margin: 0;
+  color: inherit;
+  font-size: var(--font-29, 2.9rem);
+  line-height: var(--leading-110, 1.1);
+}
+
+.collaboration-talks .collaboration-talks-description {
+  margin: 0;
+}
+
+.collaboration-talks .collaboration-talks-mobile-break,
+.collaboration-talks .collaboration-talks-desktop-break {
+  display: none;
+}
+
+.collaboration-talks .collaboration-talks-cta.brxe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 5rem;
+  margin-block-start: 0.9rem;
+  padding: 1rem 2.4rem;
+  border-radius: 14rem;
+  background: var(--color-orange, #ff7340);
+  color: var(--color-espresso, #110a05);
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 365px) and (max-width: 479px) {
+  .collaboration-talks .collaboration-talks-mobile-break {
+    display: initial;
+  }
+}
+
+@media (min-width: 768px) {
+  .collaboration-talks {
+    padding-inline: var(--space-40, 4rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .collaboration-talks {
+    --talks-bottom-padding: 12rem;
+    padding: 12rem var(--space-60, 6rem) var(--talks-bottom-padding);
+  }
+
+  .collaboration-talks .collaboration-talks-layout {
+    grid-template-columns: minmax(0, 762fr) minmax(0, 427fr);
+    column-gap: min(13.1rem, 9.0972vw);
+    max-width: none;
+  }
+
+  .collaboration-talks .collaboration-talks-photo {
+    max-width: 76.2rem;
+    aspect-ratio: 762 / 462;
+    border-radius: 3rem;
+  }
+
+  .collaboration-talks img.collaboration-talks-image {
+    object-position: center 73.2%;
+  }
+
+  .collaboration-talks .collaboration-talks-copy {
+    justify-self: end;
+    max-width: 42.7rem;
+    padding-block-start: 0.5rem;
+  }
+
+  .collaboration-talks .collaboration-talks-title.brxe-heading {
+    font-size: var(--font-39, 3.9rem);
+  }
+
+  .collaboration-talks .collaboration-talks-desktop-break {
+    display: initial;
+  }
+
+  .collaboration-talks .collaboration-talks-cta.brxe-button {
+    width: min(100%, 31.5rem);
+    min-height: 6rem;
+    margin-block-start: 0;
+  }
+}

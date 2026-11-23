@@ -64,7 +64,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
         { height: `${previousHeight.toFixed(2)}px`, opacity: previousOpacity },
         { height: `${height.toFixed(2)}px`, opacity: expanded ? 1 : 0 },
       ],
-      { duration: 360, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'both' },
+      { duration: expanded ? 468 : 360, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'both' },
     );
     animations.set(item, animation);
     animation.addEventListener(

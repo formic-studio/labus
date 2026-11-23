@@ -1,4 +1,4 @@
-:where(#brx-footer, .site-footer) {
+:where(#brx-content, #brx-footer, .site-footer) {
   --footer-radius: 2.3rem;
 }
 
@@ -150,7 +150,7 @@
 }
 
 @media (min-width: 992px) {
-  :where(#brx-footer, .site-footer) {
+  :where(#brx-content, #brx-footer, .site-footer) {
     --footer-radius: 3rem;
   }
 

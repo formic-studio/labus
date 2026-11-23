@@ -119,4 +119,8 @@
   .collaboration-offers .collaboration-offer-summary {
     transition: min-block-size 360ms cubic-bezier(0.22, 1, 0.36, 1);
   }
+
+  .collaboration-offers .collaboration-offer[open]:not([data-accordion-closing]) > summary {
+    transition-duration: 468ms;
+  }
 }
