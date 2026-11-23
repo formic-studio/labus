@@ -1,65 +1,58 @@
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
   if (!(element instanceof HTMLElement)) return;
 
-  const darkPanel = element.querySelector<HTMLElement>('[data-footer-dark]');
-  if (!darkPanel) return;
+  const panel = element.querySelector<HTMLElement>('[data-footer-dark]');
+  if (!panel) return;
 
   const root = element;
-  const dark = darkPanel;
+  const darkPanel = panel;
   const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let frame = 0;
+  let visibility: IntersectionObserver | undefined;
 
   function reset(): void {
-    root.removeAttribute('data-footer-revealing');
+    visibility?.disconnect();
+    visibility = undefined;
+    root.removeAttribute('data-footer-reveal');
     root.removeAttribute('data-footer-callout-hidden');
-    root.style.removeProperty('--footer-dark-lift');
+    root.style.removeProperty('--footer-sticky-bottom');
   }
 
-  function update(): void {
-    frame = 0;
-
+  function sync(): void {
     if (media.matches) {
       reset();
       return;
     }
 
-    const height = window.innerHeight;
-    const entered = height - root.getBoundingClientRect().top;
-    const calloutHeight = dark.offsetTop;
-    const darkTravel = Math.min(dark.offsetHeight * 0.6, height * 0.28);
-    const revealed = Math.max(0, entered - darkTravel);
-    const lift = Math.max(0, calloutHeight - revealed);
+    const viewportHeight = window.innerHeight;
+    const panelHeight = darkPanel.getBoundingClientRect().height;
+    const travel = Math.min(panelHeight * 0.6, viewportHeight * 0.28);
+    const calloutVisible = root.getBoundingClientRect().top < viewportHeight - travel;
 
-    if (lift === 0) {
-      reset();
-      return;
-    }
+    // Dolny offset przypina panel z widocznym odcinkiem odsłonięcia.
+    root.style.setProperty('--footer-sticky-bottom', `${(travel - panelHeight).toFixed(2)}px`);
+    root.setAttribute('data-footer-reveal', '');
+    root.toggleAttribute('data-footer-callout-hidden', !calloutVisible);
 
-    root.style.setProperty('--footer-dark-lift', `${lift.toFixed(2)}px`);
-    root.setAttribute('data-footer-revealing', '');
-    root.toggleAttribute('data-footer-callout-hidden', revealed === 0);
+    visibility?.disconnect();
+    visibility = new IntersectionObserver(
+      ([entry], observer) => {
+        if (observer === visibility && entry) {
+          root.toggleAttribute('data-footer-callout-hidden', !entry.isIntersecting);
+        }
+      },
+      { rootMargin: `0px 0px -${travel.toFixed(2)}px 0px` },
+    );
+    visibility.observe(root);
   }
 
-  function schedule(): void {
-    if (!frame) frame = window.requestAnimationFrame(update);
-  }
-
-  const size = new ResizeObserver(schedule);
-  size.observe(root);
-  size.observe(dark);
-
-  const visibility = new IntersectionObserver(schedule);
-  visibility.observe(root);
-
-  window.addEventListener('scroll', schedule, { passive: true, signal });
-  window.addEventListener('resize', schedule, { passive: true, signal });
-  media.addEventListener('change', schedule, { signal });
-  update();
+  const size = new ResizeObserver(sync);
+  size.observe(darkPanel, { box: 'border-box' });
+  window.addEventListener('resize', sync, { signal });
+  media.addEventListener('change', sync, { signal });
+  sync();
 
   return () => {
     size.disconnect();
-    visibility.disconnect();
-    window.cancelAnimationFrame(frame);
     reset();
   };
 }

@@ -25,6 +25,7 @@
 .site-footer .site-footer-callout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  margin-block-end: calc(-1 * var(--footer-radius));
   padding: 4rem var(--footer-gutter) calc(4rem + var(--footer-radius));
   background: var(--color-lime, #f2ff26);
   color: var(--color-espresso, #110a05);
@@ -80,7 +81,6 @@
     'social logo';
   align-items: start;
   gap: 5.8rem 0.7rem;
-  margin-block-start: calc(-1 * var(--footer-radius));
   padding: 5rem var(--footer-gutter) 7.5rem;
   background: var(--color-espresso, #110a05);
   color: var(--color-cream, #fcf6e8);
@@ -220,14 +220,9 @@
     transition: background-size 260ms ease;
   }
 
-  .site-footer[data-footer-revealing]:not(:focus-within, :has(:target)) .site-footer-dark {
-    transform: translateY(calc(-1 * var(--footer-dark-lift)));
-  }
-
-  .site-footer[data-footer-revealing]:not(:focus-within, :has(:target)) .site-footer-callout {
-    clip-path: inset(
-      0 0 var(--footer-dark-lift) round var(--footer-radius) var(--footer-radius) 0 0
-    );
+  .site-footer[data-footer-reveal]:not(:focus-within, :has(:target)) .site-footer-dark {
+    position: sticky;
+    inset-block-end: var(--footer-sticky-bottom);
   }
 
   .site-footer[data-footer-callout-hidden]:not(:focus-within, :has(:target)) .site-footer-callout {
