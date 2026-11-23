@@ -29,6 +29,11 @@ const components = [
     load: () => import('./components/directional-fill'),
   },
   {
+    name: 'site-header',
+    selector: '[data-component="site-header"]',
+    load: () => import('./components/site-header'),
+  },
+  {
     name: 'site-footer',
     selector: '[data-component="site-footer"]',
     load: () => import('./components/site-footer'),

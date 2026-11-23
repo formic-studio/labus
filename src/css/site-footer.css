@@ -45,6 +45,8 @@
 }
 
 .site-footer .site-footer-button.brxe-button {
+  --directional-fill-background: var(--color-espresso, #110a05);
+  --directional-fill-color: var(--color-lime, #f2ff26);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -60,9 +62,11 @@
   text-decoration: none;
 }
 
-.site-footer .site-footer-button:hover {
+.site-footer .site-footer-button:not([data-directional-fill]):hover,
+.site-footer .site-footer-button:focus-visible {
   background: var(--color-espresso, #110a05);
   color: var(--color-lime, #f2ff26);
+  outline-color: var(--color-espresso, #110a05);
 }
 
 .site-footer .site-footer-dark {
@@ -116,16 +120,20 @@
   padding: 0;
 }
 
-.site-footer .site-footer-contact a,
-.site-footer .site-footer-links a {
+.site-footer :is(.site-footer-contact, .site-footer-links) a {
+  width: fit-content;
+  max-width: 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
   color: inherit;
   text-decoration: none;
 }
 
-.site-footer .site-footer-contact a:hover,
-.site-footer .site-footer-links a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+.site-footer :is(.site-footer-contact, .site-footer-links) a:is(:hover, :focus-visible) {
+  background-position: left bottom;
+  background-size: 100% 1px;
 }
 
 .site-footer .site-footer-name {
@@ -206,6 +214,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .site-footer :is(.site-footer-contact, .site-footer-links) a {
+    transition: background-size 260ms ease;
+  }
+
   .site-footer[data-footer-revealing]:not(:focus-within, :has(:target)) .site-footer-dark {
     transform: translateY(calc(-1 * var(--footer-dark-lift)));
   }
@@ -219,5 +231,11 @@
   .site-footer[data-footer-callout-hidden]:not(:focus-within, :has(:target)) .site-footer-callout {
     opacity: 0;
     pointer-events: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .site-footer :is(.site-footer-contact, .site-footer-links) a:is(:hover, :focus-visible) {
+    text-decoration: underline;
   }
 }
