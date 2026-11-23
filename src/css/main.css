@@ -1,4 +1,5 @@
 @import './accessibility.css';
+@import './responsive-scale.css';
 
 body {
   background-color: #f2ff26;

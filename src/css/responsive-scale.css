@@ -1,0 +1,24 @@
+:root {
+  font-size: 62.5%;
+}
+
+/* Mobile: od 9px przy 320px do 10px przy 390px. */
+@media (max-width: 390px) {
+  :root {
+    font-size: clamp(56.25%, calc(62.5% + (100vw - 390px) / 70), 62.5%);
+  }
+}
+
+/* Desktop: od 8.75px przy 992px do 10px przy 1440px. */
+@media (min-width: 992px) {
+  :root {
+    font-size: clamp(54.6875%, calc(62.5% + (100vw - 1440px) / 358.4), 62.5%);
+  }
+}
+
+/* Szerokie ekrany: od 10px przy 1920px do 15px przy 3840px. */
+@media (min-width: 1920px) {
+  :root {
+    font-size: clamp(62.5%, calc(62.5% + (100vw - 1920px) / 384), 93.75%);
+  }
+}

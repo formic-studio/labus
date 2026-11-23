@@ -1,0 +1,60 @@
+{
+  "id": "fcfixw",
+  "name": "Labus",
+  "colors": [
+    {
+      "id": "mhcmzm",
+      "name": "labus-color-espresso",
+      "raw": "var(--labus-color-espresso)",
+      "light": "#110A05"
+    },
+    {
+      "id": "udreox",
+      "name": "labus-color-orange",
+      "raw": "var(--labus-color-orange)",
+      "light": "#FF7340"
+    },
+    {
+      "id": "outkhc",
+      "name": "labus-color-cream",
+      "raw": "var(--labus-color-cream)",
+      "light": "#FCF6E8"
+    },
+    {
+      "id": "qdeydx",
+      "name": "labus-color-lime",
+      "raw": "var(--labus-color-lime)",
+      "light": "#F2FF26"
+    },
+    {
+      "id": "samaua",
+      "name": "labus-color-sky",
+      "raw": "var(--labus-color-sky)",
+      "light": "#98C2E5"
+    },
+    {
+      "id": "qporwp",
+      "name": "labus-color-black",
+      "raw": "var(--labus-color-black)",
+      "light": "#000000"
+    },
+    {
+      "id": "skqvzw",
+      "name": "labus-color-white",
+      "raw": "var(--labus-color-white)",
+      "light": "#FFFFFF"
+    },
+    {
+      "id": "kdseai",
+      "name": "labus-color-dark-brown",
+      "raw": "var(--labus-color-dark-brown)",
+      "light": "#140C06"
+    },
+    {
+      "id": "dpeezk",
+      "name": "labus-color-taupe",
+      "raw": "var(--labus-color-taupe)",
+      "light": "#978B6F"
+    }
+  ]
+}

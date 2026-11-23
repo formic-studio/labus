@@ -1,0 +1,282 @@
+{
+  "variables": [
+    {
+      "id": "msayfw",
+      "name": "labus-font-12",
+      "value": "1.2rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "mvsira",
+      "name": "labus-font-14",
+      "value": "1.4rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "oddkqp",
+      "name": "labus-font-16",
+      "value": "1.6rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "spauly",
+      "name": "labus-font-21",
+      "value": "2.1rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "mmagjn",
+      "name": "labus-font-24",
+      "value": "2.4rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "bqcjuw",
+      "name": "labus-font-29",
+      "value": "2.9rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "ofrtos",
+      "name": "labus-font-39",
+      "value": "3.9rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "qfoune",
+      "name": "labus-font-52",
+      "value": "5.2rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "drxuot",
+      "name": "labus-font-61",
+      "value": "6.1rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "onjmaq",
+      "name": "labus-font-82",
+      "value": "8.2rem",
+      "category": "vapndi"
+    },
+    {
+      "id": "ihvfic",
+      "name": "labus-leading-105",
+      "value": "1.05",
+      "category": "zimckd"
+    },
+    {
+      "id": "oapxyz",
+      "name": "labus-leading-110",
+      "value": "1.1",
+      "category": "zimckd"
+    },
+    {
+      "id": "fsmjch",
+      "name": "labus-leading-115",
+      "value": "1.15",
+      "category": "zimckd"
+    },
+    {
+      "id": "ojolxz",
+      "name": "labus-leading-120",
+      "value": "1.2",
+      "category": "zimckd"
+    },
+    {
+      "id": "zbmcgy",
+      "name": "labus-leading-125",
+      "value": "1.25",
+      "category": "zimckd"
+    },
+    {
+      "id": "psttes",
+      "name": "labus-leading-145",
+      "value": "1.45",
+      "category": "zimckd"
+    },
+    {
+      "id": "azfwgj",
+      "name": "labus-space-6",
+      "value": "0.6rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "laxwxj",
+      "name": "labus-space-8",
+      "value": "0.8rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "bzguur",
+      "name": "labus-space-10",
+      "value": "1rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "qgsgpy",
+      "name": "labus-space-12",
+      "value": "1.2rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "mjoxzr",
+      "name": "labus-space-14",
+      "value": "1.4rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "lsuvgv",
+      "name": "labus-space-16",
+      "value": "1.6rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "zkwjle",
+      "name": "labus-space-18",
+      "value": "1.8rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "ecczdd",
+      "name": "labus-space-20",
+      "value": "2rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "luleht",
+      "name": "labus-space-22",
+      "value": "2.2rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "eolqca",
+      "name": "labus-space-24",
+      "value": "2.4rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "oafeub",
+      "name": "labus-space-26",
+      "value": "2.6rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "wttksv",
+      "name": "labus-space-28",
+      "value": "2.8rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "iglfwb",
+      "name": "labus-space-30",
+      "value": "3rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "xuwaof",
+      "name": "labus-space-32",
+      "value": "3.2rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "osefpf",
+      "name": "labus-space-34",
+      "value": "3.4rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "hiossp",
+      "name": "labus-space-36",
+      "value": "3.6rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "ofaksl",
+      "name": "labus-space-40",
+      "value": "4rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "bribru",
+      "name": "labus-space-48",
+      "value": "4.8rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "otjbdw",
+      "name": "labus-space-56",
+      "value": "5.6rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "pooucm",
+      "name": "labus-space-64",
+      "value": "6.4rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "iyghbc",
+      "name": "labus-space-72",
+      "value": "7.2rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "hplhju",
+      "name": "labus-space-80",
+      "value": "8rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "oabmfk",
+      "name": "labus-space-88",
+      "value": "8.8rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "zvxtxa",
+      "name": "labus-space-96",
+      "value": "9.6rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "qmkqzu",
+      "name": "labus-space-104",
+      "value": "10.4rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "zneubt",
+      "name": "labus-space-112",
+      "value": "11.2rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "fqdhjm",
+      "name": "labus-space-120",
+      "value": "12rem",
+      "category": "zjjbci"
+    },
+    {
+      "id": "oahjfb",
+      "name": "labus-space-128",
+      "value": "12.8rem",
+      "category": "zjjbci"
+    }
+  ],
+  "categories": [
+    {
+      "id": "vapndi",
+      "name": "Labus · Rozmiary tekstu"
+    },
+    {
+      "id": "zimckd",
+      "name": "Labus · Interlinia"
+    },
+    {
+      "id": "zjjbci",
+      "name": "Labus · Odstępy"
+    }
+  ]
+}
