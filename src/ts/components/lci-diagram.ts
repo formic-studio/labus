@@ -21,7 +21,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
         const animation = item.animate(
           [{ clipPath: 'circle(0% at center)' }, { clipPath: 'circle(72% at center)' }],
           {
-            delay: index === 0 ? 0 : 160 + (index - 1) * 95,
+            delay: index === 0 ? 0 : 250 + (index - 1) * 180,
             duration: 680,
             easing: 'cubic-bezier(0.3, 0.7, 0.2, 1)',
             fill: 'backwards',
