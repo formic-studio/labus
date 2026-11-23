@@ -2,6 +2,7 @@
   --offer-gutter: var(--space-20, 2rem);
   --offer-header-height: 11.5rem;
   --offer-open-header-height: 10.1rem;
+  --accordion-content-travel: 3.2rem;
   display: block;
   width: 100%;
   padding: 0.3rem 0 0;
@@ -60,7 +61,7 @@
   padding-inline: var(--offer-gutter);
 }
 
-.collaboration-offers [data-accordion-animating] {
+.collaboration-offers .collaboration-offer:has(> [data-accordion-animating]) {
   overflow: clip;
 }
 
@@ -84,6 +85,7 @@
     --offer-gutter: 4.3rem;
     --offer-header-height: 23.5rem;
     --offer-open-header-height: 18.5rem;
+    --accordion-content-travel: 7.2rem;
     padding-block-start: 3.1rem;
   }
 
@@ -117,7 +119,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .collaboration-offers .collaboration-offer-summary {
-    transition: min-block-size 360ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition: min-block-size 360ms cubic-bezier(0.32, 0, 0.2, 1);
   }
 
   .collaboration-offers .collaboration-offer[open]:not([data-accordion-closing]) > summary {

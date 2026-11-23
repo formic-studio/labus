@@ -2,8 +2,11 @@ interface Disclosure {
   details: HTMLDetailsElement;
   summary: HTMLElement;
   panel: HTMLElement;
+  content: HTMLElement | null;
   name: string | null;
 }
+
+const easing = 'cubic-bezier(0.32, 0, 0.2, 1)';
 
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
   if (typeof HTMLElement.prototype.animate !== 'function') return;
@@ -14,18 +17,30 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   )) {
     const summary = details.querySelector<HTMLElement>(':scope > summary');
     const panel = details.querySelector<HTMLElement>(':scope > [data-accordion-panel]');
-    if (summary && panel)
-      items.push({ details, summary, panel, name: details.getAttribute('name') });
+    if (!summary || !panel) continue;
+
+    const content = panel.querySelector(':scope > :only-child');
+    items.push({
+      details,
+      summary,
+      panel,
+      content: content instanceof HTMLElement ? content : null,
+      name: details.getAttribute('name'),
+    });
   }
   if (items.length === 0) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const animations = new Map<Disclosure, Animation>();
+  const animations = new Map<Disclosure, Animation[]>();
   let active = items.find(({ details }) => details.open);
 
-  function settle(item: Disclosure, expanded: boolean): void {
-    animations.get(item)?.cancel();
+  function cancel(item: Disclosure): void {
+    for (const animation of animations.get(item) ?? []) animation.cancel();
     animations.delete(item);
+  }
+
+  function settle(item: Disclosure, expanded: boolean): void {
+    cancel(item);
     item.details.open = expanded;
     item.details.removeAttribute('data-accordion-closing');
     item.panel.removeAttribute('data-accordion-animating');
@@ -38,8 +53,8 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     settle(item, item === active);
   }
 
-  function animate(item: Disclosure, expanded: boolean): void {
-    const { details, panel, summary } = item;
+  function animate(item: Disclosure, expanded: boolean, direction: -1 | 1): void {
+    const { details, panel, summary, content } = item;
     if (!expanded && panel.contains(document.activeElement)) {
       summary.focus({ preventScroll: true });
     }
@@ -49,9 +64,15 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
       return;
     }
 
-    const previousHeight = details.open ? panel.getBoundingClientRect().height : 0;
-    const previousOpacity = details.open ? getComputedStyle(panel).opacity : '0';
-    animations.get(item)?.cancel();
+    const wasOpen = details.open;
+    const previousHeight = wasOpen ? panel.getBoundingClientRect().height : 0;
+    const contentStyle = wasOpen && content ? getComputedStyle(content) : null;
+    const travel = 'var(--accordion-content-travel, 4rem)';
+    const from = {
+      opacity: contentStyle?.opacity ?? 0,
+      translate: contentStyle?.translate ?? `0 calc(${travel} * ${String(-direction)})`,
+    };
+    cancel(item);
 
     details.open = true;
     details.toggleAttribute('data-accordion-closing', !expanded);
@@ -59,18 +80,34 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     panel.setAttribute('data-accordion-animating', '');
     const height = expanded ? panel.getBoundingClientRect().height : 0;
 
-    const animation = panel.animate(
-      [
-        { height: `${previousHeight.toFixed(2)}px`, opacity: previousOpacity },
-        { height: `${height.toFixed(2)}px`, opacity: expanded ? 1 : 0 },
-      ],
-      { duration: expanded ? 468 : 360, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'both' },
+    const duration = expanded ? 468 : 360;
+    const layout = panel.animate(
+      [{ height: `${previousHeight.toFixed(2)}px` }, { height: `${height.toFixed(2)}px` }],
+      { duration, easing, fill: 'both' },
     );
-    animations.set(item, animation);
-    animation.addEventListener(
+    const motion = [layout];
+
+    if (content) {
+      const delay = expanded && !wasOpen ? 60 : 0;
+      motion.push(
+        content.animate(
+          [
+            from,
+            {
+              opacity: expanded ? 1 : 0,
+              translate: expanded ? 'none' : `0 calc(${travel} * ${String(direction)})`,
+            },
+          ],
+          { delay, duration: expanded ? duration - delay : 240, easing, fill: 'both' },
+        ),
+      );
+    }
+
+    animations.set(item, motion);
+    layout.addEventListener(
       'finish',
       () => {
-        if (animations.get(item) === animation) settle(item, expanded);
+        if (animations.get(item) === motion) settle(item, expanded);
       },
       { once: true, signal },
     );
@@ -88,8 +125,10 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
       event.preventDefault();
       const previous = active;
       active = item === previous ? undefined : item;
-      if (previous) animate(previous, false);
-      if (active) animate(active, true);
+      const direction =
+        previous && active && items.indexOf(active) > items.indexOf(previous) ? 1 : -1;
+      if (previous) animate(previous, false, direction);
+      if (active) animate(active, true, previous ? direction : 1);
     },
     { signal },
   );
