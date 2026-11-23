@@ -67,11 +67,7 @@
 }
 
 .longevity .logo-marquee-header {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-8, 0.8rem) var(--space-20, 2rem);
+  display: block;
   margin-block-end: var(--space-24, 2.4rem);
 }
 
@@ -80,15 +76,6 @@
   font-size: var(--font-24, 2.4rem);
   line-height: 1.25;
   overflow-wrap: anywhere;
-}
-
-.longevity .logo-marquee-toggle {
-  padding: var(--space-8, 0.8rem) var(--space-12, 1.2rem);
-  border: 1px solid currentColor;
-  border-radius: 14rem;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
 }
 
 .longevity .logo-marquee-viewport {

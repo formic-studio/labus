@@ -8,22 +8,16 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   const viewport = element.querySelector<HTMLElement>('[data-logo-marquee-viewport]');
   const track = viewport?.querySelector<HTMLElement>('[data-logo-marquee-track]');
   const group = track?.querySelector<HTMLElement>('[data-logo-marquee-group]');
-  const toggle = element.querySelector<HTMLButtonElement>('button[data-logo-marquee-toggle]');
 
-  if (!viewport || !track || !group?.children.length || !toggle) return;
+  if (!viewport || !track || !group?.children.length) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const initialTabIndex = viewport.getAttribute('tabindex');
-  const startLabel = toggle.textContent;
   const copies: HTMLElement[] = [];
   let visible = false;
-  let paused = false;
 
   const syncPlayback = () => {
-    viewport.toggleAttribute(
-      playingAttribute,
-      viewport.hasAttribute(readyAttribute) && visible && !paused,
-    );
+    viewport.toggleAttribute(playingAttribute, viewport.hasAttribute(readyAttribute) && visible);
   };
 
   const restoreStaticLayout = () => {
@@ -33,7 +27,6 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     track.style.removeProperty('--logo-marquee-offset');
     track.style.removeProperty('--logo-marquee-duration');
     for (const copy of copies.splice(0)) copy.remove();
-    toggle.hidden = true;
   };
 
   const syncLayout = () => {
@@ -67,19 +60,8 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
       viewport.removeAttribute('tabindex');
     }
 
-    toggle.hidden = false;
     syncPlayback();
   };
-
-  toggle.addEventListener(
-    'click',
-    () => {
-      paused = !paused;
-      toggle.textContent = paused ? 'Wznów przewijanie' : startLabel;
-      syncPlayback();
-    },
-    { signal },
-  );
 
   viewport.addEventListener(
     'keydown',
@@ -105,6 +87,5 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
     visibility.disconnect();
     resize.disconnect();
     restoreStaticLayout();
-    toggle.textContent = startLabel;
   };
 }
