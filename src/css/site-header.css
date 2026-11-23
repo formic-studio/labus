@@ -207,6 +207,16 @@
   --header-light: 0;
 }
 
+@media (max-width: 767px) {
+  #brx-header > .site-header {
+    --header-top: 3.2rem;
+  }
+
+  .site-header :is(.site-header-toggle, .site-header-nav) {
+    inset-block-start: var(--header-top);
+  }
+}
+
 @media (min-width: 992px) {
   #brx-header > .site-header {
     --header-top: 6rem;
