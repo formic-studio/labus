@@ -165,6 +165,12 @@
   height: auto;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .lci-diagram[data-lci-reveal-pending] > :is(.lci-mark, .lci-pill) {
+    clip-path: circle(0% at center);
+  }
+}
+
 @media (min-width: 768px) {
   .lci {
     padding-inline: var(--space-40, 4rem);

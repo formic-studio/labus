@@ -24,6 +24,11 @@ const components = [
     load: () => import('./components/design-approach'),
   },
   {
+    name: 'lci-diagram',
+    selector: '[data-component="lci-diagram"]',
+    load: () => import('./components/lci-diagram'),
+  },
+  {
     name: 'directional-fill',
     selector: '[data-component="directional-fill"]',
     load: () => import('./components/directional-fill'),
