@@ -61,11 +61,12 @@
 }
 
 .lci-pillars .lci-pillars-track {
-  /* The leading margin moves with the cards. The viewport spans the full section. */
+  /* Both insets move with the cards inside the full-width viewport. */
   display: flex;
   gap: var(--space-20, 2rem);
   width: max-content;
-  margin-inline-start: max(var(--pillars-gutter), calc((100cqi - var(--content-max-width)) / 2));
+  max-width: none;
+  padding-inline: max(var(--pillars-gutter), calc((100cqi - var(--content-max-width)) / 2));
 }
 
 .lci-pillars .lci-pillar {
