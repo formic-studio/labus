@@ -36,6 +36,8 @@
 }
 
 .lci-benefits .lci-benefits-list {
+  /* Keep the animated row height within the measured bounds of its summary. */
+  --accordion-switch-easing: cubic-bezier(0.32, 0, 0.2, 1);
   grid-area: list;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
