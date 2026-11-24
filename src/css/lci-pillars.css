@@ -52,6 +52,11 @@
   scrollbar-width: none;
 }
 
+.lci-pillars .lci-pillars-viewport[data-lenis-prevent-horizontal] {
+  /* Lenis sets containment on both axes. Let vertical gestures reach the page. */
+  overscroll-behavior-block: auto;
+}
+
 .lci-pillars .lci-pillars-viewport::-webkit-scrollbar {
   display: none;
 }
