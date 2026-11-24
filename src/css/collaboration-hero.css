@@ -92,7 +92,7 @@
 
 @media (min-width: 992px) {
   .collaboration-hero {
-    padding: 20rem var(--space-60, 6rem) var(--space-80, 8rem);
+    padding-block: 20rem var(--space-80, 8rem);
   }
 
   .collaboration-hero .collaboration-title.brxe-heading {

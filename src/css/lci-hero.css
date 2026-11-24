@@ -92,7 +92,6 @@
   .lci-hero {
     --lci-hero-bottom-padding: 0rem;
     padding-block-start: 20rem;
-    padding-inline: var(--space-60, 6rem);
   }
 
   .lci-hero .lci-hero-layout {

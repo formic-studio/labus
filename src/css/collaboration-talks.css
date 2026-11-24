@@ -96,7 +96,7 @@
 @media (min-width: 992px) {
   .collaboration-talks {
     --talks-bottom-padding: 12rem;
-    padding: 12rem var(--space-60, 6rem) var(--talks-bottom-padding);
+    padding-block: 12rem var(--talks-bottom-padding);
   }
 
   .collaboration-talks .collaboration-talks-layout {
