@@ -36,8 +36,6 @@
 }
 
 .lci-benefits .lci-benefits-list {
-  /* Keep the animated row height within the measured bounds of its summary. */
-  --accordion-switch-easing: cubic-bezier(0.32, 0, 0.2, 1);
   grid-area: list;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -52,7 +50,18 @@
 }
 
 .lci-benefits .lci-benefits-item:has(> [data-accordion-animating]) {
-  overflow: clip;
+  /* Clip the moving text to the row and let the dot paint through the overshoot. */
+  --benefits-dot-clip-edge: calc(var(--benefits-dot-size) + var(--benefits-label-gap) / 2);
+  --benefits-dot-clip-end: calc(100% + var(--benefits-dot-size));
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    var(--benefits-dot-clip-edge) 100%,
+    var(--benefits-dot-clip-edge) var(--benefits-dot-clip-end),
+    0 var(--benefits-dot-clip-end)
+  );
+  pointer-events: none;
 }
 
 .lci-benefits .lci-benefits-summary {
@@ -65,6 +74,7 @@
   padding-block: 0.9rem;
   cursor: pointer;
   list-style: none;
+  pointer-events: auto;
 }
 
 .lci-benefits .lci-benefits-summary::-webkit-details-marker {
@@ -116,6 +126,7 @@
   padding-block: 0.5rem var(--space-16, 1.6rem);
   color: inherit;
   overflow-wrap: anywhere;
+  pointer-events: auto;
 }
 
 .lci-benefits .lci-benefits-cta.brxe-button {

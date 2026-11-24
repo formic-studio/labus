@@ -17,7 +17,7 @@ interface PanelLayout {
 }
 
 const disclosureEasing = 'cubic-bezier(0.32, 0, 0.2, 1)';
-const defaultSwitchEasing = 'cubic-bezier(0.7, -0.4, 0.4, 1.4)';
+const switchEasing = 'cubic-bezier(0.7, -0.4, 0.4, 1.4)';
 
 function measure({ details, summary, content }: Disclosure): PanelLayout {
   const summaryBox = summary.getBoundingClientRect();
@@ -61,9 +61,6 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   }
   if (items.length === 0) return;
 
-  const switchEasing =
-    getComputedStyle(element).getPropertyValue('--accordion-switch-easing').trim() ||
-    defaultSwitchEasing;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const animations = new Map<Disclosure, Animation[]>();
   let active = items.find(({ details }) => details.open);
