@@ -1,0 +1,31 @@
+.lci-closing-photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 390 / 445;
+  margin: 0;
+  overflow: clip;
+  border-radius: 2.3rem 2.3rem 0 0;
+}
+
+.lci-closing-photo img.lci-closing-image {
+  /* Preserve the framing of the 390px reference as the figure scales. */
+  position: absolute;
+  inset: -27.89% auto auto -41.35%;
+  display: block;
+  width: 220.51%;
+  max-width: none;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .lci-closing-photo {
+    aspect-ratio: 1440 / 800;
+    border-radius: 3rem 3rem 0 0;
+  }
+
+  .lci-closing-photo img.lci-closing-image {
+    inset: -39.125% auto auto -0.4167%;
+    width: 117.153%;
+  }
+}
