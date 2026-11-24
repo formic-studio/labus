@@ -39,6 +39,11 @@ const components = [
     load: () => import('./components/lci-benefits'),
   },
   {
+    name: 'lci-pillars',
+    selector: '[data-component="lci-pillars"]',
+    load: () => import('./components/lci-pillars'),
+  },
+  {
     name: 'accordion',
     selector: '[data-component="accordion"]',
     load: () => import('./components/accordion'),
