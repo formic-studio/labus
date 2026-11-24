@@ -15,6 +15,8 @@
 
 - Projekty referencyjne mają 1440 px na desktopie i 390 px na telefonie. W obu punktach baza wynosi `1rem = 10px` przy domyślnym rozmiarze pisma przeglądarki 16 px. Progi dotyczą szerokości viewportu w pikselach CSS.
 - Na desktopie poniżej 1440 px rozmiary zapisane w `rem` mają płynnie maleć. Od 1440 do 1920 px baza pozostaje stała. Powyżej 1920 px rośnie płynnie do 3840 px, gdzie skalowanie osiąga sufit.
+- Wyśrodkuj wewnętrzne kontenery sekcji z tekstem, zdjęciami i kartami. Stosuj wspólny limit `--content-max-width: 1920px` w pikselach CSS do obszaru treści po odjęciu bocznych odstępów sekcji. Jeśli projekt przewiduje węższy kontener, obowiązuje węższy limit.
+- Tła zaprojektowane na pełną szerokość prowadź do krawędzi ekranu. W tabach i akordeonach numery, nagłówki i opisy umieszczaj we wspólnym obszarze treści objętym limitem 1920 px. W pełnoszerokich akordeonach cały wiersz jest klikalny.
 - Poniżej 390 px widok mobilny ma się zmniejszać tylko nieznacznie. Układy tabletowe i mobilne dostosowuj breakpointami Bricks, w tym liczbę kolumn i sposób łamania treści.
 - Przy wdrożeniu ustaw `font-size` na `:root` w CSS motywu potomnego. Używaj procentowej bazy `62.5%` oraz ograniczonych przedziałów `clamp()`. W Bricks korzystaj z istniejących klas typografii i zmiennych rozmiarów oraz odstępów w `rem`. Interlinia pozostaje bez jednostki.
 - Do pierwszej przymiarki przyjmij wstępnie domyślny próg desktopu Bricks 992 px z bazą 8.75 px na tym progu, bazę 10 px w zakresie 390–991 px, około 9 px przy 320 px i maksymalnie 15 px przy 3840 px. Dostosuj wartości po sprawdzeniu pierwszego szablonu.
