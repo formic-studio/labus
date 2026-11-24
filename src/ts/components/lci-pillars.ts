@@ -22,7 +22,6 @@ function mountFlipHint(viewport: HTMLElement, signal: AbortSignal): () => void {
   let pointer: { x: number; y: number } | undefined;
   let frame: number | undefined;
   let activeCard: HTMLDetailsElement | undefined;
-  let activeOpen = false;
 
   function hide(): void {
     activeCard = undefined;
@@ -41,6 +40,7 @@ function mountFlipHint(viewport: HTMLElement, signal: AbortSignal): () => void {
     const card = hit?.closest('summary')?.parentElement;
     if (
       !(card instanceof HTMLDetailsElement) ||
+      card.open ||
       !card.matches('[data-pillar]') ||
       !viewport.contains(card)
     ) {
@@ -49,10 +49,9 @@ function mountFlipHint(viewport: HTMLElement, signal: AbortSignal): () => void {
     }
 
     if (!hint.isConnected) document.body.append(hint);
-    if (card !== activeCard || card.open !== activeOpen) {
+    if (card !== activeCard) {
       hint.style.backgroundColor = getComputedStyle(card).getPropertyValue('--pillar-flip-hint');
       activeCard = card;
-      activeOpen = card.open;
     }
 
     const { clientWidth, clientHeight } = document.documentElement;

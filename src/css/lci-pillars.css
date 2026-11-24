@@ -123,10 +123,6 @@
   --pillar-back-ink: #3e77a9;
 }
 
-.lci-pillars :is([data-pillar='ruch'], [data-pillar='bliskosc'])[open] {
-  --pillar-flip-hint: var(--pillars-lime);
-}
-
 .lci-pillar-hint {
   position: fixed;
   z-index: 9;
@@ -138,10 +134,11 @@
   border-radius: 999px;
   color: var(--color-espresso, #110a05);
   font:
-    600 var(--font-14, 1.4rem) / var(--leading-110, 1.1) 'Mona Sans',
+    400 var(--font-14, 1.4rem) / var(--leading-110, 1.1) 'Mona Sans',
     sans-serif;
   visibility: hidden;
   opacity: 0;
+  scale: 0;
   white-space: nowrap;
   pointer-events: none;
 }
@@ -150,11 +147,19 @@
   .lci-pillar-hint[data-visible] {
     visibility: visible;
     opacity: 1;
+    scale: 1;
   }
 
   @media (prefers-reduced-motion: no-preference) {
+    .lci-pillar-hint {
+      transition:
+        opacity 200ms linear,
+        scale 200ms linear,
+        visibility 0s linear 200ms;
+    }
+
     .lci-pillar-hint[data-visible] {
-      transition: opacity 120ms ease-out;
+      transition-delay: 0s;
     }
   }
 }
@@ -288,8 +293,7 @@
 }
 
 @media (any-pointer: fine) {
-  .lci-pillars [data-pillars-drag-ready],
-  .lci-pillars [data-pillars-drag-ready] .lci-pillar-summary {
+  .lci-pillars [data-pillars-drag-ready] {
     cursor: grab;
     user-select: none;
   }
