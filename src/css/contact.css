@@ -1,0 +1,344 @@
+.contact-page {
+  --contact-divider: var(--space-75, 7.5rem);
+  display: block;
+  width: 100%;
+  padding: 21rem var(--space-20, 2rem) calc(var(--contact-divider) + var(--footer-radius, 0px));
+  background: var(--color-cream, #fcf6e8);
+  color: var(--color-espresso, #110a05);
+}
+
+.contact-page .contact-wrap {
+  display: block;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+.contact-page .contact-wordmark {
+  width: 100%;
+  aspect-ratio: 350 / 116.888;
+  margin: 0;
+  background: url('../assets/contact/wordmark.svg') center / contain no-repeat;
+}
+
+.contact-page .contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'intro'
+    'details'
+    'form';
+  align-items: start;
+  row-gap: var(--contact-divider);
+  margin-block-start: 12.7rem;
+}
+
+.contact-layout > * {
+  min-width: 0;
+}
+
+.contact-page .contact-intro {
+  grid-area: intro;
+  display: grid;
+  gap: var(--space-10, 1rem);
+}
+
+.contact-page .contact-lead {
+  margin: 0;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.contact-copy,
+.contact-bio-copy {
+  margin: 0;
+}
+
+.contact-page .contact-details {
+  grid-area: details;
+  display: grid;
+  align-content: start;
+  gap: var(--space-40, 4rem);
+  overflow-wrap: anywhere;
+}
+
+.contact-page .contact-links,
+.contact-page .contact-bio {
+  display: grid;
+  justify-items: start;
+}
+
+.contact-links :is(a, p) {
+  margin: 0;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+}
+
+.contact-links a:hover {
+  text-decoration-thickness: 0.12em;
+}
+
+.contact-page .contact-bio {
+  gap: var(--space-24, 2.4rem);
+}
+
+.contact-role-separator {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.contact-page .contact-copy {
+  overflow-wrap: anywhere;
+}
+
+.contact-page .contact-form-panel {
+  grid-area: form;
+}
+
+.contact-page :is(.contact-details, .contact-form-panel) {
+  padding-block-start: var(--contact-divider);
+  border-block-start: 1px solid var(--color-orange, #ff7340);
+}
+
+.contact-page :is(.contact-button, .contact-form .submit-button-wrapper > button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 5rem;
+  padding: 0.75em 1.4em;
+  border: 0;
+  border-radius: 14rem;
+  background: var(--color-orange, #ff7340);
+  color: var(--color-espresso, #110a05);
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.contact-page
+  :is(.contact-button, .contact-form .submit-button-wrapper > button):not(
+    [data-directional-fill],
+    :disabled
+  ):hover {
+  background-color: var(--color-lime, #f2ff26);
+}
+
+.contact-page .contact-button {
+  margin-block-start: var(--space-40, 4rem);
+}
+
+.contact-page .contact-form {
+  display: grid;
+  gap: var(--space-20, 2rem);
+  width: 100%;
+  min-width: 0;
+  color: inherit;
+}
+
+.contact-form > .form-group {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form > .form-group > :is(label, .label) {
+  display: block;
+  margin-block-end: var(--space-10, 1rem);
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.contact-form > .form-group > label:has(+ [required])::after,
+.contact-form
+  > .form-group:has(.options-wrapper [data-required], .options-wrapper [required])
+  > .label::after {
+  content: '*';
+}
+
+.contact-form :is(input[type='text'], input[type='email'], input[type='tel'], textarea) {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  padding: 0 0 0.75rem;
+  border: 0;
+  border-block-end: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.contact-form :is(input, textarea)::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.contact-form > .form-group > textarea {
+  height: 21rem;
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact-form .options-wrapper {
+  display: grid;
+  row-gap: var(--space-10, 1rem);
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0.75rem;
+  border-block-end: 1px solid currentColor;
+  list-style: none;
+}
+
+.contact-form .options-wrapper > li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-16, 1.6rem);
+}
+
+.contact-form .options-wrapper input[type='checkbox'] {
+  display: inline-grid;
+  flex: none;
+  place-content: center;
+  width: 0.75em;
+  height: 0.75em;
+  margin: 0.3em 0 0;
+  padding: 0;
+  appearance: none;
+  border: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.contact-form .options-wrapper input[type='checkbox']:checked {
+  background: var(--color-lime, #f2ff26);
+}
+
+.contact-form .options-wrapper input[type='checkbox']:checked::before {
+  width: 0.5em;
+  height: 0.5em;
+  background: currentColor;
+  clip-path: polygon(14% 46%, 39% 70%, 88% 13%, 100% 24%, 41% 93%, 0 55%);
+  content: '';
+}
+
+.contact-form .options-wrapper label {
+  margin: 0;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.contact-form .form-group:has([name='form-field-ctpriv[]']) {
+  margin-block-start: var(--space-24, 2.4rem);
+}
+
+.contact-form .options-wrapper:has([name='form-field-ctpriv[]']) {
+  padding: 0;
+  border: 0;
+  font-size: var(--font-12, 1.2rem);
+  line-height: 1.25;
+}
+
+.contact-form .options-wrapper input[name='form-field-ctpriv[]'] {
+  width: 2rem;
+  height: 2rem;
+  margin-block-start: 0;
+}
+
+.contact-data-notice {
+  margin: -1rem 0 0 3.6rem;
+  font-size: var(--font-12, 1.2rem);
+  line-height: 1.25;
+}
+
+.contact-form .submit-button-wrapper {
+  margin-block-start: var(--space-20, 2rem);
+}
+
+.contact-form .submit-button-wrapper > button {
+  font-size: var(--font-14, 1.4rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .contact-page {
+    padding-inline: var(--space-40, 4rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-page {
+    padding-block: 15.2rem calc(10.6rem + var(--footer-radius, 0px));
+  }
+
+  .contact-page .contact-wrap {
+    max-width: var(--content-max-width);
+  }
+
+  .contact-page .contact-wordmark {
+    width: 90.93%;
+    margin-inline-start: 2.87%;
+  }
+
+  .contact-page .contact-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      'intro form'
+      'details form';
+    grid-template-rows: auto 1fr;
+    gap: var(--space-60, 6rem) var(--space-20, 2rem);
+    margin-block-start: 12rem;
+  }
+
+  .contact-page .contact-intro {
+    max-width: 36.8rem;
+  }
+
+  .contact-page .contact-details {
+    align-self: end;
+    min-height: 33rem;
+    gap: 6.2rem;
+  }
+
+  .contact-role-separator {
+    display: inline;
+  }
+
+  .contact-mobile-break {
+    display: none;
+  }
+
+  .contact-page :is(.contact-details, .contact-form-panel) {
+    padding-block-start: 0;
+    border-block-start: 0;
+  }
+
+  .contact-page :is(.contact-button, .contact-form .submit-button-wrapper > button) {
+    width: min(100%, 36.6rem);
+    min-height: 6rem;
+  }
+
+  .contact-page .contact-button {
+    margin-block-start: 3rem;
+  }
+}
+
+@media (forced-colors: active) {
+  .contact-form .options-wrapper input[type='checkbox'] {
+    appearance: auto;
+  }
+
+  .contact-form .options-wrapper input[type='checkbox']:checked::before {
+    display: none;
+  }
+}
