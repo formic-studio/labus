@@ -193,7 +193,7 @@
       'heading heading'
       'content diagram';
     gap: 5.5rem clamp(8.4rem, 5.8vw, 20rem);
-    max-width: clamp(109.6rem, 76vw, 190rem);
+    max-width: min(clamp(109.6rem, 76vw, 190rem), var(--content-max-width));
   }
 
   .lci .lci-heading {

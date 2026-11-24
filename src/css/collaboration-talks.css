@@ -102,7 +102,7 @@
   .collaboration-talks .collaboration-talks-layout {
     grid-template-columns: minmax(0, 762fr) minmax(0, 427fr);
     column-gap: min(13.1rem, 9.0972vw);
-    max-width: none;
+    max-width: var(--content-max-width);
   }
 
   .collaboration-talks .collaboration-talks-photo {

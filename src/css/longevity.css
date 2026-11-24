@@ -12,8 +12,9 @@
 
 .longevity .longevity-copy,
 .longevity .logo-marquee-header {
-  width: 100%;
-  padding-inline: var(--longevity-inset);
+  width: calc(100% - 2 * var(--longevity-inset));
+  max-width: var(--content-max-width);
+  margin-inline: auto;
 }
 
 .longevity .longevity-copy {

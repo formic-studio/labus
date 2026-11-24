@@ -138,7 +138,7 @@
     --measure-rule-end: 1.7rem;
     --measure-dot-travel: -3.2rem;
     padding-block-start: 12rem;
-    padding-inline: var(--space-60, 6rem);
+    padding-inline: max(var(--space-60, 6rem), calc((100% - var(--content-max-width)) / 2));
   }
 
   .lci-measure .lci-measure-heading.brxe-heading {

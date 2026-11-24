@@ -97,7 +97,7 @@
 
   .collaboration-hero .collaboration-title.brxe-heading {
     max-width: 87.3rem;
-    margin-inline: 0;
+    margin-inline: max(0px, calc((100% - var(--content-max-width)) / 2)) 0;
     color: inherit;
     font-size: var(--font-82, 8.2rem);
     line-height: var(--leading-115, 1.15);
@@ -107,7 +107,7 @@
     grid-template-columns: minmax(0, 538fr) minmax(0, 650fr);
     grid-template-areas: 'copy photo';
     column-gap: min(13.2rem, 9.17vw);
-    max-width: none;
+    max-width: var(--content-max-width);
     margin-block-start: 9.54rem;
   }
 

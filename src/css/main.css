@@ -15,6 +15,7 @@
 @import './directional-fill.css';
 
 :root {
+  --content-max-width: 1920px;
   overscroll-behavior-y: none;
 }
 
