@@ -18,12 +18,6 @@
   overscroll-behavior-y: none;
 }
 
-@media (min-width: 992px) {
-  :is(.lci-hero, .collaboration-hero, .collaboration-talks) {
-    padding-inline: max(var(--space-60, 6rem), calc((100% - 132rem) / 2));
-  }
-}
-
 [data-component='example-disclosure'] > summary {
   display: list-item;
   cursor: pointer;
