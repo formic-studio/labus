@@ -1,10 +1,15 @@
 .contact-page {
   --contact-divider: var(--space-75, 7.5rem);
+  --contact-footer-overlap: var(--footer-radius, 0px);
   display: block;
   width: 100%;
-  padding: 21rem var(--space-20, 2rem) calc(var(--contact-divider) + var(--footer-radius, 0px));
+  padding: 21rem var(--space-20, 2rem) calc(var(--contact-divider) + var(--contact-footer-overlap));
   background: var(--color-cream, #fcf6e8);
   color: var(--color-espresso, #110a05);
+}
+
+.contact-page:has(+ .contact-closing-photo) {
+  --contact-footer-overlap: 0px;
 }
 
 .contact-page .contact-wrap {
@@ -270,6 +275,32 @@
   line-height: 1.1;
 }
 
+#brx-content:has(> .contact-closing-photo) {
+  background-color: var(--color-cream, #fcf6e8);
+}
+
+.contact-closing-photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 550px;
+  aspect-ratio: 390 / 445;
+  margin: 0;
+  overflow: clip;
+  border-radius: var(--footer-radius) var(--footer-radius) 0 0;
+}
+
+.contact-closing-photo img {
+  /* Center the mobile crop on the same point as the frame widens on tablets. */
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: block;
+  width: min(313.3333%, 1520px);
+  max-width: none;
+  height: auto;
+  translate: -59.5745% -62.5153%;
+}
+
 @media (min-width: 768px) {
   .contact-page {
     padding-inline: var(--space-40, 4rem);
@@ -278,7 +309,7 @@
 
 @media (min-width: 992px) {
   .contact-page {
-    padding-block: 15.2rem calc(10.6rem + var(--footer-radius, 0px));
+    padding-block: 15.2rem calc(10.6rem + var(--contact-footer-overlap));
   }
 
   .contact-page .contact-wrap {
@@ -330,6 +361,16 @@
 
   .contact-page .contact-button {
     margin-block-start: 3rem;
+  }
+
+  .contact-closing-photo {
+    max-height: none;
+    aspect-ratio: 1440 / 800;
+  }
+
+  .contact-closing-photo img {
+    width: 152.2917%;
+    translate: -55.6316% -59.9179%;
   }
 }
 
