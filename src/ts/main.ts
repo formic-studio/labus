@@ -24,6 +24,11 @@ const components = [
     load: () => import('./components/photo-reveal'),
   },
   {
+    name: 'photo-stack',
+    selector: '[data-component="photo-stack"]',
+    load: () => import('./components/photo-stack'),
+  },
+  {
     name: 'lci-diagram',
     selector: '[data-component="lci-diagram"]',
     load: () => import('./components/lci-diagram'),
