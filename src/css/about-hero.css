@@ -6,7 +6,9 @@
   color: var(--color-black, #000);
 }
 
-#brx-content:has(> :is(.about-hero, .about-question, .about-work, .about-achievements):last-child)
+#brx-content:has(
+    > :is(.about-hero, .about-question, .about-work, .about-achievements, .about-mission):last-child
+  )
   + #brx-footer {
   --footer-overlap: 0px;
 }

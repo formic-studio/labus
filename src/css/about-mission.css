@@ -1,0 +1,127 @@
+.about-mission {
+  display: block;
+  width: 100%;
+  padding: 0 var(--space-20, 2rem) var(--space-60, 6rem);
+  background: var(--color-cream, #fcf6e8);
+  color: var(--color-black, #000);
+}
+
+.about-mission .about-mission-layout {
+  display: block;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+.about-mission .about-mission-heading.brxe-heading {
+  margin: 0 0 5rem 0.3rem;
+  color: inherit;
+  font-size: var(--font-39, 3.9rem);
+  line-height: var(--leading-110, 1.1);
+  letter-spacing: -0.026em;
+  overflow-wrap: anywhere;
+}
+
+.about-mission .about-mission-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-40, 4rem);
+  width: 100%;
+  min-width: 0;
+  align-items: start;
+}
+
+.about-mission .about-mission-topic {
+  display: grid;
+  gap: var(--space-20, 2rem);
+  min-width: 0;
+}
+
+.about-mission :is(.about-mission-subheading, .about-mission-description) {
+  margin: 0;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.about-mission :is(.about-mission-mobile-break, .about-mission-desktop-break, .about-mission-cta) {
+  display: none;
+}
+
+@media (365px <= width <= 478px) and (min-width: 22em) {
+  .about-mission .about-mission-mobile-break {
+    display: initial;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-mission {
+    padding-inline: var(--space-40, 4rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-mission {
+    padding: var(--space-28, 2.8rem) var(--space-60, 6rem) 9.2rem;
+    color: var(--color-espresso, #110a05);
+  }
+
+  .about-mission .about-mission-layout {
+    max-width: var(--content-max-width);
+  }
+
+  .about-mission .about-mission-heading.brxe-heading {
+    margin: 0 0 var(--space-120, 12rem);
+    font-size: 10rem;
+    letter-spacing: normal;
+  }
+
+  .about-mission .about-mission-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5.2rem var(--space-20, 2rem);
+  }
+
+  .about-mission .about-mission-topic {
+    gap: 4.4rem;
+  }
+
+  .about-mission .about-mission-subheading.brxe-heading {
+    font-size: var(--font-29, 2.9rem);
+    line-height: var(--leading-110, 1.1);
+  }
+
+  .about-mission .about-mission-description.brxe-text-basic {
+    max-width: 41.1rem;
+    font-size: var(--font-21, 2.1rem);
+    line-height: 1.3;
+  }
+
+  .about-mission .about-mission-description--experience.brxe-text-basic {
+    max-width: 39.6rem;
+  }
+
+  .about-mission .about-mission-description--solution.brxe-text-basic {
+    max-width: 41.5rem;
+  }
+
+  .about-mission .about-mission-desktop-break {
+    display: initial;
+  }
+
+  .about-mission .about-mission-cta.brxe-button {
+    display: inline-flex;
+    grid-column: 3;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 31.5rem);
+    min-height: 6rem;
+    margin-inline-start: -0.6rem;
+    padding: 1rem var(--space-24, 2.4rem);
+    border-radius: 14rem;
+    background: var(--color-orange, #ff7340);
+    color: var(--color-espresso, #110a05);
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+}
