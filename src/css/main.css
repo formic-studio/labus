@@ -24,6 +24,12 @@
 @import './site-header.css';
 @import './directional-fill.css';
 
+@property --row-text-stroke {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+
 :root {
   --content-max-width: 1920px;
   overscroll-behavior-y: none;

@@ -98,9 +98,24 @@
   overflow-wrap: anywhere;
 }
 
-.appearances a.appearance-row:is(:hover, :focus-visible) .appearance-title {
-  text-decoration: underline;
-  text-underline-offset: 0.16em;
+.appearances a.appearance-row {
+  -webkit-text-stroke-width: var(--row-text-stroke, 0px);
+}
+
+.appearances a.appearance-row:focus-visible {
+  --row-text-stroke: 0.04em;
+}
+
+@media (hover: hover) {
+  .appearances a.appearance-row:hover {
+    --row-text-stroke: 0.04em;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .appearances a.appearance-row {
+    transition: --row-text-stroke 220ms ease;
+  }
 }
 
 .appearances .appearance-source {
