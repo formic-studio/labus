@@ -151,13 +151,17 @@
   pointer-events: auto;
 }
 
-.site-header .site-header-links {
+.site-header :is(.site-header-links, .bricks-nav-menu) {
   display: grid;
   gap: 1rem;
   width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site-header .bricks-nav-menu > li {
+  margin: 0;
 }
 
 .site-header .site-header-nav a {
@@ -170,7 +174,9 @@
   border-radius: 99rem;
   background: var(--color-espresso, #110a05);
   color: var(--color-cream, #fcf6e8);
+  font-family: 'Mona Sans', sans-serif;
   font-size: var(--font-16, 1.6rem);
+  font-weight: 600;
   line-height: 1.15;
   text-align: center;
   text-decoration: none;
@@ -269,23 +275,23 @@
     scale: 1;
   }
 
-  .site-header .site-header-menu[open] .site-header-links > li {
+  .site-header .site-header-menu[open] :is(.site-header-links, .bricks-nav-menu) > li {
     animation: site-header-link-enter 280ms var(--header-ease) var(--header-link-delay, 0ms) both;
   }
 
-  .site-header .site-header-links > li:nth-child(2) {
+  .site-header :is(.site-header-links, .bricks-nav-menu) > li:nth-child(2) {
     --header-link-delay: 35ms;
   }
 
-  .site-header .site-header-links > li:nth-child(3) {
+  .site-header :is(.site-header-links, .bricks-nav-menu) > li:nth-child(3) {
     --header-link-delay: 70ms;
   }
 
-  .site-header .site-header-links > li:nth-child(4) {
+  .site-header :is(.site-header-links, .bricks-nav-menu) > li:nth-child(4) {
     --header-link-delay: 105ms;
   }
 
-  .site-header .site-header-menu[open] .site-header-links > li:focus-within {
+  .site-header .site-header-menu[open] :is(.site-header-links, .bricks-nav-menu) > li:focus-within {
     animation: none;
   }
 }

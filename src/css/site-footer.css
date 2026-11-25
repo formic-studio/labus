@@ -113,7 +113,7 @@
   font-style: normal;
 }
 
-.site-footer .site-footer-links {
+.site-footer :is(.site-footer-links, .bricks-nav-menu) {
   display: grid;
   gap: 1.45rem;
   margin: 0;
@@ -121,12 +121,12 @@
   list-style: none;
 }
 
-.site-footer .site-footer-links > li {
+.site-footer :is(.site-footer-links, .bricks-nav-menu) > li {
   margin: 0;
   padding: 0;
 }
 
-.site-footer :is(.site-footer-contact, .site-footer-links) a {
+.site-footer :is(.site-footer-contact, .site-footer-links, .bricks-nav-menu) a {
   width: fit-content;
   max-width: 100%;
   background-image: linear-gradient(currentColor, currentColor);
@@ -137,7 +137,9 @@
   text-decoration: none;
 }
 
-.site-footer :is(.site-footer-contact, .site-footer-links) a:is(:hover, :focus-visible) {
+.site-footer
+  :is(.site-footer-contact, .site-footer-links, .bricks-nav-menu)
+  a:is(:hover, :focus-visible) {
   background-position: left bottom;
   background-size: 100% 1px;
 }
@@ -218,8 +220,7 @@
     line-height: 1.45;
   }
 
-  .site-footer .site-footer-links,
-  .site-footer .site-footer-contact {
+  .site-footer :is(.site-footer-links, .site-footer-contact, .bricks-nav-menu) {
     gap: 0.8rem;
   }
 
@@ -230,7 +231,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .site-footer :is(.site-footer-contact, .site-footer-links) a {
+  .site-footer :is(.site-footer-contact, .site-footer-links, .bricks-nav-menu) a {
     transition: background-size 260ms ease;
   }
 
@@ -246,7 +247,9 @@
 }
 
 @media (forced-colors: active) {
-  .site-footer :is(.site-footer-contact, .site-footer-links) a:is(:hover, :focus-visible) {
+  .site-footer
+    :is(.site-footer-contact, .site-footer-links, .bricks-nav-menu)
+    a:is(:hover, :focus-visible) {
     text-decoration: underline;
   }
 }

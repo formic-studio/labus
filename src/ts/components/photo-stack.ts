@@ -1,3 +1,6 @@
+const CARD_DURATION_MS = 1000;
+const CARD_STAGGER_MS = 550;
+
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
   if (typeof IntersectionObserver === 'undefined' || typeof element.animate !== 'function') {
     return;
@@ -30,9 +33,9 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
           { opacity: 1, transform: 'none' },
         ],
         {
-          delay: index * 130,
-          duration: 680,
-          easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)',
+          delay: index * CARD_STAGGER_MS,
+          duration: CARD_DURATION_MS,
+          easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
           fill: 'backwards',
         },
       ),
