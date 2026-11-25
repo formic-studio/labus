@@ -1,5 +1,5 @@
-const CARD_DURATION_MS = 700;
-const CARD_STAGGER_MS = 380;
+const CARD_DURATION_MS = 540;
+const CARD_STAGGER_MS = 300;
 
 export function mount(element: Element, signal: AbortSignal): (() => void) | undefined {
   if (typeof IntersectionObserver === 'undefined' || typeof element.animate !== 'function') {
