@@ -1,0 +1,123 @@
+.about-hero {
+  display: block;
+  width: 100%;
+  padding: 12.8rem var(--space-20, 2rem) 7.6rem;
+  background: var(--color-cream, #fcf6e8);
+  color: var(--color-black, #000);
+}
+
+#brx-content:has(> .about-hero:last-child) + #brx-footer {
+  --footer-overlap: 0px;
+}
+
+.about-hero .about-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'title'
+    'photo'
+    'copy';
+  align-items: start;
+  gap: var(--space-40, 4rem);
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+.about-hero .about-hero-title.brxe-heading {
+  grid-area: title;
+  margin: 0;
+  color: inherit;
+  font-size: var(--font-39, 3.9rem);
+  line-height: var(--leading-110, 1.1);
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+
+.about-hero .about-hero-copy {
+  grid-area: copy;
+  margin: 0;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.about-hero .about-hero-desktop {
+  display: none;
+}
+
+.about-hero .about-hero-photo {
+  grid-area: photo;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 350 / 289;
+  margin: 0;
+  overflow: clip;
+  border-radius: 2.3rem;
+}
+
+.about-hero .about-hero-photo img {
+  position: absolute;
+  inset: -70.87% auto auto -76.97%;
+  display: block;
+  width: 249.26%;
+  max-width: none;
+  height: auto;
+}
+
+@media (max-width: 359px) {
+  .about-hero {
+    padding-inline: var(--space-16, 1.6rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .about-hero {
+    padding-inline: var(--space-40, 4rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-hero {
+    padding: 20rem var(--space-60, 6rem) var(--space-120, 12rem);
+  }
+
+  .about-hero .about-hero-layout {
+    grid-template-columns: minmax(0, 1fr) min(40.76%, 53.8rem);
+    grid-template-areas:
+      'title photo'
+      'copy photo';
+    grid-template-rows: auto 1fr;
+    gap: var(--space-60, 6rem) min(4.65vw, 6.7rem);
+    max-width: var(--content-max-width);
+  }
+
+  .about-hero .about-hero-title.brxe-heading {
+    max-width: 71.5rem;
+    margin-block-start: 5rem;
+    color: var(--color-espresso, #110a05);
+    font-size: var(--font-61, 6.1rem);
+    line-height: var(--leading-105, 1.05);
+  }
+
+  .about-hero .about-hero-copy {
+    max-width: 41.6rem;
+  }
+
+  .about-hero br.about-hero-desktop {
+    display: initial;
+  }
+
+  .about-hero .about-hero-mobile {
+    display: none;
+  }
+
+  .about-hero .about-hero-photo {
+    aspect-ratio: 538 / 600;
+    border-radius: var(--space-30, 3rem);
+  }
+
+  .about-hero .about-hero-photo img {
+    inset: -56.8333% auto auto -105.3903%;
+    width: 304.0892%;
+  }
+}
