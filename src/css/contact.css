@@ -279,6 +279,10 @@
   background-color: var(--color-cream, #fcf6e8);
 }
 
+#brx-content:has(> .contact-closing-photo) + #brx-footer:has(.site-footer-dark:only-child) {
+  --footer-overlap: 4.4rem;
+}
+
 .contact-closing-photo {
   position: relative;
   display: block;
@@ -361,6 +365,10 @@
 
   .contact-page .contact-button {
     margin-block-start: 3rem;
+  }
+
+  #brx-content:has(> .contact-closing-photo) + #brx-footer:has(.site-footer-dark:only-child) {
+    --footer-overlap: 6.6rem;
   }
 
   .contact-closing-photo {

@@ -2,7 +2,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   if (!(element instanceof HTMLElement)) return;
 
   const panel = element.querySelector<HTMLElement>('[data-footer-dark]');
-  if (!panel) return;
+  if (!panel || !element.querySelector(':scope > .site-footer-callout')) return;
 
   const root = element;
   const darkPanel = panel;
