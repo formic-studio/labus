@@ -7,39 +7,36 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   const cards = Array.from(element.querySelectorAll('[data-photo-stack-card]'));
   if (reducedMotion.matches || cards.length === 0) return;
 
+  const trigger = document.createElement('span');
+  trigger.className = 'photo-reveal-trigger';
+  trigger.setAttribute('aria-hidden', 'true');
   const pendingAttribute = 'data-photo-stack-waiting';
   let animations: Animation[] = [];
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (
-        !element.hasAttribute(pendingAttribute) ||
-        !entries.some((entry) => entry.isIntersecting)
-      ) {
-        return;
-      }
+  const observer = new IntersectionObserver(([entry]) => {
+    if (!entry?.isIntersecting || !element.hasAttribute(pendingAttribute)) return;
 
-      observer.disconnect();
-      animations = cards.map((card, index) =>
-        card.animate(
-          [
-            { opacity: 0, transform: 'translateY(16%) scale(0.92)' },
-            { opacity: 1, transform: 'none' },
-          ],
-          {
-            delay: index * 130,
-            duration: 680,
-            easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)',
-            fill: 'backwards',
-          },
-        ),
-      );
-      element.removeAttribute(pendingAttribute);
-    },
-    { threshold: 0.16 },
-  );
+    observer.disconnect();
+    trigger.remove();
+    animations = cards.map((card, index) =>
+      card.animate(
+        [
+          { opacity: 0, transform: 'translateY(16%) scale(0.92)' },
+          { opacity: 1, transform: 'none' },
+        ],
+        {
+          delay: index * 130,
+          duration: 680,
+          easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)',
+          fill: 'backwards',
+        },
+      ),
+    );
+    element.removeAttribute(pendingAttribute);
+  });
 
   function finish(): void {
     observer.disconnect();
+    trigger.remove();
     element.removeAttribute(pendingAttribute);
     for (const animation of animations) animation.cancel();
     animations = [];
@@ -54,6 +51,7 @@ export function mount(element: Element, signal: AbortSignal): (() => void) | und
   );
 
   element.setAttribute(pendingAttribute, '');
-  observer.observe(element);
+  element.append(trigger);
+  observer.observe(trigger);
   return finish;
 }
