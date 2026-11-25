@@ -7,6 +7,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+require_once __DIR__ . '/achievements.php';
+
 /**
  * Rejestruje miejsce na tłumaczenia motywu.
  */

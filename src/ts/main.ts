@@ -49,6 +49,11 @@ const components = [
     load: () => import('./components/accordion'),
   },
   {
+    name: 'achievements',
+    selector: '[data-component="achievements"]',
+    load: () => import('./components/achievements'),
+  },
+  {
     name: 'directional-fill',
     selector:
       '.brxe-button, .bricks-button, .site-header-nav a[href], [data-component="directional-fill"]',
